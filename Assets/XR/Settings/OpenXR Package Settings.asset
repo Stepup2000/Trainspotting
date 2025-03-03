@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeef8d85de8db242bdda70cc7ff5acd, type: 3}
   m_Name: OculusTouchControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Oculus Touch Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.oculustouch
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d6ccd3d0ef0f1d458e69421dccbdae1, type: 3}
   m_Name: ValveIndexControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Valve Index Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.valveindex
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeef8d85de8db242bdda70cc7ff5acd, type: 3}
   m_Name: OculusTouchControllerProfile Android
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Oculus Touch Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.oculustouch
@@ -570,23 +570,23 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 7464258996285166853}
-  - {fileID: 2384780375072106216}
-  - {fileID: -8334751485262919070}
-  - {fileID: 7960038105747029884}
   - {fileID: -8524223082889968156}
-  - {fileID: -2348444464225299736}
   - {fileID: 7393493430298813976}
-  - {fileID: 8953767756688334604}
-  - {fileID: -513929976772437597}
-  - {fileID: -1551361520097374300}
-  - {fileID: -1631760944890855860}
-  - {fileID: 2925873712315145658}
-  - {fileID: 1233705974639980820}
-  - {fileID: 8592533739578833479}
-  - {fileID: 8949766719343568527}
-  - {fileID: 2456451800829166337}
+  - {fileID: -2348444464225299736}
   - {fileID: 5159039774811313623}
+  - {fileID: 8953767756688334604}
+  - {fileID: -1631760944890855860}
+  - {fileID: -1551361520097374300}
+  - {fileID: 7960038105747029884}
+  - {fileID: 8592533739578833479}
+  - {fileID: 1233705974639980820}
+  - {fileID: -513929976772437597}
+  - {fileID: -8334751485262919070}
+  - {fileID: 2384780375072106216}
+  - {fileID: 2925873712315145658}
+  - {fileID: 8949766719343568527}
+  - {fileID: 7464258996285166853}
+  - {fileID: 2456451800829166337}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
