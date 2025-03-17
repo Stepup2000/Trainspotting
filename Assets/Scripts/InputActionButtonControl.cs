@@ -5,9 +5,9 @@ using UnityEngine.InputSystem.OnScreen;
 
 public class InputActionButtonControl : OnScreenControl
 {
-    [SerializeField] private InputActionReference selectAction;
+    [SerializeField] private InputActionReference leftHandAction;
+    [SerializeField] private InputActionReference rightHandAction;
 
-    
     [SerializeField]
     private string mControlPath;
 
@@ -17,38 +17,34 @@ public class InputActionButtonControl : OnScreenControl
         set => mControlPath = value;
     }
 
-
-
-
-
-
-    public void TriggerButton()
-    {
-        StartCoroutine(SendTapCoroutine());
-    }
-
     private void Update()
     {
-        if (selectAction == null || selectAction.action == null)
+        if (leftHandAction == null || leftHandAction.action == null)
         {
             Debug.Log("Select action not assigned!");
             return;
         }
+        CheckForAction();        
+    }
 
-        if (selectAction.action.WasPressedThisFrame())
+    private void CheckForAction()
+    {
+        if (leftHandAction.action.WasPressedThisFrame())
             DebugStart();
-        else if (selectAction.action.WasReleasedThisFrame())
+        else if (leftHandAction.action.WasReleasedThisFrame())
             DebugStop();
     }
 
-    private IEnumerator SendTapCoroutine()
+    public void StartLeftGrab()
     {
-        yield return null;
-        SentDefaultValueToControl();
         SendValueToControl(1.0f);
-        yield return new WaitForSeconds(0.1f);
+        Debug.Log("StartGrab");
+    }
+
+    public void EndLeftGrab()
+    {
         SentDefaultValueToControl();
-        Debug.Log("SendTapCoroutine");
+        Debug.Log("EndGrab");
     }
 
     private void DebugStart()
