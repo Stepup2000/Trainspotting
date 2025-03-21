@@ -6,18 +6,9 @@ using System.Collections;
 /// </summary>
 public class TimedObjective : BaseObjective
 {
-    [SerializeField] private GameObject targetObject;
     [SerializeField] private float objectiveTime = 5f;
 
     private Coroutine objectiveCoroutine;
-
-    /// <summary>
-    /// Disables the associated object(s) at the start of the scene.
-    /// </summary>
-    protected void Start()
-    {
-        targetObject.SetActive(false);
-    }
 
     /// <summary>
     /// Starts the timed collection objective using a coroutine.
@@ -25,7 +16,6 @@ public class TimedObjective : BaseObjective
     public override void StartObjective()
     {
         base.StartObjective();
-        targetObject.SetActive(true);
 
         if (objectiveCoroutine != null)
             StopCoroutine(objectiveCoroutine);
@@ -48,6 +38,5 @@ public class TimedObjective : BaseObjective
     protected override void OnQuestCompleted()
     {
         Debug.Log($"Objective '{ObjectiveTitle}' completed");
-        targetObject.SetActive(false);
     }
 }

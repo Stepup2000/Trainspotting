@@ -32,7 +32,7 @@ public class HandGrabOverride : OnScreenControl
             Debug.Log("Select action not assigned!");
             return;
         }
-        CheckForAction();
+        //CheckForAction();
     }
 
     /// <summary>
@@ -52,7 +52,7 @@ public class HandGrabOverride : OnScreenControl
     public void StartGrab()
     {
         SendValueToControl(1.0f);
-        Debug.Log("StartGrab");
+        //Debug.Log("StartGrab");
     }
 
     /// <summary>
@@ -61,7 +61,7 @@ public class HandGrabOverride : OnScreenControl
     public void EndGrab()
     {
         SentDefaultValueToControl();
-        Debug.Log("EndGrab");
+        //Debug.Log("EndGrab");
     }
 
     /// <summary>
