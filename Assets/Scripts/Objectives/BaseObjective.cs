@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Base class for quest objectives.
@@ -6,7 +7,13 @@ using UnityEngine;
 /// </summary>
 public class BaseObjective : MonoBehaviour, IObjective
 {
-    [SerializeField] private GameObject targetObject;
+    [SerializeField] 
+    [Tooltip("The object that will be turned off/on based on the state of the objective.")]
+    private GameObject targetObject;
+
+    [SerializeField]
+    [Tooltip("The event fired when the objective has been completed.")]
+    private UnityEvent OnObjectiveComplete;
 
     public string ObjectiveTitle { get; protected set; }
     public string ObjectiveDescription { get; protected set; }
@@ -40,8 +47,7 @@ public class BaseObjective : MonoBehaviour, IObjective
     public virtual void CompleteObjective()
     {
         if (!IsCompleted && IsActive == true)
-        {
-           // Debug.Log($"Completing quest: {ObjectiveTitle}");
+        {           
             IsCompleted = true;
             IsActive = false;
             OnQuestCompleted();
@@ -55,5 +61,15 @@ public class BaseObjective : MonoBehaviour, IObjective
     {
         targetObject?.SetActive(false);
         ObjectiveManager.Instance.GoToNextObjective();
+        OnObjectiveComplete?.Invoke();
+        Debug.Log($"Completed quest: {ObjectiveTitle}");
+    }
+
+    /// <summary>
+    /// Public method that other scripts/instances can access to change the EV through the EVController.
+    /// </summary>
+    public virtual void ChangeEV(float amount)
+    {
+        EVController.Instance.AdjustEV(amount);
     }
 }

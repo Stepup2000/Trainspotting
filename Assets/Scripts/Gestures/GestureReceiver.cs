@@ -14,15 +14,6 @@ public class GestureReceiver : MonoBehaviour
     [Tooltip("The event fired when the thumbs-down gesture is performed.")]
     UnityEvent ThumbsDownPerformed;
 
-    /// <summary>
-    /// The event fired when the thumbs-up gesture is performed.
-    /// </summary>
-    public UnityEvent gesturePerformed
-    {
-        get => ThumbsUpPerformed;
-        set => ThumbsUpPerformed = value;
-    }
-
     private void OnEnable()
     {
         // Subscribe to the thumbs-up and thumbs-down events
