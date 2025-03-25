@@ -3,18 +3,29 @@ using UnityEngine;
 
 public class ObjectiveManager : MonoBehaviour
 {
-    public static ObjectiveManager Instance { get; private set; }
-
     private List<BaseObjective> objectivesInQueue = new List<BaseObjective>();
     private BaseObjective currentObjective;
 
-    private void Awake()
+    private static ObjectiveManager instance;
+
+    /// <summary>
+    /// Provides access to the singleton instance of EVController
+    /// </summary>
+    public static ObjectiveManager Instance
     {
-        // Ensure that only one instance of ObjectiveManager exists
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindAnyObjectByType<ObjectiveManager>();
+                if (instance == null)
+                {
+                    GameObject singletonObject = new GameObject("ObjectiveManager");
+                    instance = singletonObject.AddComponent<ObjectiveManager>();
+                }
+            }
+            return instance;
+        }
     }
 
     /// <summary>
@@ -23,7 +34,6 @@ public class ObjectiveManager : MonoBehaviour
     private void Start()
     {
         CollectObjectivesRecursively(transform);
-
         StartNextObjective();
     }
 
@@ -39,7 +49,7 @@ public class ObjectiveManager : MonoBehaviour
             if (objective != null)
             {
                 AddObjective((BaseObjective)objective);
-                Debug.Log("Objective added");
+                //Debug.Log("Objective added");
             }
         }
     }
@@ -79,7 +89,6 @@ public class ObjectiveManager : MonoBehaviour
     {
         if (currentObjective != null)
         {
-            // Reset the current objective and start the next one
             currentObjective = null;
             StartNextObjective();
         }

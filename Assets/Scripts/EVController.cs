@@ -7,7 +7,7 @@ using UnityEngine.Events;
 /// </summary>
 public class EVController : MonoBehaviour
 {
-    public static EVController Instance { get; private set; }
+    private static EVController instance;
 
     [SerializeField, Range(-5f, 5f)]
     private float ev = 0f;
@@ -17,14 +17,25 @@ public class EVController : MonoBehaviour
     /// </summary>
     public UnityEvent<float> OnEVChanged { get; } = new UnityEvent<float>();
 
-    private void Awake()
+    /// <summary>
+    /// Provides access to the singleton instance of EVController
+    /// </summary>
+    public static EVController Instance
     {
-        if (Instance != null && Instance != this)
+        get
         {
-            Destroy(gameObject);
-            return;
+            if (instance == null)
+            {
+                instance = FindAnyObjectByType<EVController>();
+                if (instance == null)
+                {
+                    GameObject singletonObject = new GameObject("EVController");
+                    instance = singletonObject.AddComponent<EVController>();
+                    DontDestroyOnLoad(singletonObject);
+                }
+            }
+            return instance;
         }
-        Instance = this;
     }
 
     /// <summary>
@@ -44,11 +55,26 @@ public class EVController : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        // Ensure instance is set up when the object is created
+        _ = Instance;
+    }
+
     /// <summary>
     /// Adjusts the EV value by a given amount.
     /// </summary>
+    /// /// <param name="change">The amount the EV will change.</param>
     public void AdjustEV(float change)
     {
         EV += change;
+    }
+
+    /// <summary>
+    /// Resets the EV back to 0.
+    /// </summary>
+    public void ResetEV()
+    {
+        EV = 0;
     }
 }

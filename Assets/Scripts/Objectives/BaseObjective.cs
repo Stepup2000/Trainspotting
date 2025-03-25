@@ -29,7 +29,7 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     public virtual void StartObjective()
     {
-        Debug.Log($"Starting quest: {ObjectiveTitle}");
+        //Debug.Log($"Starting quest: {ObjectiveTitle}");
         targetObject?.SetActive(true);
         IsActive = true;
     }
@@ -41,7 +41,7 @@ public class BaseObjective : MonoBehaviour, IObjective
     {
         if (!IsCompleted && IsActive == true)
         {
-            Debug.Log($"Completing quest: {ObjectiveTitle}");
+           // Debug.Log($"Completing quest: {ObjectiveTitle}");
             IsCompleted = true;
             IsActive = false;
             OnQuestCompleted();
