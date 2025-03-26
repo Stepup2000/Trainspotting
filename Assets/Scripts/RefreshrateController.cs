@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
+/// <summary>
+/// Adjusts Time.fixedDeltaTime based on the refresh rate of an active XR device.
+/// </summary>
 public class RefreshrateController : MonoBehaviour
 {
     private void Start()
@@ -10,11 +13,13 @@ public class RefreshrateController : MonoBehaviour
         AttemptChangeDeltaTime();
     }
 
+    /// <summary>
+    /// Attempts to set Time.fixedDeltaTime if an XR device is active; retries if none is detected.
+    /// </summary>
     private void AttemptChangeDeltaTime()
     {
-        // Check if XR device is present
-        if (XRSettings.isDeviceActive) ChangeDeltaTime();
-        //Else log a warning and try again
+        if (XRSettings.isDeviceActive)
+            ChangeDeltaTime();
         else
         {
             Debug.LogWarning("No XR device is active.");
@@ -22,17 +27,15 @@ public class RefreshrateController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Updates Time.fixedDeltaTime based on the XR device's refresh rate.
+    /// </summary>
     private void ChangeDeltaTime()
     {
-        // Get the refresh rate of the XR device
         float refreshRate = XRDevice.refreshRate;
 
-        // Check if the refresh rate is valid
         if (refreshRate > 0)
-        {
             Time.fixedDeltaTime = 1.0f / refreshRate;
-        }
-        //Else log a warning and try again
         else
         {
             Debug.LogWarning("Invalid XR device refresh rate: " + refreshRate);
