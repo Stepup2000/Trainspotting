@@ -60,16 +60,7 @@ public class BaseObjective : MonoBehaviour, IObjective
     protected virtual void OnQuestCompleted()
     {
         targetObject?.SetActive(false);
-        ObjectiveManager.Instance.GoToNextObjective();
         OnObjectiveComplete?.Invoke();
         Debug.Log($"Completed quest: {ObjectiveTitle}");
-    }
-
-    /// <summary>
-    /// Public method that other scripts/instances can access to change the EV through the EVController.
-    /// </summary>
-    public virtual void ChangeEV(float amount)
-    {
-        EVController.Instance.AdjustEV(amount);
     }
 }
