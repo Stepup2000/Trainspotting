@@ -149,7 +149,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 385223451}
+  m_Father: {fileID: 385223450}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -179,18 +179,17 @@ MonoBehaviour:
   m_text: 'Friend 2 comes running back from the car, hands occupied with what looks
     like a tarp and his phone.
 
-    
 
-    He turns to his phone to put some calming
-    music on and then proceeds to lay the tarp down on the floor.
 
-    Levi looks
-    at the sky
+    He turns to his phone to put some calming music
+    on and then proceeds to lay the tarp down on the floor.
 
-    
+    Levi looks at the
+    sky
 
-    "Woow... the sky is so clear today. You can see all of
-    the stars."
+
+
+    "Woow... the sky is so clear today. You can see all of the stars."
 
 
 '
@@ -347,7 +346,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1608126168}
+  m_Father: {fileID: 1608126167}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -628,7 +627,7 @@ PrefabInstance:
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: targetObject
       value: 
-      objectReference: {fileID: 385223452}
+      objectReference: {fileID: 0}
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -725,7 +724,7 @@ PrefabInstance:
     - {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       insertIndex: -1
       addedObject: {fileID: 19876327}
     m_AddedComponents:
@@ -736,16 +735,6 @@ PrefabInstance:
 --- !u!4 &385223450 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 385223449}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &385223451 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 385223449}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &385223452 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5251531431232176689, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
   m_PrefabInstance: {fileID: 385223449}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &385223453 stripped
@@ -765,17 +754,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 385223452}
   OnObjectiveComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1608126171}
-        m_TargetAssemblyTypeName: BaseObjective, Assembly-CSharp
+      - m_Target: {fileID: 1655943327}
+        m_TargetAssemblyTypeName: ObjectiveManager, Assembly-CSharp
         m_MethodName: StartObjective
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1608126171}
+          m_ObjectArgumentAssemblyTypeName: BaseObjective, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -870,7 +858,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1270008964}
+  m_Father: {fileID: 1270008963}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1057,7 +1045,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1929997028}
+  m_Father: {fileID: 1929997027}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1087,7 +1075,7 @@ MonoBehaviour:
   m_text: 'The conversation pauses, giving you time to take all the natural beauty
     in.
 
-    
+
 
     The stars are shining like pearls in the dark sky.'
   m_isRightToLeft: 0
@@ -1219,7 +1207,7 @@ PrefabInstance:
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: targetObject
       value: 
-      objectReference: {fileID: 635499001}
+      objectReference: {fileID: 0}
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -1316,7 +1304,7 @@ PrefabInstance:
     - {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       insertIndex: -1
       addedObject: {fileID: 665265178}
     m_AddedComponents:
@@ -1327,16 +1315,6 @@ PrefabInstance:
 --- !u!4 &635498999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 635498998}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &635499000 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 635498998}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &635499001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5251531431232176689, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
   m_PrefabInstance: {fileID: 635498998}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &635499002 stripped
@@ -1356,17 +1334,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 635499001}
   OnObjectiveComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 385223454}
-        m_TargetAssemblyTypeName: TimedObjective, Assembly-CSharp
+      - m_Target: {fileID: 1655943327}
+        m_TargetAssemblyTypeName: ObjectiveManager, Assembly-CSharp
         m_MethodName: StartObjective
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 385223454}
+          m_ObjectArgumentAssemblyTypeName: BaseObjective, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1384,7 +1361,7 @@ PrefabInstance:
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: targetObject
       value: 
-      objectReference: {fileID: 650088756}
+      objectReference: {fileID: 0}
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -1481,7 +1458,7 @@ PrefabInstance:
     - {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1474413816}
     m_AddedComponents:
@@ -1492,16 +1469,6 @@ PrefabInstance:
 --- !u!4 &650088754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 650088753}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &650088755 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 650088753}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &650088756 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5251531431232176689, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
   m_PrefabInstance: {fileID: 650088753}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &650088757 stripped
@@ -1521,17 +1488,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 650088756}
   OnObjectiveComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1929997031}
-        m_TargetAssemblyTypeName: TimedObjective, Assembly-CSharp
+      - m_Target: {fileID: 1655943327}
+        m_TargetAssemblyTypeName: ObjectiveManager, Assembly-CSharp
         m_MethodName: StartObjective
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1929997031}
+          m_ObjectArgumentAssemblyTypeName: BaseObjective, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1568,7 +1534,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 635499000}
+  m_Father: {fileID: 635498999}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1994,7 +1960,7 @@ PrefabInstance:
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: targetObject
       value: 
-      objectReference: {fileID: 1270008965}
+      objectReference: {fileID: 0}
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -2090,7 +2056,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       insertIndex: -1
       addedObject: {fileID: 553872116}
     m_AddedComponents:
@@ -2101,16 +2067,6 @@ PrefabInstance:
 --- !u!4 &1270008963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 1270008962}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1270008964 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 1270008962}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1270008965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5251531431232176689, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
   m_PrefabInstance: {fileID: 1270008962}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1270008966 stripped
@@ -2225,7 +2181,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 650088755}
+  m_Father: {fileID: 650088754}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2382,7 +2338,7 @@ PrefabInstance:
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: targetObject
       value: 
-      objectReference: {fileID: 1608126169}
+      objectReference: {fileID: 0}
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -2478,7 +2434,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       insertIndex: -1
       addedObject: {fileID: 235686480}
     m_AddedComponents:
@@ -2489,16 +2445,6 @@ PrefabInstance:
 --- !u!4 &1608126167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 1608126166}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1608126168 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 1608126166}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1608126169 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5251531431232176689, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
   m_PrefabInstance: {fileID: 1608126166}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1608126170 stripped
@@ -2612,6 +2558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb0b7c7a8036214f804309cb906caa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingObjective: {fileID: 1270008967}
 --- !u!4 &1655943328
 Transform:
   m_ObjectHideFlags: 0
@@ -2644,7 +2591,7 @@ PrefabInstance:
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: targetObject
       value: 
-      objectReference: {fileID: 1929997029}
+      objectReference: {fileID: 0}
     - target: {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -2741,7 +2688,7 @@ PrefabInstance:
     - {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       insertIndex: -1
       addedObject: {fileID: 606580435}
     m_AddedComponents:
@@ -2752,16 +2699,6 @@ PrefabInstance:
 --- !u!4 &1929997027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 1929997026}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1929997028 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5678212970858007444, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
-  m_PrefabInstance: {fileID: 1929997026}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1929997029 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5251531431232176689, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
   m_PrefabInstance: {fileID: 1929997026}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1929997030 stripped
@@ -2781,7 +2718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1929997029}
   OnObjectiveComplete:
     m_PersistentCalls:
       m_Calls: []

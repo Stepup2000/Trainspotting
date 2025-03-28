@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ObjectiveManager : MonoBehaviour
 {
+    [SerializeField] private BaseObjective startingObjective;
+
     private BaseObjective currentObjective;
 
     private static ObjectiveManager instance;
@@ -28,14 +30,22 @@ public class ObjectiveManager : MonoBehaviour
     }
 
     /// <summary>
+    /// Starts the first objective.
+    /// </summary>
+    private void Start()
+    {
+        StartObjective(startingObjective);
+    }
+
+    /// <summary>
     /// Starts a new objective by completing the current one (if any) and setting the new objective as the current one.
     /// </summary>
     /// <param name="baseObject">The new objective to start.</param>
     public void StartObjective(BaseObjective baseObject)
     {
         currentObjective?.CompleteObjective();
-        baseObject.StartObjective();
         currentObjective = baseObject;
+        baseObject.StartObjective();        
     }
 
     // <summary>

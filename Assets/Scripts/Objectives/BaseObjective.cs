@@ -7,18 +7,12 @@ using UnityEngine.Events;
 /// </summary>
 public class BaseObjective : MonoBehaviour, IObjective
 {
-    [SerializeField] 
-    [Tooltip("The object that will be turned off/on based on the state of the objective.")]
-    private GameObject targetObject;
-
     [SerializeField]
     [Tooltip("The event fired when the objective has been completed.")]
     private UnityEvent OnObjectiveComplete;
 
     public string ObjectiveTitle { get; protected set; }
     public string ObjectiveDescription { get; protected set; }
-
-    public bool IsActive { get; protected set; }
     public bool IsCompleted { get; protected set; }
 
     /// <summary>
@@ -26,9 +20,8 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     protected void Awake()
     {
-        targetObject?.SetActive(false);
+        gameObject.SetActive(false);
         IsCompleted = false;
-        IsActive = false;
     }
 
     /// <summary>
@@ -36,9 +29,8 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     public virtual void StartObjective()
     {
-        //Debug.Log($"Starting quest: {ObjectiveTitle}");
-        targetObject?.SetActive(true);
-        IsActive = true;
+        //Debug.Log($"Starting quest: {ObjectiveTitle}" + gameObject.name);
+        gameObject.SetActive(true);
     }
 
     /// <summary>
@@ -46,10 +38,9 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     public virtual void CompleteObjective()
     {
-        if (!IsCompleted && IsActive == true)
+        if (!IsCompleted == true)
         {           
             IsCompleted = true;
-            IsActive = false;
             OnQuestCompleted();
         }
     }
@@ -59,8 +50,8 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     protected virtual void OnQuestCompleted()
     {
-        targetObject?.SetActive(false);
-        OnObjectiveComplete?.Invoke();
-        Debug.Log($"Completed quest: {ObjectiveTitle}");
+        //Debug.Log($"Completed quest: {ObjectiveTitle}" + gameObject.name);
+        OnObjectiveComplete?.Invoke();        
+        gameObject.SetActive(false);        
     }
 }
