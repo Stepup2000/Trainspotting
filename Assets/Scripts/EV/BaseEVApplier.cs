@@ -5,13 +5,18 @@ using UnityEngine;
 /// </summary>
 public class BaseEVApplier : MonoBehaviour
 {
+    private float currentEV;
+
     /// <summary>
     /// Subscribes to the EV change event when the object is enabled.
     /// </summary>
     protected virtual void OnEnable()
     {
         if (EVController.Instance != null)
+        {
             EVController.Instance.OnEVChanged.AddListener(OnEVChanged);
+            currentEV = EVController.Instance.EV;
+        }            
         else
             Debug.LogWarning("Could not find EVController");
     }
