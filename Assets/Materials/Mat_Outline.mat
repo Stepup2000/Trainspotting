@@ -91,18 +91,21 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _ColorThreshold: 6.61
+    - _ColorThreshold: 3.1
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+    - _EdgeMult: 0.001
+    - _EdgeMult_1: 0.0001
+    - _EdgeThickness: 0.78
     - _EnvironmentReflections: 1
     - _Fullscreen_AlphaBlendOperation: 0
     - _Fullscreen_BlendMode: 0
     - _Fullscreen_ColorBlendOperation: 0
-    - _Fullscreen_DepthWrite: 0
+    - _Fullscreen_DepthWrite: 1
     - _Fullscreen_DstAlphaBlend: 10
     - _Fullscreen_DstColorBlend: 10
     - _Fullscreen_SrcAlphaBlend: 1
@@ -111,7 +114,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NormalThreshold: 3.05
+    - _NormalThreshold: 0.08
     - _OVERLAY: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -128,7 +131,11 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeMult: {r: 1.05, g: 1.02, b: 0, a: 0}
+    - _EdgeThickness: {r: 0.001, g: 0.001, b: 0, a: 0}
+    - _EdgeThickness_DoNotTouch: {r: 0.001, g: 0.001, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Mult: {r: 0.001, g: 0.001, b: 0, a: 0}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
