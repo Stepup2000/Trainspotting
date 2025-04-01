@@ -31,12 +31,4 @@ public class TimedObjective : BaseObjective
         yield return new WaitForSeconds(objectiveTime);
         OnQuestCompleted();
     }
-
-    /// <summary>
-    /// Defines the behavior when the collection objective is completed.
-    /// </summary>
-    protected override void OnQuestCompleted()
-    {
-        Debug.Log($"Objective '{ObjectiveTitle}' completed");
-    }
 }
