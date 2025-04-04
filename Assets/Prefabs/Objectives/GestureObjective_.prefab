@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697650395795091923, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
       propertyPath: m_Name
-      value: GestureObjective
+      value: GestureObjective_
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
