@@ -150,8 +150,8 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
-    - _StarHeight: 2000
-    - _StarIntensity: 1000
+    - _StarHeight: 7500
+    - _StarIntensity: 3000
     - _StarRotation: 0
     - _Surface: 0
     - _WorkflowMode: 1

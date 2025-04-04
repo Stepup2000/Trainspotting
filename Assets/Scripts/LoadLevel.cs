@@ -5,10 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    //Load a scene based on a string name
-    [SerializeField] private string sceneName;
-
-    public void LoadLevel()
+    public void LoadLevel(string sceneName)
     {
         Debug.Log("Loaded level");
         SceneManager.LoadScene(sceneName);
