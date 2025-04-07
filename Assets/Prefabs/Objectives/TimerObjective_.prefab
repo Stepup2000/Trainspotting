@@ -230,7 +230,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimerObjective_
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2171774266083110734, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5307458023400706837, guid: 32b39c0b003c3b246bc81fb13fbad022, type: 3}
