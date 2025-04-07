@@ -15,8 +15,7 @@ public class TimedObjective : BaseObjective
     /// </summary>
     public override void StartObjective()
     {
-        //base.StartObjective();
-        Debug.Log("Started");
+        base.StartObjective();
         if (objectiveCoroutine != null)
             StopCoroutine(objectiveCoroutine);
 
@@ -28,7 +27,6 @@ public class TimedObjective : BaseObjective
     /// </summary>
     protected IEnumerator ActivateObjective()
     {
-        Debug.Log("Started timer");
         yield return new WaitForSeconds(objectiveTime);
         CompleteObjective();
     }

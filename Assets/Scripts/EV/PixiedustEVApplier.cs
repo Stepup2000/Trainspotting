@@ -8,6 +8,7 @@ public class PixiedustEVApplier : MonoBehaviour
     {
         EVController.Instance.OnEVChanged.AddListener(HandleEVChanged);
         EVController.Instance.ChangePixydust.AddListener(TriggerPixiedust);
+        TriggerPixiedust(false);
     }
 
     private void OnDisable()
