@@ -29,6 +29,6 @@ public class TimedObjective : BaseObjective
     private IEnumerator ActivateObjective()
     {
         yield return new WaitForSeconds(objectiveTime);
-        OnQuestCompleted();
+        CompleteObjective();
     }
 }

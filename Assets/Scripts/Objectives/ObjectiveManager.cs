@@ -45,6 +45,7 @@ public class ObjectiveManager : MonoBehaviour
     {
         currentObjective?.CompleteObjective();
         currentObjective = baseObject;
+        baseObject.gameObject.SetActive(true);
         baseObject.StartObjective();        
     }
 
