@@ -1,159 +1,103 @@
-using System.Collections;
 using UnityEngine;
 
 public class EVApplierSkybox : BaseEVApplier
 {
-    [SerializeField]
-    protected Material skyboxMaterial;
-    [SerializeField]
-    protected Material targetSkyboxMaterial;
+    [SerializeField] protected Material skyboxMaterial;
+    [SerializeField] protected Material targetMaterial;
+    [SerializeField] protected float transitionSpeed = 1f;
+    [SerializeField] protected bool loop = true;
 
-    protected float zenithBlend;
-    protected float nadirBlend;
-    protected float horizonBlend;
-    protected Color skyColor;
-    protected Color groundColor;
-    protected Color horizonColor;
-    protected float starHeight;
-    protected float starPower;
-    protected float starIntensity;
-    protected float starRotation;
-
-    protected Material initialSkyboxMaterial;
-    protected Material initialTargetSkyboxMaterial;
-
-    [SerializeField]
-    private float transitionDuration = 5f; // Time to transition from one skybox to the other
-    private bool transitioningToTarget = false;
+    private Material initialSkyboxMaterial;
     private float transitionProgress = 0f;
+    private bool transitioningToTarget = true;
 
-    /// <summary>
-    /// Initializes the skybox materials, their properties, and starts the transition cycle.
-    /// </summary>
-    private void Start()
+    private float initialStarHeight, initialStarPower, initialStarIntensity, initialStarRotation;
+    private float targetStarHeight, targetStarPower, targetStarIntensity, targetStarRotation;
+
+    protected void Start()
     {
-        if (skyboxMaterial == null || targetSkyboxMaterial == null)
+        if (skyboxMaterial == null || targetMaterial == null)
         {
-            Debug.LogError("Skybox materials not assigned!");
+            Debug.LogError("Skybox or Target Material not assigned!");
             return;
         }
 
+        // Backup current material properties
         initialSkyboxMaterial = new Material(skyboxMaterial);
-        initialTargetSkyboxMaterial = new Material(targetSkyboxMaterial);
 
-        InitializeMaterialProperties(skyboxMaterial);
-        InitializeMaterialProperties(targetSkyboxMaterial);
+        initialStarHeight = skyboxMaterial.GetFloat("_StarHeight");
+        initialStarPower = skyboxMaterial.GetFloat("_StarPower");
+        initialStarIntensity = skyboxMaterial.GetFloat("_StarIntensity");
+        initialStarRotation = skyboxMaterial.GetFloat("_StarRotation");
 
-        StartCoroutine(TransitionCycle());
+        // Fetch target values
+        targetStarHeight = targetMaterial.GetFloat("_StarHeight");
+        targetStarPower = targetMaterial.GetFloat("_StarPower");
+        targetStarIntensity = targetMaterial.GetFloat("_StarIntensity");
+        targetStarRotation = targetMaterial.GetFloat("_StarRotation");
     }
 
-    /// <summary>
-    /// Initializes material properties by extracting values from the given material.
-    /// </summary>
-    /// <param name="material">The material to initialize properties from.</param>
-    private void InitializeMaterialProperties(Material material)
+    protected void Update()
     {
-        zenithBlend = material.GetFloat("_ZenithBlend");
-        nadirBlend = material.GetFloat("_NadirBlend");
-        horizonBlend = material.GetFloat("_HorizonBlend");
-        skyColor = material.GetColor("_SkyColor");
-        groundColor = material.GetColor("_GroundColor");
-        horizonColor = material.GetColor("_HorizonColor");
-        starHeight = material.GetFloat("_StarHeight");
-        starPower = material.GetFloat("_StarPower");
-        starIntensity = material.GetFloat("_StarIntensity");
-        starRotation = material.GetFloat("_StarRotation");
-    }
+        if (skyboxMaterial == null || targetMaterial == null) return;
 
-    /// <summary>
-    /// Updates the skybox material properties with the current values of the associated properties.
-    /// </summary>
-    /// <param name="material">The material whose properties will be updated.</param>
-    private void UpdateSkyboxProperties(Material material)
-    {
-        if (material != null)
+        transitionProgress += Time.deltaTime;
+        float t = Mathf.Clamp01(transitionProgress / transitionSpeed);
+
+
+        // Lerp between original and target based on direction
+        float height = transitioningToTarget
+            ? Mathf.Lerp(initialStarHeight, targetStarHeight, t)
+            : Mathf.Lerp(targetStarHeight, initialStarHeight, t);
+
+        float power = transitioningToTarget
+            ? Mathf.Lerp(initialStarPower, targetStarPower, t)
+            : Mathf.Lerp(targetStarPower, initialStarPower, t);
+
+        float intensity = transitioningToTarget
+            ? Mathf.Lerp(initialStarIntensity, targetStarIntensity, t)
+            : Mathf.Lerp(targetStarIntensity, initialStarIntensity, t);
+
+        float rotation = transitioningToTarget
+            ? Mathf.Lerp(initialStarRotation, targetStarRotation, t)
+            : Mathf.Lerp(targetStarRotation, initialStarRotation, t);
+
+        // Apply interpolated values
+        skyboxMaterial.SetFloat("_StarHeight", height);
+        skyboxMaterial.SetFloat("_StarPower", power);
+        skyboxMaterial.SetFloat("_StarIntensity", intensity);
+        skyboxMaterial.SetFloat("_StarRotation", rotation);
+
+        // When done transitioning, flip direction if looping
+        if (t >= 1f)
         {
-            material.SetFloat("_ZenithBlend", zenithBlend);
-            material.SetFloat("_NadirBlend", nadirBlend);
-            material.SetFloat("_HorizonBlend", horizonBlend);
-            material.SetColor("_SkyColor", skyColor);
-            material.SetColor("_GroundColor", groundColor);
-            material.SetColor("_HorizonColor", horizonColor);
-            material.SetFloat("_StarHeight", starHeight);
-            material.SetFloat("_StarPower", starPower);
-            material.SetFloat("_StarIntensity", starIntensity);
-            material.SetFloat("_StarRotation", starRotation);
+            if (loop)
+            {
+                transitioningToTarget = !transitioningToTarget;
+                transitionProgress = 0f;
+            }
         }
     }
 
-    /// <summary>
-    /// Starts the cycle of transitioning between the two skybox materials. It will repeatedly transition from one to the other.
-    /// </summary>
-    /// <returns>An IEnumerator that represents the ongoing transition cycle.</returns>
-    private IEnumerator TransitionCycle()
+    protected override void OnDisable()
     {
-        while (true)
-        {
-            yield return StartCoroutine(TransitionSkybox(true));
-            yield return new WaitForSeconds(1f);
-            yield return StartCoroutine(TransitionSkybox(false));
-            yield return new WaitForSeconds(1f);
-        }
+        RevertSkyboxProperties();
     }
 
-    /// <summary>
-    /// Handles the transition between the current skybox material and the target skybox material.
-    /// It smoothly interpolates properties of the materials over a specified duration.
-    /// </summary>
-    /// <param name="toTarget">True if transitioning to the target material, false if transitioning back to the initial material.</param>
-    /// <returns>An IEnumerator that represents the transition process.</returns>
-    private IEnumerator TransitionSkybox(bool toTarget)
+    protected void OnApplicationQuit()
     {
-        float startTime = Time.time;
-        Material fromMaterial = toTarget ? skyboxMaterial : targetSkyboxMaterial;
-        Material toMaterial = toTarget ? targetSkyboxMaterial : skyboxMaterial;
-
-        while (transitionProgress < 1f)
-        {
-            transitionProgress = (Time.time - startTime) / transitionDuration;
-            transitionProgress = Mathf.Clamp01(transitionProgress);
-
-            BlendSkyboxes(fromMaterial, toMaterial, transitionProgress);
-
-            yield return null;
-        }
-
-        BlendSkyboxes(fromMaterial, toMaterial, 1f);
+        RevertSkyboxProperties();
     }
 
-    /// <summary>
-    /// Blends the properties between two materials based on the transition progress.
-    /// The properties include blend values, colors, and star-related values.
-    /// </summary>
-    /// <param name="fromMaterial">The material to blend from.</param>
-    /// <param name="toMaterial">The material to blend to.</param>
-    /// <param name="blend">A value between 0 and 1 representing the progress of the transition.</param>
-    private void BlendSkyboxes(Material fromMaterial, Material toMaterial, float blend)
+    protected void RevertSkyboxProperties()
     {
-        skyboxMaterial.SetFloat("_ZenithBlend", Mathf.Lerp(fromMaterial.GetFloat("_ZenithBlend"), toMaterial.GetFloat("_ZenithBlend"), blend));
-        skyboxMaterial.SetFloat("_NadirBlend", Mathf.Lerp(fromMaterial.GetFloat("_NadirBlend"), toMaterial.GetFloat("_NadirBlend"), blend));
-        skyboxMaterial.SetFloat("_HorizonBlend", Mathf.Lerp(fromMaterial.GetFloat("_HorizonBlend"), toMaterial.GetFloat("_HorizonBlend"), blend));
-        skyboxMaterial.SetColor("_SkyColor", Color.Lerp(fromMaterial.GetColor("_SkyColor"), toMaterial.GetColor("_SkyColor"), blend));
-        skyboxMaterial.SetColor("_GroundColor", Color.Lerp(fromMaterial.GetColor("_GroundColor"), toMaterial.GetColor("_GroundColor"), blend));
-        skyboxMaterial.SetColor("_HorizonColor", Color.Lerp(fromMaterial.GetColor("_HorizonColor"), toMaterial.GetColor("_HorizonColor"), blend));
-        skyboxMaterial.SetFloat("_StarHeight", Mathf.Lerp(fromMaterial.GetFloat("_StarHeight"), toMaterial.GetFloat("_StarHeight"), blend));
-        skyboxMaterial.SetFloat("_StarPower", Mathf.Lerp(fromMaterial.GetFloat("_StarPower"), toMaterial.GetFloat("_StarPower"), blend));
-        skyboxMaterial.SetFloat("_StarIntensity", Mathf.Lerp(fromMaterial.GetFloat("_StarIntensity"), toMaterial.GetFloat("_StarIntensity"), blend));
-        skyboxMaterial.SetFloat("_StarRotation", Mathf.Lerp(fromMaterial.GetFloat("_StarRotation"), toMaterial.GetFloat("_StarRotation"), blend));
+        if (skyboxMaterial != null && initialSkyboxMaterial != null)
+            skyboxMaterial.CopyPropertiesFromMaterial(initialSkyboxMaterial);
     }
 
-    /// <summary>
-    /// This function is called when the exposure value (EV) changes. 
-    /// Currently, it calls the base method but can be extended to adjust behavior based on the EV change.
-    /// </summary>
-    /// <param name="newEV">The new exposure value.</param>
     protected override void OnEVChanged(float newEV)
     {
         base.OnEVChanged(newEV);
+        // Could adjust `transitionSpeed` or direction based on newEV
     }
 }

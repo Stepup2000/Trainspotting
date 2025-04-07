@@ -380,8 +380,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skyboxMaterial: {fileID: 2100000, guid: 227c8db5b3e5aac47879f0f7a09ddc0a, type: 2}
-  targetSkyboxMaterial: {fileID: 2100000, guid: faa5d05881b573944886a15a3746b1b3, type: 2}
-  transitionDuration: 10
+  targetMaterial: {fileID: 2100000, guid: faa5d05881b573944886a15a3746b1b3, type: 2}
+  transitionSpeed: 2
+  loop: 1
 --- !u!1 &1042419809
 GameObject:
   m_ObjectHideFlags: 0
