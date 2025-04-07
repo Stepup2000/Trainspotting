@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5072262635447270830}
+  - component: {fileID: 1432343648923889185}
   m_Layer: 0
   m_Name: PixieDustEffect
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 1409974915411218176}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1432343648923889185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916024166407862192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75f9a58081ebda4d96f63774bab51f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pixiedust: {fileID: 2050875059619550235}
 --- !u!1001 &5669835827159501481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,5 +226,10 @@ PrefabInstance:
 --- !u!4 &1409974915411218176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6718932016675161513, guid: 28b1f7e8d0898604f8f52f51bbe0eaf1, type: 3}
+  m_PrefabInstance: {fileID: 5669835827159501481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2050875059619550235 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5969910142957051570, guid: 28b1f7e8d0898604f8f52f51bbe0eaf1, type: 3}
   m_PrefabInstance: {fileID: 5669835827159501481}
   m_PrefabAsset: {fileID: 0}
