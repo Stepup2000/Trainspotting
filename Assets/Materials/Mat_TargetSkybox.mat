@@ -33,7 +33,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_Skybox
+  m_Name: Mat_TargetSkybox
   m_Shader: {fileID: -6465566751694194690, guid: f152b442d616f7844b857a4e36bb687a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -144,16 +144,16 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SarPower: 40
+    - _SarPower: 38
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _StarHeight: 7500
-    - _StarIntensity: 3000
-    - _StarPower: 40
-    - _StarRotation: 0
+    - _StarIntensity: 10000
+    - _StarPower: 38
+    - _StarRotation: 90
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
@@ -162,9 +162,9 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GroundColor: {r: 0.21698095, g: 0.13407789, b: 0.1562099, a: 0}
-    - _HorizonColor: {r: 0.21698095, g: 0.13407789, b: 0.1562099, a: 0}
-    - _SkyColor: {r: 0.38892838, g: 0.44194704, b: 0.7169812, a: 0}
+    - _GroundColor: {r: 0.21698102, g: 0.13407797, b: 0.15620998, a: 0}
+    - _HorizonColor: {r: 0.21698102, g: 0.13407797, b: 0.15620998, a: 0}
+    - _SkyColor: {r: 0.38892847, g: 0.44194713, b: 0.7169812, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

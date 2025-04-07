@@ -1547,10 +1547,10 @@
     "m_Guid": {
         "m_GuidSerialized": "823657db-c385-4c73-8369-8340585574f1"
     },
-    "m_Name": "SarPower",
+    "m_Name": "StarPower",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "SarPower",
-    "m_DefaultReferenceName": "_SarPower",
+    "m_RefNameGeneratedByDisplayName": "StarPower",
+    "m_DefaultReferenceName": "_StarPower",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -2002,7 +2002,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "666672bda2d54831ae29fae0848cc065",
     "m_Id": 0,
-    "m_DisplayName": "SarPower",
+    "m_DisplayName": "StarPower",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
