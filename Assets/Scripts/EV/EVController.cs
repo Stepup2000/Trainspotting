@@ -20,7 +20,12 @@ public class EVController : MonoBehaviour
     /// <summary>
     /// Event triggered if the pixiedust should start appearing.
     /// </summary>
-    public UnityEvent<bool> ChangePixydust { get; } = new UnityEvent<bool>();
+    public UnityEvent<bool> TogglePixiedust { get; } = new UnityEvent<bool>();
+
+    /// <summary>
+    /// Event triggered if the pixiedust should start appearing.
+    /// </summary>
+    public UnityEvent<bool> ToggleWobble { get; } = new UnityEvent<bool>();
 
     /// <summary>
     /// Provides access to the singleton instance of EVController
@@ -87,6 +92,15 @@ public class EVController : MonoBehaviour
     /// </summary>
     public void TriggerPixiedust(bool onOrOff)
     {
-        ChangePixydust.Invoke(onOrOff);
+        TogglePixiedust.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the wobble.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the wobble effect.</param>
+    /// </summary>
+    public void TriggerWobble(bool onOrOff)
+    {
+        ToggleWobble.Invoke(onOrOff);
     }
 }
