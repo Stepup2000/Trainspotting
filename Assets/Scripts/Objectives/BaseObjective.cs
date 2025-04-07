@@ -31,6 +31,7 @@ public class BaseObjective : MonoBehaviour, IObjective
     {
         Debug.Log($"Starting quest: {ObjectiveTitle}" + gameObject.name);
         gameObject.SetActive(true);
+        IsCompleted = false;
     }
 
     /// <summary>
@@ -38,7 +39,7 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     public virtual void CompleteObjective()
     {
-        if (!IsCompleted == true)
+        if (!IsCompleted)
         {           
             IsCompleted = true;
             OnQuestCompleted();
