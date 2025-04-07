@@ -398,6 +398,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3157668464698295385, guid: 74420b8aa597aa0429b52a74210d6e0e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 586576310}
+    - targetCorrespondingSourceObject: {fileID: 3157668464698295385, guid: 74420b8aa597aa0429b52a74210d6e0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 586576311}
   m_SourcePrefab: {fileID: 100100000, guid: 74420b8aa597aa0429b52a74210d6e0e, type: 3}
 --- !u!1001 &147476506
 PrefabInstance:
@@ -643,7 +646,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c12100366575e32458c09dace28d626c, type: 2}
+  - {fileID: 2100000, guid: 6282a5746c53eb444a485e8e839983c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -702,6 +705,23 @@ Skybox:
   m_GameObject: {fileID: 586576304}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 227c8db5b3e5aac47879f0f7a09ddc0a, type: 2}
+--- !u!114 &586576311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586576304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 4de1aedfdbecee84fa8a043fdeaf628f, type: 2}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &1034626592
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +786,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 05862b8dc893e7f41a14fec14193fe9c, type: 2}
+  - {fileID: 2100000, guid: 138095f80cd0247449316aa8ccc1959a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
