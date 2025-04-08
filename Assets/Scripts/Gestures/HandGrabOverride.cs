@@ -3,6 +3,10 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.OnScreen;
 
+/// <summary>
+/// A class that overrides the input system to force a grab action.
+/// Using this class the hand tracking system can use grabbing without a physical button.
+/// </summary>
 public class HandGrabOverride : OnScreenControl
 {
     [SerializeField, Tooltip("Reference to the input action that should control the grab.")]
@@ -28,7 +32,7 @@ public class HandGrabOverride : OnScreenControl
             Debug.Log("Select action not assigned!");
             return;
         }
-        CheckForAction();
+        //CheckForAction();
     }
 
     /// <summary>
@@ -48,7 +52,7 @@ public class HandGrabOverride : OnScreenControl
     public void StartGrab()
     {
         SendValueToControl(1.0f);
-        Debug.Log("StartGrab");
+        //Debug.Log("StartGrab");
     }
 
     /// <summary>
@@ -57,7 +61,7 @@ public class HandGrabOverride : OnScreenControl
     public void EndGrab()
     {
         SentDefaultValueToControl();
-        Debug.Log("EndGrab");
+        //Debug.Log("EndGrab");
     }
 
     /// <summary>

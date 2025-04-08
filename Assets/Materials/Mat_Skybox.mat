@@ -46,7 +46,7 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: _StarIntensity
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -144,15 +144,11 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SarPower: 25
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
-    - _StarHeight: 5000
-    - _StarIntensity: 1230.1
-    - _StarRotation: 146
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
@@ -161,9 +157,6 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GroundColor: {r: 0.5660378, g: 0.33908868, b: 0.35268667, a: 0}
-    - _HorizonColor: {r: 0.21698102, g: 0.13407797, b: 0.15620998, a: 0}
-    - _SkyColor: {r: 0.31706125, g: 0.38069597, b: 0.7075472, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
