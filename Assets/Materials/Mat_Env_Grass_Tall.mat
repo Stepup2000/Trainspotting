@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Grass
+  m_Name: Mat_Env_Grass_Tall
   m_Shader: {fileID: -6465566751694194690, guid: 48a05d5e916695242bb9242558445142, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
