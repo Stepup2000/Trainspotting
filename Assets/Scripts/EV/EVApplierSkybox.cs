@@ -2,110 +2,102 @@ using UnityEngine;
 
 public class EVApplierSkybox : BaseEVApplier
 {
-    [SerializeField]
-    protected Material skyboxMaterial;
+    [SerializeField] protected Material skyboxMaterial;
+    [SerializeField] protected Material targetMaterial;
+    [SerializeField] protected float transitionSpeed = 1f;
+    [SerializeField] protected bool loop = true;
 
-    protected float zenithBlend;
-    protected float nadirBlend;
-    protected float horizonBlend;
-    protected Color skyColor;
-    protected Color groundColor;
-    protected Color horizonColor;
-    protected float starHeight;
-    protected float starPower;
-    protected float starIntensity;
-    protected float starRotation;
+    private Material initialSkyboxMaterial;
+    private float transitionProgress = 0f;
+    private bool transitioningToTarget = true;
 
-    protected Material initialSkyboxMaterial;
+    private float initialStarHeight, initialStarPower, initialStarIntensity, initialStarRotation;
+    private float targetStarHeight, targetStarPower, targetStarIntensity, targetStarRotation;
 
-    /// <summary>
-    /// Called when the script starts. Initializes the skybox material and stores its initial state.
-    /// </summary>
     protected void Start()
     {
-        if (skyboxMaterial == null)
+        if (skyboxMaterial == null || targetMaterial == null)
         {
-            Debug.LogError("Skybox material not assigned!");
+            Debug.LogError("Skybox or Target Material not assigned!");
             return;
         }
 
+        // Backup current material properties
         initialSkyboxMaterial = new Material(skyboxMaterial);
 
-        // Get initial values from the shader
-        zenithBlend = skyboxMaterial.GetFloat("_ZenithBlend");
-        nadirBlend = skyboxMaterial.GetFloat("_NadirBlend");
-        horizonBlend = skyboxMaterial.GetFloat("_HorizonBlend");
-        skyColor = skyboxMaterial.GetColor("_SkyColor");
-        groundColor = skyboxMaterial.GetColor("_GroundColor");
-        horizonColor = skyboxMaterial.GetColor("_HorizonColor");
-        starHeight = skyboxMaterial.GetFloat("_StarHeight");
-        starPower = skyboxMaterial.GetFloat("_StarPower");
-        starIntensity = skyboxMaterial.GetFloat("_StarIntensity");
-        starRotation = skyboxMaterial.GetFloat("_StarRotation");
+        initialStarHeight = skyboxMaterial.GetFloat("_StarHeight");
+        initialStarPower = skyboxMaterial.GetFloat("_StarPower");
+        initialStarIntensity = skyboxMaterial.GetFloat("_StarIntensity");
+        initialStarRotation = skyboxMaterial.GetFloat("_StarRotation");
 
-        UpdateSkyboxProperties();
+        // Fetch target values
+        targetStarHeight = targetMaterial.GetFloat("_StarHeight");
+        targetStarPower = targetMaterial.GetFloat("_StarPower");
+        targetStarIntensity = targetMaterial.GetFloat("_StarIntensity");
+        targetStarRotation = targetMaterial.GetFloat("_StarRotation");
     }
 
-    /// <summary>
-    /// Called when the script is disabled. Reverts the skybox properties to their initial state.
-    /// </summary>
+    protected void Update()
+    {
+        if (skyboxMaterial == null || targetMaterial == null) return;
+
+        transitionProgress += Time.deltaTime;
+        float t = Mathf.Clamp01(transitionProgress / transitionSpeed);
+
+
+        // Lerp between original and target based on direction
+        float height = transitioningToTarget
+            ? Mathf.Lerp(initialStarHeight, targetStarHeight, t)
+            : Mathf.Lerp(targetStarHeight, initialStarHeight, t);
+
+        float power = transitioningToTarget
+            ? Mathf.Lerp(initialStarPower, targetStarPower, t)
+            : Mathf.Lerp(targetStarPower, initialStarPower, t);
+
+        float intensity = transitioningToTarget
+            ? Mathf.Lerp(initialStarIntensity, targetStarIntensity, t)
+            : Mathf.Lerp(targetStarIntensity, initialStarIntensity, t);
+
+        float rotation = transitioningToTarget
+            ? Mathf.Lerp(initialStarRotation, targetStarRotation, t)
+            : Mathf.Lerp(targetStarRotation, initialStarRotation, t);
+
+        // Apply interpolated values
+        skyboxMaterial.SetFloat("_StarHeight", height);
+        skyboxMaterial.SetFloat("_StarPower", power);
+        skyboxMaterial.SetFloat("_StarIntensity", intensity);
+        skyboxMaterial.SetFloat("_StarRotation", rotation);
+
+        // When done transitioning, flip direction if looping
+        if (t >= 1f)
+        {
+            if (loop)
+            {
+                transitioningToTarget = !transitioningToTarget;
+                transitionProgress = 0f;
+            }
+        }
+    }
+
     protected override void OnDisable()
     {
         RevertSkyboxProperties();
     }
 
-    /// <summary>
-    /// Called when the application is quit. Reverts the skybox properties to their initial state.
-    /// </summary>
     protected void OnApplicationQuit()
     {
         RevertSkyboxProperties();
     }
 
-    /// <summary>
-    /// Called every frame. Checks for input to update the skybox properties.
-    /// </summary>
-    protected void Update()
-    {
-        starRotation += 0.01f * Time.deltaTime;
-        UpdateSkyboxProperties();
-    }
-
-    /// <summary>
-    /// Updates the skybox material properties based on the current values.
-    /// </summary>
-    protected void UpdateSkyboxProperties()
-    {
-        if (skyboxMaterial != null)
-        {
-            // Set the properties to the material
-            skyboxMaterial.SetFloat("_ZenithBlend", zenithBlend);
-            skyboxMaterial.SetFloat("_NadirBlend", nadirBlend);
-            skyboxMaterial.SetFloat("_HorizonBlend", horizonBlend);
-            skyboxMaterial.SetColor("_SkyColor", skyColor);
-            skyboxMaterial.SetColor("_GroundColor", groundColor);
-            skyboxMaterial.SetColor("_HorizonColor", horizonColor);
-            skyboxMaterial.SetFloat("_StarHeight", starHeight);
-            skyboxMaterial.SetFloat("_StarPower", starPower);
-            skyboxMaterial.SetFloat("_StarIntensity", starIntensity);
-            skyboxMaterial.SetFloat("_StarRotation", starRotation);
-        }
-    }
-
-    /// <summary>
-    /// Reverts the skybox material properties to their initial state.
-    /// </summary>
     protected void RevertSkyboxProperties()
     {
         if (skyboxMaterial != null && initialSkyboxMaterial != null)
             skyboxMaterial.CopyPropertiesFromMaterial(initialSkyboxMaterial);
     }
 
-    /// <summary>
-    /// Method that gets called when the EV in the EVController changes.
-    /// </summary>
     protected override void OnEVChanged(float newEV)
     {
         base.OnEVChanged(newEV);
+        // Could adjust `transitionSpeed` or direction based on newEV
     }
 }

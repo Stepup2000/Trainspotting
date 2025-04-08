@@ -18,6 +18,16 @@ public class EVController : MonoBehaviour
     public UnityEvent<float> OnEVChanged { get; } = new UnityEvent<float>();
 
     /// <summary>
+    /// Event triggered if the pixiedust should start appearing.
+    /// </summary>
+    public UnityEvent<bool> TogglePixiedust { get; } = new UnityEvent<bool>();
+
+    /// <summary>
+    /// Event triggered if the pixiedust should start appearing.
+    /// </summary>
+    public UnityEvent<bool> ToggleWobble { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -31,7 +41,6 @@ public class EVController : MonoBehaviour
                 {
                     GameObject singletonObject = new GameObject("EVController");
                     instance = singletonObject.AddComponent<EVController>();
-                    DontDestroyOnLoad(singletonObject);
                 }
             }
             return instance;
@@ -57,7 +66,6 @@ public class EVController : MonoBehaviour
 
     private void Awake()
     {
-        // Ensure instance is set up when the object is created
         _ = Instance;
     }
 
@@ -76,5 +84,23 @@ public class EVController : MonoBehaviour
     public void ResetEV()
     {
         EV = 0;
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the pixiedust.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the pixiedust effect.</param>
+    /// </summary>
+    public void TriggerPixiedust(bool onOrOff)
+    {
+        TogglePixiedust.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the wobble.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the wobble effect.</param>
+    /// </summary>
+    public void TriggerWobble(bool onOrOff)
+    {
+        ToggleWobble.Invoke(onOrOff);
     }
 }

@@ -29,8 +29,9 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     public virtual void StartObjective()
     {
-        //Debug.Log($"Starting quest: {ObjectiveTitle}" + gameObject.name);
+        Debug.Log($"Starting quest: {ObjectiveTitle}" + gameObject.name);
         gameObject.SetActive(true);
+        IsCompleted = false;
     }
 
     /// <summary>
@@ -38,7 +39,7 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     public virtual void CompleteObjective()
     {
-        if (!IsCompleted == true)
+        if (!IsCompleted)
         {           
             IsCompleted = true;
             OnQuestCompleted();
@@ -50,7 +51,7 @@ public class BaseObjective : MonoBehaviour, IObjective
     /// </summary>
     protected virtual void OnQuestCompleted()
     {
-        //Debug.Log($"Completed quest: {ObjectiveTitle}" + gameObject.name);
+        Debug.Log($"Completed quest: {ObjectiveTitle}" + gameObject.name);
         OnObjectiveComplete?.Invoke();        
         gameObject.SetActive(false);        
     }

@@ -8,7 +8,7 @@ public class TimedObjective : BaseObjective
 {
     [SerializeField] private float objectiveTime = 5f;
 
-    private Coroutine objectiveCoroutine;
+    protected Coroutine objectiveCoroutine;
 
     /// <summary>
     /// Starts the timed collection objective using a coroutine.
@@ -16,7 +16,6 @@ public class TimedObjective : BaseObjective
     public override void StartObjective()
     {
         base.StartObjective();
-
         if (objectiveCoroutine != null)
             StopCoroutine(objectiveCoroutine);
 
@@ -26,9 +25,9 @@ public class TimedObjective : BaseObjective
     /// <summary>
     /// Coroutine to handle the timer logic for enabling and disabling the objective.
     /// </summary>
-    private IEnumerator ActivateObjective()
+    protected IEnumerator ActivateObjective()
     {
         yield return new WaitForSeconds(objectiveTime);
-        OnQuestCompleted();
+        CompleteObjective();
     }
 }

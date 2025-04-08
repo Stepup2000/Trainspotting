@@ -36,6 +36,6 @@ public class BaseEVApplier : MonoBehaviour
     /// <param name="newEV">The new EV value.</param>
     protected virtual void OnEVChanged(float newEV)
     {
-        //Debug.Log($"EV changed: {newEV}");
+        currentEV = newEV;
     }
 }
