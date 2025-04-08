@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GrassEVApplier : BaseEVApplier
+public class WobbleEVApplier : BaseEVApplier
 {
     [SerializeField] protected Material targetMaterial;
     [SerializeField] protected string amplitudeProperty = "_Amplitude";

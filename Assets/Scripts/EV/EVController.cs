@@ -38,6 +38,11 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> ToggleTree { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the grass should start growing..
+    /// </summary>
+    public UnityEvent<bool> ToggleGrass { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -130,5 +135,14 @@ public class EVController : MonoBehaviour
     public void TriggerTreeAnimation(bool onOrOff)
     {
         ToggleTree.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the grass effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the grass effect.</param>
+    /// </summary>
+    public void TriggerGrass(bool onOrOff)
+    {
+        ToggleGrass.Invoke(onOrOff);
     }
 }
