@@ -1,30 +1,22 @@
 using UnityEngine;
 
-public class PixiedustEVApplier : MonoBehaviour
+public class PixiedustEVApplier : BaseEVApplier
 {
     [SerializeField] private ParticleSystem pixiedust;
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
-        EVController.Instance.OnEVChanged.AddListener(HandleEVChanged);
+        base.OnEnable();
         EVController.Instance.TogglePixiedust.AddListener(TriggerPixiedust);
         TriggerPixiedust(false);
     }
 
-    private void OnDisable()
+    protected override void OnDisable()
     {
-        EVController.Instance.OnEVChanged.RemoveListener(HandleEVChanged);
+        base.OnDisable();
         EVController.Instance.TogglePixiedust.RemoveListener(TriggerPixiedust);
     }
 
-    /// <summary>
-    /// Called when the EV value changes.
-    /// <param name="newEV">The updated EV value that triggers the effect based on its sign.</param>
-    /// </summary>
-    private void HandleEVChanged(float newEV)
-    {
-        
-    }
 
     /// <summary>
     /// Starts or stops the pixiedust effect.

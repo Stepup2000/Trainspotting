@@ -28,6 +28,16 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> ToggleWobble { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the sky should start blinking.
+    /// </summary>
+    public UnityEvent<bool> ToggleSky { get; } = new UnityEvent<bool>();
+
+    /// <summary>
+    /// Event triggered if the tree should start bending.
+    /// </summary>
+    public UnityEvent<bool> ToggleTree { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -102,5 +112,23 @@ public class EVController : MonoBehaviour
     public void TriggerWobble(bool onOrOff)
     {
         ToggleWobble.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the sky effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the sky effect.</param>
+    /// </summary>
+    public void TriggerSky(bool onOrOff)
+    {
+        ToggleSky.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the tree effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the tree effect.</param>
+    /// </summary>
+    public void TriggerTreeAnimation(bool onOrOff)
+    {
+        ToggleTree.Invoke(onOrOff);
     }
 }
