@@ -37,6 +37,14 @@ public class EVApplierSkybox : BaseEVApplier
     }
 
     /// <summary>
+    /// Reverts skybox when the object is destroyed (e.g., on scene unload).
+    /// </summary>
+    protected void OnDestroy()
+    {
+        RevertSkyboxProperties();
+    }
+
+    /// <summary>
     /// Resets skybox to initial values when the application quits.
     /// </summary>
     protected void OnApplicationQuit()
