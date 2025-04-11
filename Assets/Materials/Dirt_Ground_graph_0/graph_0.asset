@@ -127,6 +127,7 @@ MonoBehaviour:
   Thumbnail: 
   CurrentStatePreset: " <sbspreset pkgurl=\"pkg://Substance_graph\" label=\"\" >\n 
     <presetinput identifier=\"$outputsize\" uid=\"3795302352\" type=\"8\" value=\"10,10\"
+    />\n  <presetinput identifier=\"BladeScale\" uid=\"2204498804\" type=\"0\" value=\"10\"
     />\n  <presetinput identifier=\"Grass_Random_Rotation\" uid=\"2208256266\" type=\"0\"
     value=\"18.7\" />\n </sbspreset>\n"
   IsRuntimeOnly: 0
@@ -193,7 +194,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 0
           WidgetType: 1
-        Data: 21
+        Data: 10
         NumericalDescription:
           DefaultValue: 21
           MinValue: 0
