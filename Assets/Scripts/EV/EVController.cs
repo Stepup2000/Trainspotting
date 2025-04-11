@@ -28,6 +28,21 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> ToggleWobble { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the sky should start blinking.
+    /// </summary>
+    public UnityEvent<bool> ToggleSky { get; } = new UnityEvent<bool>();
+
+    /// <summary>
+    /// Event triggered if the tree should start bending.
+    /// </summary>
+    public UnityEvent<bool> ToggleTree { get; } = new UnityEvent<bool>();
+
+    /// <summary>
+    /// Event triggered if the grass should start growing..
+    /// </summary>
+    public UnityEvent<bool> ToggleGrass { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -102,5 +117,32 @@ public class EVController : MonoBehaviour
     public void TriggerWobble(bool onOrOff)
     {
         ToggleWobble.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the sky effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the sky effect.</param>
+    /// </summary>
+    public void TriggerSky(bool onOrOff)
+    {
+        ToggleSky.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the tree effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the tree effect.</param>
+    /// </summary>
+    public void TriggerTreeAnimation(bool onOrOff)
+    {
+        ToggleTree.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the grass effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the grass effect.</param>
+    /// </summary>
+    public void TriggerGrass(bool onOrOff)
+    {
+        ToggleGrass.Invoke(onOrOff);
     }
 }
