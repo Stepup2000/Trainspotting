@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: d56c7d213af4a034bb2b3ce834144dfa
+guid: ffbddfa4084e7f744bec7453b5c0bb11
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Big_Birch_branch
+    second: {fileID: 2100000, guid: 84d8ce033acfbf14da6835e09a6e1846, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch
+    second: {fileID: 2100000, guid: e75fce823aa5c8e4db43711a0716f9ef, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
