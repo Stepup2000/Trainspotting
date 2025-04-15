@@ -590,6 +590,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!95 &322485558 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6363487014899966607, guid: 4ec9900c08080cd4a884ae98604fd421, type: 3}
+  m_PrefabInstance: {fileID: 247005032260024471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &406835144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,6 +2573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 4106596327445419770, guid: 4ec9900c08080cd4a884ae98604fd421, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 322485558}
     - target: {fileID: 8189186504798410783, guid: 4ec9900c08080cd4a884ae98604fd421, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.44
