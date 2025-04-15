@@ -12,11 +12,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: 4832301964284058818}
+  - {fileID: 4206716361869095458}
+  EditorEvents:
+  - {fileID: 8158023302025239340}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
+  MasterBanks:
+  - {fileID: 4206716361869095458}
+  StringsBanks:
+  - {fileID: 4832301964284058818}
   cacheVersion: 131847
-  cacheTime: 0
-  SerializableEventsDict: []
+  cacheTime: 638803114545236404
+  SerializableEventsDict:
+  - key: event:/Test Event
+    index: 0
+--- !u!114 &4206716361869095458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../Documents/FMOD Studio/IMT&S Trainspotting/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638803114545222847
+  FileSizes:
+  - Name: Desktop
+    Value: 4512
+  Exists: 1
+--- !u!114 &4832301964284058818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Documents/FMOD Studio/IMT&S Trainspotting/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638803114545236404
+  FileSizes:
+  - Name: Desktop
+    Value: 772
+  Exists: 1
+--- !u!114 &8158023302025239340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Test Event
+  m_EditorClassIdentifier: 
+  Path: event:/Test Event
+  Guid:
+    Data1: 862647401
+    Data2: 1176768926
+    Data3: -191122760
+    Data4: 1762492457
+  Banks:
+  - {fileID: 4206716361869095458}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
