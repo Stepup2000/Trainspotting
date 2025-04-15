@@ -2568,8 +2568,8 @@
     "m_Value": 0.0010000000474974514,
     "m_FloatType": 1,
     "m_RangeValues": {
-        "x": 9.999999974752428e-7,
-        "y": 0.0010000000474974514
+        "x": 0.0010000000474974514,
+        "y": 1.0
     }
 }
 
@@ -5876,8 +5876,8 @@
     "m_ObjectId": "7f6e57beb0104f2e92d099ea361cac2e",
     "m_Title": "Edge Detect based on World Space Normals",
     "m_Position": {
-        "x": -562.6666870117188,
-        "y": -2.666656494140625
+        "x": -562.0,
+        "y": -3.0
     }
 }
 
@@ -6084,8 +6084,8 @@
     "m_ObjectId": "84f3f43c7e8b4e2bbb30d249ace689fd",
     "m_Title": "Edge Detect based on color",
     "m_Position": {
-        "x": -598.6666870117188,
-        "y": 1249.33349609375
+        "x": -598.0,
+        "y": 1248.9998779296875
     }
 }
 
