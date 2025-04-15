@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class WobbleEVApplier : MonoBehaviour
+public class WobbleEVApplier : BaseEVApplier
 {
-    [SerializeField] private Material targetMaterial; // Reference to the material
-    [SerializeField] private string amplitudeProperty = "_Amplitude";
+    [SerializeField] protected Material targetMaterial;
+    [SerializeField] protected string amplitudeProperty = "_Amplitude";
 
-    private float latestAmplitude = 0f;
+    protected float latestAmplitude = 0f;
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
         if (targetMaterial == null)
         {
@@ -18,32 +18,22 @@ public class WobbleEVApplier : MonoBehaviour
         latestAmplitude = targetMaterial.GetFloat(amplitudeProperty);
         TriggerWobble(false);
 
+        base.OnEnable();
         if (EVController.Instance != null)
         {
-            EVController.Instance.OnEVChanged.AddListener(HandleEVChanged);
             EVController.Instance.ToggleWobble.AddListener(TriggerWobble);
             TriggerWobble(false);
         }
     }
 
-    private void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         if (EVController.Instance != null)
         {
-            EVController.Instance.OnEVChanged.RemoveListener(HandleEVChanged);
             EVController.Instance.ToggleWobble.RemoveListener(TriggerWobble);
         }
         ApplyAmplitude(latestAmplitude);
-    }
-
-    /// <summary>
-    /// Called when the EV value changes.
-    /// <param name="newEV">The updated EV value used to set the current amplitude.</param>
-    /// </summary>
-    private void HandleEVChanged(float newEV)
-    {
-        if (IsWobbleActive())
-            ApplyAmplitude(latestAmplitude);
     }
 
     /// <summary>
@@ -59,16 +49,8 @@ public class WobbleEVApplier : MonoBehaviour
     /// <summary>
     /// Applies the amplitude value to the material.
     /// </summary>
-    private void ApplyAmplitude(float value)
+    protected void ApplyAmplitude(float value)
     {
         targetMaterial.SetFloat(amplitudeProperty, value);
-    }
-
-    /// <summary>
-    /// Checks if the current wobble is active (amplitude is not zero).
-    /// </summary>
-    private bool IsWobbleActive()
-    {
-        return targetMaterial.GetFloat(amplitudeProperty) != 0f;
     }
 }

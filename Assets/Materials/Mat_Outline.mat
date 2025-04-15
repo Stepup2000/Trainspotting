@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8455672227375847471
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -8,11 +21,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mat_Outline
-  m_Shader: {fileID: -6465566751694194690, guid: b7eb1ffb99d582241bc2d4cb7b383aff, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: b20f9e991b333bf4f9fad87ef1144d2a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _OVERLAY
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -83,6 +95,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - REQUIRE_DEPTH_TEXTURE: 1
+    - REQUIRE_OPAQUE_TEXTURE: 1
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
@@ -91,37 +105,41 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _ColorDepthModifier: 0.002
-    - _ColorThreshold: 1.65
+    - _ColorStrength: 16.3
+    - _ColorThickness: 0.02
+    - _ColorThreshold: 7.33
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DepthModifier: 0.818
-    - _DepthMult: 0
+    - _DepthStrength: 1.47
+    - _DepthThickness: 106.43
+    - _DepthThreshold: 0.002
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _EdgeMult: 0.001
-    - _EdgeMult_1: 0.0001
-    - _EdgeThickness: 0.001
+    - _Edge_Thickness: 0.1
     - _EnvironmentReflections: 1
-    - _FadeDistance: 50.7
-    - _FocalDistance: 416.5
     - _Fullscreen_AlphaBlendOperation: 0
     - _Fullscreen_BlendMode: 0
     - _Fullscreen_ColorBlendOperation: 0
+    - _Fullscreen_DepthTest: 8
     - _Fullscreen_DepthWrite: 1
     - _Fullscreen_DstAlphaBlend: 10
     - _Fullscreen_DstColorBlend: 10
     - _Fullscreen_SrcAlphaBlend: 1
     - _Fullscreen_SrcColorBlend: 5
+    - _Fullscreen_Stencil: 1
+    - _Fullscreen_StencilComparison: 8
+    - _Fullscreen_StencilDepthFail: 0
+    - _Fullscreen_StencilFail: 1
+    - _Fullscreen_StencilPass: 0
+    - _Fullscreen_StencilReadMask: 255
+    - _Fullscreen_StencilReference: 1
+    - _Fullscreen_StencilWriteMask: 255
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NormalDepthModifier: 0.082
-    - _NormalThreshold: 0.01
-    - _OVERLAY: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueOffset: 0
@@ -132,31 +150,13 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
+    - _Thickness: 0.0015
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EdgeMult: {r: 1.05, g: 1.02, b: 0, a: 0}
-    - _EdgeThickness: {r: 0.001, g: 0.001, b: 0, a: 0}
-    - _EdgeThickness_DoNotTouch: {r: 0.001, g: 0.001, b: 0, a: 0}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Mult: {r: 0.001, g: 0.001, b: 0, a: 0}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _screenmod: {r: 0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &7285225041148320721
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 9

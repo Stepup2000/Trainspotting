@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2536070318898250052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32e72b6a3f58a24c9033e2b9275eea0, type: 3}
+  m_Name: ScreenSpaceShadows
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  m_Shader: {fileID: 4800000, guid: 0f854b35a0cf61a429bd5dcfea30eddd, type: 3}
 --- !u!114 &-1582720681160495955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,8 +29,8 @@ MonoBehaviour:
   m_Active: 1
   injectionPoint: 600
   fetchColorBuffer: 1
-  requirements: 7
-  passMaterial: {fileID: 2100000, guid: 6def0fcb2f7e8a241a322714370f0671, type: 2}
+  requirements: 5
+  passMaterial: {fileID: 2100000, guid: f9197773d3c9c294d884431d1a332c15, type: 2}
   passIndex: 0
   bindDepthStencilAttachment: 1
   m_Version: 1
@@ -46,7 +60,8 @@ MonoBehaviour:
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
   - {fileID: -1582720681160495955}
-  m_RendererFeatureMap: adacc314ed0b09ea
+  - {fileID: -2536070318898250052}
+  m_RendererFeatureMap: adacc314ed0b09eabc7ea84c7b11cedc
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
