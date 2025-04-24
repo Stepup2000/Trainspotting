@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4832301964284058818}
-  - {fileID: 4206716361869095458}
+  - {fileID: 4239598304088972821}
+  - {fileID: 1693670454172968617}
   EditorEvents:
   - {fileID: 8158023302025239340}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4206716361869095458}
+  - {fileID: 1693670454172968617}
   StringsBanks:
-  - {fileID: 4832301964284058818}
+  - {fileID: 4239598304088972821}
   cacheVersion: 131847
-  cacheTime: 638803114545236404
+  cacheTime: 638811046271850434
   SerializableEventsDict:
   - key: event:/Test Event
     index: 0
---- !u!114 &4206716361869095458
+--- !u!114 &1693670454172968617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,15 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../Documents/FMOD Studio/IMT&S Trainspotting/Build/Desktop/Master.bank
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638803114545222847
-  FileSizes:
-  - Name: Desktop
-    Value: 4512
+  lastModified: 638811046271839192
+  FileSizes: []
   Exists: 1
---- !u!114 &4832301964284058818
+--- !u!114 &4239598304088972821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,12 +57,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../Documents/FMOD Studio/IMT&S Trainspotting/Build/Desktop/Master.strings.bank
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638803114545236404
+  lastModified: 638811046271850434
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 772
   Exists: 1
 --- !u!114 &8158023302025239340
@@ -81,16 +79,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Test Event
   Guid:
-    Data1: 862647401
-    Data2: 1176768926
-    Data3: -191122760
-    Data4: 1762492457
+    Data1: 1877142191
+    Data2: 1155757193
+    Data3: -1240544873
+    Data4: 2062088957
   Banks:
-  - {fileID: 4206716361869095458}
+  - {fileID: 1693670454172968617}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 500
+  Length: 220
