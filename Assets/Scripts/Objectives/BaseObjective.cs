@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using FMODUnity;
 
 /// <summary>
 /// Base class for quest objectives.
@@ -10,6 +11,9 @@ public class BaseObjective : MonoBehaviour, IObjective
     [SerializeField]
     [Tooltip("The event fired when the objective has been completed.")]
     private UnityEvent OnObjectiveComplete;
+
+    //receiving the sound effect through editor
+    [SerializeField] private EventReference soundEffect;
 
     public string ObjectiveTitle { get; protected set; }
     public string ObjectiveDescription { get; protected set; }
@@ -32,6 +36,8 @@ public class BaseObjective : MonoBehaviour, IObjective
         Debug.Log($"Starting quest: {ObjectiveTitle}" + gameObject.name);
         gameObject.SetActive(true);
         IsCompleted = false;
+        //Added by Matias (plays sound effect/dialogue when event starts)
+        AudioManager.instance.PlayOneShot(soundEffect, this.transform.position);
     }
 
     /// <summary>

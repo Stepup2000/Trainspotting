@@ -506,6 +506,50 @@ MonoBehaviour:
   targetMaterial: {fileID: 2100000, guid: faa5d05881b573944886a15a3746b1b3, type: 2}
   transitionSpeed: 2
   loop: 1
+--- !u!1 &1010987236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010987238}
+  - component: {fileID: 1010987237}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1010987237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010987236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab31fd77cb3b0aa44a34b36340198169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1010987238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010987236}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.000708, y: -16.95494, z: 49.31737}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1042419809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1111,26 @@ PrefabInstance:
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1774853453140233008, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774853453140233008, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Guid.Data1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774853453140233008, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Guid.Data2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774853453140233008, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Guid.Data3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774853453140233008, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Guid.Data4
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3993425864846148884, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
       propertyPath: m_Name
       value: Prefab_ObjectiveManager_Scene3
@@ -1587,3 +1651,4 @@ SceneRoots:
   - {fileID: 1914903514}
   - {fileID: 828163399}
   - {fileID: 1744520980}
+  - {fileID: 1010987238}
