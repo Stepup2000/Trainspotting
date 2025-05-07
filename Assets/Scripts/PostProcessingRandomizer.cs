@@ -20,6 +20,7 @@ public class PostProcessingRandomizer : MonoBehaviour
                 var randomStyle = dataList[randomIndex].style;
 
                 PPController.Instance.SetPostProcessingStyle(randomStyle);
+
             }
 
             yield return new WaitForSeconds(3f);

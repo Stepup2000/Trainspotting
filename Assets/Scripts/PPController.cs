@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -7,21 +8,30 @@ public class PPController : MonoBehaviour
     public static PPController Instance { get; private set; }
 
     [Header("References")]
-    public Volume volume;
+    public Volume mainVolume;
+    public Volume transitionVolume; // Add a second volume in the scene for blending
 
     [Header("Post Processing Data")]
     public List<PostProcessingData> postProcessingDataList;
+
+    [Header("Transition Settings")]
+    public float transitionDuration = 5f;
+
+    private Coroutine transitionCoroutine;
 
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // Prevent duplicates
+            Destroy(gameObject);
             return;
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); // Optional: persist between scenes
+        DontDestroyOnLoad(gameObject);
+
+        if (transitionVolume != null)
+            transitionVolume.weight = 0f; // Ensure it starts hidden
     }
 
     public void SetPostProcessingStyle(PostProcessingStyle style)
@@ -30,11 +40,39 @@ public class PPController : MonoBehaviour
         {
             if (data.style == style)
             {
-                volume.profile = data.profile;
+                if (transitionCoroutine != null)
+                    StopCoroutine(transitionCoroutine);
+
+                transitionCoroutine = StartCoroutine(TransitionToProfile(data.profile));
                 return;
             }
         }
 
         Debug.LogWarning($"Post-processing profile for '{style}' not found.");
+    }
+
+    private IEnumerator TransitionToProfile(VolumeProfile newProfile)
+    {
+        // Set new profile on transitionVolume
+        transitionVolume.profile = newProfile;
+
+        float time = 0f;
+        while (time < transitionDuration)
+        {
+            float t = time / transitionDuration;
+            mainVolume.weight = 1f - t;
+            transitionVolume.weight = t;
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        // Finalize
+        mainVolume.profile = newProfile;
+        mainVolume.weight = 1f;
+        transitionVolume.weight = 0f;
+        transitionVolume.profile = null; // Optional: clean up
+
+        transitionCoroutine = null;
     }
 }

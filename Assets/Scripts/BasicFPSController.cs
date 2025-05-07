@@ -68,8 +68,6 @@ public class BasicFPSController : MonoBehaviour
         lookInput = inputActions.PCPLayer.Look.ReadValue<Vector2>();
         moveInput = inputActions.PCPLayer.Move.ReadValue<Vector2>();
 
-        Debug.Log("Mouse X: " + lookInput.x);
-
         float mouseX = lookInput.x * mouseSensitivity;
         float mouseY = lookInput.y * mouseSensitivity;
 
