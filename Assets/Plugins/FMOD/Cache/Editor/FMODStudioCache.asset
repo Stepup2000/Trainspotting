@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5849844571269903739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Voicelines.bank
+  m_EditorClassIdentifier: 
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Voicelines.bank
+  Name: Voicelines
+  StudioPath: bank:/Voicelines
+  lastModified: 638823083071721258
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3774122882329385669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Test 3D event
+  m_EditorClassIdentifier: 
+  Path: event:/Test 3D event
+  Guid:
+    Data1: 1299224906
+    Data2: 1188320835
+    Data3: -871663175
+    Data4: -882396141
+  Banks:
+  - {fileID: 1693670454172968617}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,18 +60,53 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 4239598304088972821}
   - {fileID: 1693670454172968617}
+  - {fileID: 5196846527074882838}
+  - {fileID: -5849844571269903739}
   EditorEvents:
   - {fileID: 8158023302025239340}
+  - {fileID: -3774122882329385669}
+  - {fileID: 950031464589164068}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1693670454172968617}
   StringsBanks:
   - {fileID: 4239598304088972821}
   cacheVersion: 131847
-  cacheTime: 638811046271850434
+  cacheTime: 638823083071721258
   SerializableEventsDict:
   - key: event:/Test Event
     index: 0
+  - key: event:/Test 3D event
+    index: 1
+  - key: event:/Ominous Test
+    index: 2
+--- !u!114 &950031464589164068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ominous Test
+  m_EditorClassIdentifier: 
+  Path: event:/Ominous Test
+  Guid:
+    Data1: -72927749
+    Data2: 1246954833
+    Data3: -1833389437
+    Data4: 2134059251
+  Banks:
+  - {fileID: 5196846527074882838}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 49452
 --- !u!114 &1693670454172968617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,7 +122,7 @@ MonoBehaviour:
   Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638811046271839192
+  lastModified: 638823083071421250
   FileSizes: []
   Exists: 1
 --- !u!114 &4239598304088972821
@@ -60,10 +140,28 @@ MonoBehaviour:
   Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638811046271850434
+  lastModified: 638823083071436461
   FileSizes:
   - Name: 
-    Value: 772
+    Value: 970
+  Exists: 1
+--- !u!114 &5196846527074882838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638823083071686468
+  FileSizes: []
   Exists: 1
 --- !u!114 &8158023302025239340
 MonoBehaviour:
