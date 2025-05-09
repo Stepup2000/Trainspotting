@@ -145,4 +145,12 @@ public class EVController : MonoBehaviour
     {
         ToggleGrass.Invoke(onOrOff);
     }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AdjustEV(1);
+        }
+    }
 }

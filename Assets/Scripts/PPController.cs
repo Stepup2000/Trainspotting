@@ -9,7 +9,7 @@ public class PPController : MonoBehaviour
 
     [Header("References")]
     public Volume mainVolume;
-    public Volume transitionVolume; // Add a second volume in the scene for blending
+    public Volume transitionVolume;
 
     [Header("Post Processing Data")]
     public List<PostProcessingData> postProcessingDataList;
@@ -31,7 +31,7 @@ public class PPController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         if (transitionVolume != null)
-            transitionVolume.weight = 0f; // Ensure it starts hidden
+            transitionVolume.weight = 0f;
     }
 
     public void SetPostProcessingStyle(PostProcessingStyle style)
@@ -53,7 +53,6 @@ public class PPController : MonoBehaviour
 
     private IEnumerator TransitionToProfile(VolumeProfile newProfile)
     {
-        // Set new profile on transitionVolume
         transitionVolume.profile = newProfile;
 
         float time = 0f;
@@ -67,11 +66,10 @@ public class PPController : MonoBehaviour
             yield return null;
         }
 
-        // Finalize
         mainVolume.profile = newProfile;
         mainVolume.weight = 1f;
         transitionVolume.weight = 0f;
-        transitionVolume.profile = null; // Optional: clean up
+        transitionVolume.profile = null;
 
         transitionCoroutine = null;
     }
