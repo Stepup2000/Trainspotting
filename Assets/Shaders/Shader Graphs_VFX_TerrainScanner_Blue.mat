@@ -57,7 +57,7 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _IntersectionColor: {r: 57.033367, g: 64.23745, b: 0.30300757, a: 0}
+    - _IntersectionColor: {r: 1.3452901, g: 147.45094, b: 256.94992, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7934696218397508564
