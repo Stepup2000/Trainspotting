@@ -3047,7 +3047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 5329315010692638924}
   cameraTransform: {fileID: 7251098701410180338}
-  mouseSensitivity: 100
+  mouseSensitivity: 1
   moveSpeed: 5
 --- !u!1 &730603452621506700
 GameObject:
@@ -24564,6 +24564,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8886030313675900355}
     m_Modifications:
+    - target: {fileID: 147394356962355920, guid: 92d4f7f5ac1ab444e865bd05d8925ea6, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147394356962355920, guid: 92d4f7f5ac1ab444e865bd05d8925ea6, type: 3}
+      propertyPath: m_VolumeLayerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6111743065723407191, guid: 92d4f7f5ac1ab444e865bd05d8925ea6, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -25246,6 +25254,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8074281941269683038}
     m_Modifications:
+    - target: {fileID: 147394356962355920, guid: 92d4f7f5ac1ab444e865bd05d8925ea6, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147394356962355920, guid: 92d4f7f5ac1ab444e865bd05d8925ea6, type: 3}
+      propertyPath: m_VolumeLayerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6111743065723407191, guid: 92d4f7f5ac1ab444e865bd05d8925ea6, type: 3}
       propertyPath: m_Name
       value: Main Camera

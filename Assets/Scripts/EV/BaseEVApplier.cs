@@ -5,7 +5,7 @@ using UnityEngine;
 /// </summary>
 public class BaseEVApplier : MonoBehaviour
 {
-    private float currentEV;
+    protected float currentEV;
 
     /// <summary>
     /// Subscribes to the EV change event when the object is enabled.
