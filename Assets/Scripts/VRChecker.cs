@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.XR;
+using System.Collections;
 
 public class PlayerSwitcher : MonoBehaviour
 {
     [SerializeField] private GameObject vrPlayerPrefab;
     [SerializeField] private GameObject pcPlayerPrefab;
+
+    private bool vrConnected = false;
+    private bool switchedToVR = false;
 
     private void Start()
     {
@@ -15,23 +19,41 @@ public class PlayerSwitcher : MonoBehaviour
             return;
         }
 
-        bool vrConnected;
+        StartCoroutine(CheckForVRCoroutine());
+    }
 
-        // Check if XR system is active
-        try
+    /// <summary>
+    /// Repeatedly checks every 0.5 seconds if a VR device is active.
+    /// If detected, switches to the VR player prefab.
+    /// </summary>
+    private IEnumerator CheckForVRCoroutine()
+    {
+        while (!switchedToVR)
         {
-            vrConnected = XRSettings.isDeviceActive;
-        }
-        catch (System.Exception ex)
-        {
-            Debug.LogWarning("PlayerSwitcher: XRSettings not available or XR not set up. Defaulting to PC mode.\n" + ex.Message);
-            vrConnected = false;
-        }
+            try
+            {
+                vrConnected = XRSettings.isDeviceActive;
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogWarning("PlayerSwitcher: XRSettings not available or XR not set up. Defaulting to PC mode.\n" + ex.Message);
+                vrConnected = false;
+            }
 
-        // Activate the appropriate prefab
-        vrPlayerPrefab.SetActive(vrConnected);
-        pcPlayerPrefab.SetActive(!vrConnected);
-
-        Debug.Log($"PlayerSwitcher: {(vrConnected ? "VR player enabled." : "PC player enabled.")}");
+            if (vrConnected)
+            {
+                vrPlayerPrefab.SetActive(true);
+                pcPlayerPrefab.SetActive(false);
+                Debug.Log("PlayerSwitcher: VR player enabled.");
+                switchedToVR = true;
+            }
+            else
+            {
+                vrPlayerPrefab.SetActive(false);
+                pcPlayerPrefab.SetActive(true);
+                Debug.Log("PlayerSwitcher: PC player enabled. Retrying in 0.5s...");
+                yield return new WaitForSeconds(0.5f);
+            }
+        }
     }
 }
