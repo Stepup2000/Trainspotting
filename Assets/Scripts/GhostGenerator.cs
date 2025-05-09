@@ -1,3 +1,4 @@
+/*
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -110,7 +111,7 @@ public class GhostGenerator : MonoBehaviour
         }
         ghost.Add(new GhostContainer(ghost, GhostLife));
 
-        ghost.transform.localPosition = trnasform.localPosition;
+        ghost.transform.localPosition = transform.localPosition;
         ghost.transform.localRotation = transform.localRotation;
 
         ghost.Source = SourceBoneRoot;
@@ -118,3 +119,4 @@ public class GhostGenerator : MonoBehaviour
         ghost.CopyBones();
     }
 }
+*/

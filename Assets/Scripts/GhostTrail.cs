@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 using System;
 
@@ -41,3 +42,4 @@ public class GhostTrail : MonoBehaviour
         }
     }
 }
+*/
