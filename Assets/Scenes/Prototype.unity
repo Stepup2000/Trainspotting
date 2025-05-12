@@ -921,31 +921,6 @@ MonoBehaviour:
   targetMaterial: {fileID: 2100000, guid: f8c2401e2df83544bacb003de666e2b7, type: 2}
   growProperty: _Grow
   transitionDuration: 5
---- !u!1 &231167500 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3579423980216501098, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-  m_PrefabInstance: {fileID: 97030859}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &231167501 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-  m_PrefabInstance: {fileID: 97030859}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &231167502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 231167500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb156324786ee242834e8c1ed09e186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetMaterial: {fileID: 2100000, guid: f8c2401e2df83544bacb003de666e2b7, type: 2}
-  growProperty: _Grow
-  transitionDuration: 5
 --- !u!1001 &242219830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2419,11 +2394,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3579423980216501098, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 101734139}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
+--- !u!4 &455808343 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
+  m_PrefabInstance: {fileID: 455808342}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &468885428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3834,31 +3811,6 @@ MonoBehaviour:
   targetMaterial: {fileID: 2100000, guid: f8c2401e2df83544bacb003de666e2b7, type: 2}
   growProperty: _Grow
   transitionDuration: 5
---- !u!1 &716389988 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3579423980216501098, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-  m_PrefabInstance: {fileID: 925844008}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &716389989 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-  m_PrefabInstance: {fileID: 925844008}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &716389990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716389988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb156324786ee242834e8c1ed09e186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetMaterial: {fileID: 2100000, guid: f8c2401e2df83544bacb003de666e2b7, type: 2}
-  growProperty: _Grow
-  transitionDuration: 5
 --- !u!4 &717687149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7651340210993857342, guid: aa358de0f43a0ac45b9c7a95e41c1a5c, type: 3}
@@ -4559,11 +4511,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 819491656}
   - {fileID: 278027328}
   - {fileID: 3154736733679473032}
   - {fileID: 1457604904}
   - {fileID: 1082162167}
+  - {fileID: 717687149}
+  - {fileID: 1003740763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837315552 stripped
@@ -5786,13 +5739,11 @@ Transform:
   - {fileID: 1949776773}
   - {fileID: 323812795}
   - {fileID: 1118423937}
-  - {fileID: 2145289785}
   - {fileID: 774576567}
   - {fileID: 220167563}
   - {fileID: 1096017337}
   - {fileID: 108992568}
   - {fileID: 261997272}
-  - {fileID: 231167501}
   - {fileID: 634768466}
   - {fileID: 893825424}
   - {fileID: 1791421351}
@@ -5814,7 +5765,6 @@ Transform:
   - {fileID: 790700503}
   - {fileID: 1729252647}
   - {fileID: 1886503564}
-  - {fileID: 101734138}
   - {fileID: 1346245917}
   - {fileID: 690456000}
   - {fileID: 817050167}
@@ -5825,8 +5775,6 @@ Transform:
   - {fileID: 793487892}
   - {fileID: 416183968}
   - {fileID: 120056418}
-  - {fileID: 716389989}
-  - {fileID: 1286231039}
   - {fileID: 268010693}
   - {fileID: 1824006188}
   - {fileID: 634679552}
@@ -5879,6 +5827,7 @@ Transform:
   - {fileID: 164171020}
   - {fileID: 584328150}
   - {fileID: 247004750}
+  - {fileID: 455808343}
   m_Father: {fileID: 834467770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1085722351
@@ -6720,31 +6669,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1546462601}
   m_SourcePrefab: {fileID: 100100000, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
---- !u!1 &1286231038 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3579423980216501098, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-  m_PrefabInstance: {fileID: 923544674}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1286231039 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-  m_PrefabInstance: {fileID: 923544674}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1286231040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286231038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb156324786ee242834e8c1ed09e186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetMaterial: {fileID: 2100000, guid: f8c2401e2df83544bacb003de666e2b7, type: 2}
-  growProperty: _Grow
-  transitionDuration: 5
 --- !u!1001 &1320791656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11463,31 +11387,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134522404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb156324786ee242834e8c1ed09e186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetMaterial: {fileID: 2100000, guid: f8c2401e2df83544bacb003de666e2b7, type: 2}
-  growProperty: _Grow
-  transitionDuration: 5
---- !u!1 &2145289784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3579423980216501098, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-  m_PrefabInstance: {fileID: 1596042926}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2145289785 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
-  m_PrefabInstance: {fileID: 1596042926}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2145289786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145289784}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffb156324786ee242834e8c1ed09e186, type: 3}
