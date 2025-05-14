@@ -3374,6 +3374,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetMaterial: {fileID: 2100000, guid: 3577a4732e8ec1e47867366326235dd2, type: 2}
   amplitudeProperty: _Amplitude
+--- !u!1 &819491658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3062356789946986644, guid: 674411cd010ddba44ba565b4eb1cfa0f, type: 3}
+  m_PrefabInstance: {fileID: 819491655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &829266414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5350,6 +5355,62 @@ PrefabInstance:
     - target: {fileID: 444484567794070240, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundSource
+      value: 
+      objectReference: {fileID: 819491658}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Path
+      value: event:/Music/Laidback music
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Guid.Data1
+      value: -701811384
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Guid.Data2
+      value: 1201933138
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Guid.Data3
+      value: -699114860
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Guid.Data4
+      value: 1477121468
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Array.data[0].delay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Array.data[0].soundSource
+      value: 
+      objectReference: {fileID: 819491658}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Array.data[0].soundEffect.Path
+      value: event:/SFX/Tree Growth
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Array.data[0].soundEffect.Guid.Data1
+      value: -2040155424
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Array.data[0].soundEffect.Guid.Data2
+      value: 1210247307
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Array.data[0].soundEffect.Guid.Data3
+      value: -1289222527
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683203503061900418, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
+      propertyPath: soundEffect.Array.data[0].soundEffect.Guid.Data4
+      value: 1956657600
       objectReference: {fileID: 0}
     - target: {fileID: 2989825234100668792, guid: 910c67c8a0d1a684983b5a2b523aeed7, type: 3}
       propertyPath: m_text
@@ -9040,7 +9101,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -23
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4245755646050065076, guid: 74420b8aa597aa0429b52a74210d6e0e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 630463065068618099, guid: 74420b8aa597aa0429b52a74210d6e0e, type: 3}

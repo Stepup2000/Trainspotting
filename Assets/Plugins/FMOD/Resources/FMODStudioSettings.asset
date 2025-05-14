@@ -607,10 +607,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 0
-  HasPlatforms: 0
-  sourceProjectPath: ../Documents/FMOD Studio/IMT&S Trainspotting/IMT&S Trainspotting.fspro
-  sourceBankPath: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop
+  HasSourceProject: 1
+  HasPlatforms: 1
+  sourceProjectPath: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/IMT&S Trainspotting.fspro
+  sourceBankPath: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -636,6 +636,7 @@ MonoBehaviour:
   Banks:
   - Ambience
   - Music
+  - SFX
   - Voicelines
   BanksToLoad: []
   LiveUpdatePort: 9264

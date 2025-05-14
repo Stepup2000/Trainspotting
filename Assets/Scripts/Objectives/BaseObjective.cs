@@ -15,6 +15,10 @@ public class BaseObjective : MonoBehaviour, IObjective
     //receiving the sound effect through editor
     [SerializeField] private EventReference soundEffect;
 
+    [SerializeField] private GameObject soundSource;
+
+    [SerializeField] private float delay;
+
     public string ObjectiveTitle { get; protected set; }
     public string ObjectiveDescription { get; protected set; }
     public bool IsCompleted { get; protected set; }
