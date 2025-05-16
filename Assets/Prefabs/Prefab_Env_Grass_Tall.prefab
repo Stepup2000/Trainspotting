@@ -95,6 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 563747757758706465}
+  - component: {fileID: 1502012613436817359}
   m_Layer: 0
   m_Name: Prefab_Env_Grass_Tall
   m_TagString: Untagged
@@ -111,10 +112,29 @@ Transform:
   m_GameObject: {fileID: 3579423980216501098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -3.651}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.015, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4472813860036637721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1502012613436817359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579423980216501098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb156324786ee242834e8c1ed09e186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minEVTrigger: -5
+  maxEVTrigger: -2
+  targetMaterial: {fileID: 2100000, guid: f8c2401e2df83544bacb003de666e2b7, type: 2}
+  growProperty: _Grow
+  transitionDuration: 5
+  minAmplifier: 0.2
+  maxAmplifier: 3

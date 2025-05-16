@@ -6,6 +6,8 @@ using UnityEngine;
 public class BaseEVApplier : MonoBehaviour
 {
     protected float currentEV;
+    [SerializeField] protected float minEVTrigger;
+    [SerializeField] protected float maxEVTrigger;
 
     /// <summary>
     /// Subscribes to the EV change event when the object is enabled.
@@ -37,5 +39,13 @@ public class BaseEVApplier : MonoBehaviour
     protected virtual void OnEVChanged(float newEV)
     {
         currentEV = newEV;
+    }
+
+    /// <summary>
+    /// Checks if the effect can trigger absed on the min and max EV values.
+    /// </summary>
+    protected virtual bool CanApplyEffect()
+    {
+        return currentEV >= minEVTrigger && currentEV <= maxEVTrigger;
     }
 }
