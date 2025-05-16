@@ -49,7 +49,7 @@ MonoBehaviour:
   - {fileID: -5483399973844844205}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638827485184445852
+  lastModified: 638829910415474967
   FileSizes:
   - Name: Desktop
-    Value: 665632
+    Value: 665888
   Exists: 1
 --- !u!114 &-5265089081705562724
 MonoBehaviour:
@@ -141,7 +141,7 @@ MonoBehaviour:
   Name: HeartBeatSpeed
   StudioPath: 
   Min: 0
-  Max: 10
+  Max: 5
   Default: 0
   ID:
     data1: 9130838
@@ -150,60 +150,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-2200195897183650379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Test
-  m_EditorClassIdentifier: 
-  Path: event:/Test
-  Guid:
-    Data1: -1832163744
-    Data2: 1145617743
-    Data3: 736160690
-    Data4: -1965607735
-  Banks:
-  - {fileID: 1693670454172968617}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 242
---- !u!114 &-1627881316657069035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ominous Noise
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Ominous Noise
-  Guid:
-    Data1: 1214104627
-    Data2: 1185979979
-    Data3: -230267743
-    Data4: 1241539025
-  Banks:
-  - {fileID: 1693670454172968617}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 49452
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,15 +177,13 @@ MonoBehaviour:
   - {fileID: -8026015209250993904}
   - {fileID: 5776474604801960122}
   - {fileID: 3336193842178814528}
-  - {fileID: -1627881316657069035}
-  - {fileID: -2200195897183650379}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1693670454172968617}
   StringsBanks:
   - {fileID: 4239598304088972821}
   cacheVersion: 131847
-  cacheTime: 638828218605713753
+  cacheTime: 638829964501368730
   SerializableEventsDict:
   - key: event:/Ambience/Park Ambience
     index: 0
@@ -255,10 +199,6 @@ MonoBehaviour:
     index: 5
   - key: event:/SFX/Heart Beat
     index: 6
-  - key: event:/SFX/Ominous Noise
-    index: 7
-  - key: event:/Test
-    index: 8
 --- !u!114 &254252135881391800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,9 +229,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Car Running/Trip over
+  m_Name: parameter:/Car Running/carOver
   m_EditorClassIdentifier: 
-  Name: Trip over
+  Name: carOver
   StudioPath: 
   Min: 0
   Max: 1
@@ -318,10 +258,10 @@ MonoBehaviour:
   Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638828218605693612
+  lastModified: 638829964501358749
   FileSizes:
   - Name: Desktop
-    Value: 405088
+    Value: 1074
   Exists: 1
 --- !u!114 &3336193842178814528
 MonoBehaviour:
@@ -373,7 +313,7 @@ MonoBehaviour:
   - {fileID: -5483399973844844205}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -421,10 +361,10 @@ MonoBehaviour:
   Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638828218605713753
+  lastModified: 638829964501368730
   FileSizes:
   - Name: Desktop
-    Value: 1496
+    Value: 1414
   Exists: 1
 --- !u!114 &4533145484533741784
 MonoBehaviour:
@@ -441,7 +381,7 @@ MonoBehaviour:
   Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638827485186832751
+  lastModified: 638829910416544756
   FileSizes:
   - Name: Desktop
     Value: 238144
@@ -488,7 +428,7 @@ MonoBehaviour:
   Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638827485176249639
+  lastModified: 638829964501317910
   FileSizes:
   - Name: Desktop
     Value: 1889984
