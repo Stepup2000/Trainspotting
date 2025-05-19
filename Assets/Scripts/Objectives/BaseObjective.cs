@@ -1,5 +1,9 @@
 using UnityEngine;
 using UnityEngine.Events;
+using FMODUnity;
+using System.Collections.Generic;
+using System.Collections;
+using Unity.Android.Gradle.Manifest;
 
 /// <summary>
 /// Base class for quest objectives.
@@ -10,6 +14,10 @@ public class BaseObjective : MonoBehaviour, IObjective
     [SerializeField]
     [Tooltip("The event fired when the objective has been completed.")]
     private UnityEvent OnObjectiveComplete;
+
+    //receiving the sound effect through editor
+    [Header("Effects to preload")]
+    [SerializeField] private List<AudioReceiver> sfxToPreload = new List<AudioReceiver>();
 
     public string ObjectiveTitle { get; protected set; }
     public string ObjectiveDescription { get; protected set; }
@@ -32,6 +40,12 @@ public class BaseObjective : MonoBehaviour, IObjective
         Debug.Log($"Starting quest: {ObjectiveTitle}" + gameObject.name);
         gameObject.SetActive(true);
         IsCompleted = false;
+
+        // Trigger all sounds via the AudioManager
+        foreach (var sfx in sfxToPreload)
+        {
+            AudioManager.instance.PlayWithDelay(sfx);
+        }
     }
 
     /// <summary>
