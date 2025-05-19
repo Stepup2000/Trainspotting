@@ -609,9 +609,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/IMT&S
-    Trainspotting.fspro
-  sourceBankPath: ../../../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build
+  sourceProjectPath: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/IMT&S Trainspotting.fspro
+  sourceBankPath: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -651,7 +650,7 @@ MonoBehaviour:
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
   CurrentVersion: 131847
-  HideSetupWizard: 0
+  HideSetupWizard: 1
   LastEventReferenceScanVersion: 131847
   Platforms:
   - {fileID: -9044683301480654339}
