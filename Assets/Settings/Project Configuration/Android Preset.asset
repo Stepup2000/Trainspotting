@@ -27,10 +27,10 @@ MonoBehaviour:
   m_Name: outline
   m_EditorClassIdentifier: 
   m_Active: 1
-  injectionPoint: 600
+  injectionPoint: 550
   fetchColorBuffer: 1
   requirements: 5
-  passMaterial: {fileID: 2100000, guid: f9197773d3c9c294d884431d1a332c15, type: 2}
+  passMaterial: {fileID: 2100000, guid: 4d5e1624a7bcedd4ca568e7e20fa95cb, type: 2}
   passIndex: 0
   bindDepthStencilAttachment: 1
   m_Version: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
   - {fileID: -2536070318898250052}
   m_RendererFeatureMap: adacc314ed0b09eabc7ea84c7b11cedc
   m_UseNativeRenderPass: 1
-  xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
+  xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   m_AssetVersion: 2
   m_OpaqueLayerMask:

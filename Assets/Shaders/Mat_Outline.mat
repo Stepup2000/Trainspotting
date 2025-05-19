@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mat_Outline
-  m_Shader: {fileID: -6465566751694194690, guid: b20f9e991b333bf4f9fad87ef1144d2a, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0a053c7d3116c9d4cb709f0a994f1531, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -111,7 +111,7 @@ Material:
     - _Cull: 2
     - _Cutoff: 0.5
     - _DepthStrength: 1.23
-    - _DepthThickness: 106.43
+    - _DepthThickness: 114.28
     - _DepthThreshold: 0.0013
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
@@ -149,7 +149,7 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _Thickness: 0.0015
+    - _Thickness: 0.0008
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
