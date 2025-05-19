@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 2003628186
     Data4: 1410733037
   Banks:
-  - {fileID: -187556345826522941}
+  - {fileID: -7133791743005143371}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -27,6 +27,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7133791743005143371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638829910416544756
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-6359760158546964977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,34 +64,14 @@ MonoBehaviour:
     Data3: -1989714005
     Data4: -635223527
   Banks:
-  - {fileID: -3355993381154182162}
+  - {fileID: -5213193649299864342}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 29538
---- !u!114 &-6279480203950912814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambience.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Ambience.bank
-  Name: Ambience
-  StudioPath: bank:/Ambience
-  lastModified: 638832511627424512
-  FileSizes:
-  - Name: Desktop
-    Value: 1889984
-  Exists: 1
 --- !u!114 &-5265089081705562724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +91,7 @@ MonoBehaviour:
     Data3: -672867395
     Data4: -724365627
   Banks:
-  - {fileID: -6279480203950912814}
+  - {fileID: 2202361879001713000}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -102,7 +100,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 34945
---- !u!114 &-5154466294545042956
+--- !u!114 &-5213193649299864342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,24 +109,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Test
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
-  Path: event:/Test
-  Guid:
-    Data1: -1832163744
-    Data2: 1145617743
-    Data3: 736160690
-    Data4: -1965607735
-  Banks:
-  - {fileID: 3592848543276591250}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 242
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638829910415474967
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4752902835758248245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638829964501368730
+  FileSizes:
+  - Name: 
+    Value: 1414
+  Exists: 1
 --- !u!114 &-4701637906941932531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +177,7 @@ MonoBehaviour:
   Name: HeartBeatSpeed
   StudioPath: 
   Min: 0
-  Max: 10
+  Max: 5
   Default: 0
   ID:
     data1: 9130838
@@ -176,46 +185,6 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
---- !u!114 &-3355993381154182162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638832511627595650
-  FileSizes:
-  - Name: Desktop
-    Value: 665632
-  Exists: 1
---- !u!114 &-187556345826522941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638832511627688790
-  FileSizes:
-  - Name: Desktop
-    Value: 238144
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -230,12 +199,12 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 8848991234854884329}
-  - {fileID: -6279480203950912814}
-  - {fileID: 3592848543276591250}
-  - {fileID: -3355993381154182162}
-  - {fileID: -187556345826522941}
-  - {fileID: 6772902324582925928}
+  - {fileID: -4752902835758248245}
+  - {fileID: 2202361879001713000}
+  - {fileID: 7877548797675545603}
+  - {fileID: -5213193649299864342}
+  - {fileID: -7133791743005143371}
+  - {fileID: 87378040224671317}
   EditorEvents:
   - {fileID: -5265089081705562724}
   - {fileID: 3727783479946709550}
@@ -244,15 +213,13 @@ MonoBehaviour:
   - {fileID: -8026015209250993904}
   - {fileID: 5776474604801960122}
   - {fileID: 3336193842178814528}
-  - {fileID: 756590556649343195}
-  - {fileID: -5154466294545042956}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 3592848543276591250}
+  - {fileID: 7877548797675545603}
   StringsBanks:
-  - {fileID: 8848991234854884329}
+  - {fileID: -4752902835758248245}
   cacheVersion: 131847
-  cacheTime: 638832511627698910
+  cacheTime: 638829964501368730
   SerializableEventsDict:
   - key: event:/Ambience/Park Ambience
     index: 0
@@ -272,7 +239,7 @@ MonoBehaviour:
     index: 7
   - key: event:/Test
     index: 8
---- !u!114 &756590556649343195
+--- !u!114 &87378040224671317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,24 +248,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ominous Noise
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Voicelines.bank
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Ominous Noise
-  Guid:
-    Data1: 1214104627
-    Data2: 1185979979
-    Data3: -230267743
-    Data4: 1241539025
-  Banks:
-  - {fileID: 3592848543276591250}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 49452
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Voicelines.bank
+  Name: Voicelines
+  StudioPath: bank:/Voicelines
+  lastModified: 638827320804122238
+  FileSizes: []
+  Exists: 1
 --- !u!114 &1640425819441351216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,9 +267,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Car Running/Trip over
+  m_Name: parameter:/Car Running/carOver
   m_EditorClassIdentifier: 
-  Name: Trip over
+  Name: carOver
   StudioPath: 
   Min: 0
   Max: 1
@@ -322,6 +280,24 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &2202361879001713000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638829964501317910
+  FileSizes: []
   Exists: 1
 --- !u!114 &3336193842178814528
 MonoBehaviour:
@@ -342,7 +318,7 @@ MonoBehaviour:
     Data3: 1140413333
     Data4: 1940971491
   Banks:
-  - {fileID: -187556345826522941}
+  - {fileID: -7133791743005143371}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -370,34 +346,14 @@ MonoBehaviour:
     Data3: -699114860
     Data4: 1477121468
   Banks:
-  - {fileID: -3355993381154182162}
+  - {fileID: -5213193649299864342}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 21333
---- !u!114 &3592848543276591250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638832511627489875
-  FileSizes:
-  - Name: Desktop
-    Value: 405088
-  Exists: 1
 --- !u!114 &3727783479946709550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +373,7 @@ MonoBehaviour:
     Data3: 784987550
     Data4: 1388896882
   Banks:
-  - {fileID: -6279480203950912814}
+  - {fileID: 2202361879001713000}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -445,7 +401,7 @@ MonoBehaviour:
     Data3: -1289222527
     Data4: 1956657600
   Banks:
-  - {fileID: -187556345826522941}
+  - {fileID: -7133791743005143371}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -453,7 +409,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6772902324582925928
+--- !u!114 &7877548797675545603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -463,33 +419,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Voicelines.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../../../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Voicelines.bank
-  Name: Voicelines
-  StudioPath: bank:/Voicelines
-  lastModified: 638832511627698910
-  FileSizes:
-  - Name: Desktop
-    Value: 506
-  Exists: 1
---- !u!114 &8848991234854884329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638832511627489875
-  FileSizes:
-  - Name: Desktop
-    Value: 1496
+  Path: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638829964501358749
+  FileSizes: []
   Exists: 1
