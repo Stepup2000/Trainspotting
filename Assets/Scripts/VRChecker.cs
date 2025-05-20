@@ -9,6 +9,7 @@ public class PlayerSwitcher : MonoBehaviour
 
     private bool vrConnected = false;
     private bool switchedToVR = false;
+    private bool hasTriedBefore = false;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class PlayerSwitcher : MonoBehaviour
     /// </summary>
     private IEnumerator CheckForVRCoroutine()
     {
+        yield return new WaitForSeconds(0.5f);
         while (!switchedToVR)
         {
             try
@@ -44,6 +46,7 @@ public class PlayerSwitcher : MonoBehaviour
             {
                 vrPlayerPrefab.SetActive(true);
                 pcPlayerPrefab.SetActive(false);
+
                 Debug.Log("PlayerSwitcher: VR player enabled.");
                 switchedToVR = true;
             }
@@ -51,7 +54,7 @@ public class PlayerSwitcher : MonoBehaviour
             {
                 vrPlayerPrefab.SetActive(false);
                 pcPlayerPrefab.SetActive(true);
-                Debug.Log("PlayerSwitcher: PC player enabled. Retrying in 0.5s...");
+                hasTriedBefore = true;
                 yield return new WaitForSeconds(0.5f);
             }
         }
