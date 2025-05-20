@@ -607,10 +607,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 1
-  HasPlatforms: 1
+  HasSourceProject: 0
+  HasPlatforms: 0
   sourceProjectPath: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/IMT&S Trainspotting.fspro
-  sourceBankPath: ../IMTS-FMOD-Studio-Project/IMT&S Trainspotting/Build
+  sourceBankPath: Assets/FMOD_Banks
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
