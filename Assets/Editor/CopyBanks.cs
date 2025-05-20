@@ -4,7 +4,7 @@ using System.IO;
 
 public class CopyFmodBanks : EditorWindow
 {
-    private static string configPath = "Assets/Editor/FMODBankPathConfig.asset";
+    private static string configPath = "Assets/Editor/FMODBankPath.asset";
     private static string targetBankPath = "Assets/FMOD_Banks";
 
     [MenuItem("Tools/FMOD/Copy Bank Files")]
@@ -13,7 +13,7 @@ public class CopyFmodBanks : EditorWindow
         var config = AssetDatabase.LoadAssetAtPath<FMODBankPathConfig>(configPath);
         if (config == null)
         {
-            Debug.LogError("FMODBankPathConfig not found. Please create one in Assets/Editor.");
+            Debug.LogError("FMODBankPath not found. Please create one in Assets/Editor.");
             return;
         }
 
