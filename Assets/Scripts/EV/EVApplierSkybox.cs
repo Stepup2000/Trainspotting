@@ -9,6 +9,7 @@ public class EVApplierSkybox : BaseEVApplier
     [SerializeField] protected Material targetMaterial;
     [SerializeField] protected float transitionSpeed = 1f;
     [SerializeField] protected bool loop = true;
+    [SerializeField] protected float rotationSpeed = 1f;
 
     private Material initialSkyboxMaterial;
     private float transitionProgress = 0f;
@@ -16,7 +17,7 @@ public class EVApplierSkybox : BaseEVApplier
     private bool isActive = false;
 
     private float initialStarHeight, initialStarPower, initialStarIntensity, initialStarRotation;
-    private float targetStarHeight, targetStarPower, targetStarIntensity, targetStarRotation;
+    private float targetStarHeight, targetStarPower, targetStarIntensity;
 
     /// <summary>
     /// Subscribes to the ToggleSky event.
@@ -73,7 +74,6 @@ public class EVApplierSkybox : BaseEVApplier
         targetStarHeight = targetMaterial.GetFloat("_StarHeight");
         targetStarPower = targetMaterial.GetFloat("_StarPower");
         targetStarIntensity = targetMaterial.GetFloat("_StarIntensity");
-        targetStarRotation = targetMaterial.GetFloat("_StarRotation");
     }
 
     /// <summary>
@@ -82,6 +82,7 @@ public class EVApplierSkybox : BaseEVApplier
     protected void Update()
     {
         if (!isActive || skyboxMaterial == null || targetMaterial == null) return;
+        if (!CanApplyEffect()) return;
 
         transitionProgress += Time.deltaTime;
         float t = Mathf.Clamp01(transitionProgress / transitionSpeed);
@@ -98,9 +99,7 @@ public class EVApplierSkybox : BaseEVApplier
             ? Mathf.Lerp(initialStarIntensity, targetStarIntensity, t)
             : Mathf.Lerp(targetStarIntensity, initialStarIntensity, t);
 
-        float rotation = transitioningToTarget
-            ? Mathf.Lerp(initialStarRotation, targetStarRotation, t)
-            : Mathf.Lerp(targetStarRotation, initialStarRotation, t);
+        float rotation = initialStarRotation + Time.time * rotationSpeed;
 
         skyboxMaterial.SetFloat("_StarHeight", height);
         skyboxMaterial.SetFloat("_StarPower", power);
