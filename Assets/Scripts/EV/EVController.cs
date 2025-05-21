@@ -43,6 +43,11 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> ToggleGrass { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the grass should start growing..
+    /// </summary>
+    public UnityEvent<bool> TogglePostProcessing { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -144,6 +149,15 @@ public class EVController : MonoBehaviour
     public void TriggerGrass(bool onOrOff)
     {
         ToggleGrass.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the post processing effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the post processing effect.</param>
+    /// </summary>
+    public void TriggerPostProcessing(bool onOrOff)
+    {
+        TogglePostProcessing.Invoke(onOrOff);
     }
 
     public void Update()

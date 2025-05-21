@@ -26,7 +26,6 @@ public class TreeAnimationEVApplier : BaseEVApplier
     public void TriggerTree(bool onOrOff)
     {
         if (!CanApplyEffect() && onOrOff == true) return;
-        Debug.Log("Growing");
         animator?.SetBool("ToggleTree", onOrOff);
     }
 }
