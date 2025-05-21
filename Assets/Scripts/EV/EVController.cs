@@ -48,6 +48,11 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> TogglePostProcessing { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the aurora should appear..
+    /// </summary>
+    public UnityEvent<bool> ToggleAurora { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -158,6 +163,15 @@ public class EVController : MonoBehaviour
     public void TriggerPostProcessing(bool onOrOff)
     {
         TogglePostProcessing.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to show or hide the aurora.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the post processing effect.</param>
+    /// </summary>
+    public void TriggerAurora(bool onOrOff)
+    {
+        ToggleAurora.Invoke(onOrOff);
     }
 
     public void Update()
