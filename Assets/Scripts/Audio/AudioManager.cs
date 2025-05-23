@@ -48,7 +48,6 @@ public class AudioManager : MonoBehaviour
     //used for all sound effects that loop or for whenever you want to use paramaters with them
     public EventInstance CreatePersistentEvent(EventReference sound, GameObject source, List<AudioParameter> parameters = null)
     {
-        Debug.Log("Sound plays");
         EventInstance instance = RuntimeManager.CreateInstance(sound);
         instance.set3DAttributes(RuntimeUtils.To3DAttributes(source));
         if (parameters != null)

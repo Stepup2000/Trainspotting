@@ -5,7 +5,7 @@ public class WobbleEVApplier : BaseEVApplier
     [SerializeField] protected Material targetMaterial;
     [SerializeField] protected string amplitudeProperty = "_Amplitude";
 
-    protected float latestAmplitude = 0f;
+    protected float oldAmplitude = 0f;
 
     protected override void OnEnable()
     {
@@ -15,25 +15,20 @@ public class WobbleEVApplier : BaseEVApplier
             return;
         }
 
-        latestAmplitude = targetMaterial.GetFloat(amplitudeProperty);
+        oldAmplitude = targetMaterial.GetFloat(amplitudeProperty);
         TriggerWobble(false);
 
         base.OnEnable();
-        if (EVController.Instance != null)
-        {
-            EVController.Instance.ToggleWobble.AddListener(TriggerWobble);
-            TriggerWobble(false);
-        }
+
+        EVController.Instance.ToggleWobble.AddListener(TriggerWobble);
+        TriggerWobble(false);
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-        if (EVController.Instance != null)
-        {
-            EVController.Instance.ToggleWobble.RemoveListener(TriggerWobble);
-        }
-        ApplyAmplitude(latestAmplitude);
+        EVController.Instance.ToggleWobble.RemoveListener(TriggerWobble);
+        ApplyAmplitude(oldAmplitude);
     }
 
     /// <summary>
@@ -42,7 +37,9 @@ public class WobbleEVApplier : BaseEVApplier
     /// </summary>
     public void TriggerWobble(bool onOrOff)
     {
-        float targetAmplitude = onOrOff ? latestAmplitude : 0f;
+        //if (!CanApplyEffect() && onOrOff) return;
+
+        float targetAmplitude = onOrOff ? oldAmplitude : 0f;
         ApplyAmplitude(targetAmplitude);
     }
 

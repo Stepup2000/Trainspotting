@@ -137,4 +137,4 @@ MonoBehaviour:
   growProperty: _Grow
   transitionDuration: 5
   minAmplifier: 0.2
-  maxAmplifier: 3
+  maxAmplifier: 2

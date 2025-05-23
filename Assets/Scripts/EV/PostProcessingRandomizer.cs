@@ -2,12 +2,19 @@
 
 public class PostProcessingRandomizer : BaseEVApplier
 {
-    private void Start()
+    protected override void OnEnable()
     {
-        ApplyProfileBasedOnEV();
+        base.OnEnable();
+        EVController.Instance.TogglePostProcessing.AddListener(ApplyProfileBasedOnEV);
     }
 
-    private void ApplyProfileBasedOnEV()
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        EVController.Instance.TogglePostProcessing.RemoveListener(ApplyProfileBasedOnEV);
+    }
+
+    private void ApplyProfileBasedOnEV(bool onOrOff)
     {
         var dataList = PPController.Instance.postProcessingDataList;
 
@@ -38,6 +45,6 @@ public class PostProcessingRandomizer : BaseEVApplier
     protected override void OnEVChanged(float newEV)
     {
         currentEV = newEV;
-        ApplyProfileBasedOnEV();
+        ApplyProfileBasedOnEV(true);
     }
 }
