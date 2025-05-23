@@ -53,6 +53,11 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> ToggleAurora { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the radar should appear..
+    /// </summary>
+    public UnityEvent<bool> ToggleRadar { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -167,11 +172,20 @@ public class EVController : MonoBehaviour
 
     /// <summary>
     /// Sends an event out to show or hide the aurora.
-    /// <param name="onOrOff">Boolean indicating whether to play or stop the post processing effect.</param>
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the aurora effect.</param>
     /// </summary>
     public void TriggerAurora(bool onOrOff)
     {
         ToggleAurora.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to show or hide the radar.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the radar effect.</param>
+    /// </summary>
+    public void TriggerRadar(bool onOrOff)
+    {
+        ToggleRadar.Invoke(onOrOff);
     }
 
     public void Update()

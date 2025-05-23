@@ -43,7 +43,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Disolve_Power: 1.51
-    - _NoiseScale: 59.68
+    - _NoiseScale: 13.68
     - _QueueControl: 0
     - _QueueOffset: 0
     - _WobbleDistance: 0.015
@@ -52,7 +52,7 @@ Material:
     - _mask_power: 1.2
     m_Colors:
     - _Color: {r: 0.0047169924, g: 1, b: 0.25665388, a: 1}
-    - _noise_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _noise_speed: {r: 0.05, g: 0, b: 0, a: 0}
     - _noise_tiling: {r: 9.45, g: 0.19, b: 0, a: 0}
     - _wobble_frequency: {r: 54.8, g: -4.26, b: 0, a: 0}
   m_BuildTextureStacks: []
