@@ -52,7 +52,7 @@ public class AuroraEVApplier : BaseEVApplier
     {
         if (auroraMaterial == null) yield break;
 
-        float startValue = turnOn ? offDissolveValue : originalDissolvePower;
+        float startValue = auroraMaterial.GetFloat("_Disolve_Power");
         float endValue = turnOn ? originalDissolvePower : offDissolveValue;
 
         float elapsed = 0f;
@@ -67,4 +67,5 @@ public class AuroraEVApplier : BaseEVApplier
 
         auroraMaterial.SetFloat("_Disolve_Power", endValue);
     }
+
 }
