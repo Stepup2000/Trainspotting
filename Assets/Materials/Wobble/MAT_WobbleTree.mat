@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_WobbleMaterial
+  m_Name: MAT_WobbleTree
   m_Shader: {fileID: -6465566751694194690, guid: ad315240006d0674e969f5a404ca0b64, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Texture:
-        m_Texture: {fileID: 2800000, guid: 5a327724a94a9674a8a93e6b4e9a6eee, type: 3}
+        m_Texture: {fileID: 2800000, guid: 26dd23e9294872542bb0d89c1ffb7401, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -56,7 +56,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Alpha_Clip: 0
-    - _Amplitude: 0.08
+    - _Amplitude: 0.075
     - _Float: 0
     - _NoiseScale: 1
     - _QueueControl: 0

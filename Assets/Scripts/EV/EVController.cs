@@ -58,6 +58,11 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> ToggleRadar { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the heartbeat should appear..
+    /// </summary>
+    public UnityEvent<bool> ToggleHeartbeat { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -186,6 +191,15 @@ public class EVController : MonoBehaviour
     public void TriggerRadar(bool onOrOff)
     {
         ToggleRadar.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to show or hide the heartbeat.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the heartbeat effect.</param>
+    /// </summary>
+    public void TriggerHeartbeat(bool onOrOff)
+    {
+        ToggleHeartbeat.Invoke(onOrOff);
     }
 
     public void Update()

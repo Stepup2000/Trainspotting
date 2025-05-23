@@ -31,7 +31,6 @@ public class PostProcessingRandomizer : BaseEVApplier
             if (clampedEV >= data.minEV && clampedEV < data.maxEV)
             {
                 PPController.Instance.SetPostProcessingStyle(data.style);
-                Debug.Log(data.style);
                 return;
             }
         }
