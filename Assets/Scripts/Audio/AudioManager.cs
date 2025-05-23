@@ -62,6 +62,21 @@ public class AudioManager : MonoBehaviour
         return instance;
     }
 
+    public void StopPersistentEvent(string key, FMOD.Studio.STOP_MODE stopMode = FMOD.Studio.STOP_MODE.ALLOWFADEOUT)
+    {
+        if (persistentEvents.TryGetValue(key, out EventInstance instance))
+        {
+            instance.stop(stopMode);   // Stop the sound (with fadeout or immediate)
+            instance.release();        // Release FMOD resources
+            persistentEvents.Remove(key); // Clean up tracking
+        }
+        else
+        {
+            Debug.LogWarning($"Persistent sound with key '{key}' not found.");
+        }
+    }
+
+
     public void PlayWithDelay(AudioReceiver receiver)
     {
         if (receiver != null && !receiver.soundEffect.IsNull)
