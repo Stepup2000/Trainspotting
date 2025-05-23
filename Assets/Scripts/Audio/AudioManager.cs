@@ -4,15 +4,21 @@ using System.Collections;
 using FMOD.Studio;
 using System.Collections.Generic;
 
+/// <summary>
+/// Manages audio playback using FMOD, including one-shot, instance, and persistent sounds.
+/// </summary>
 public class AudioManager : MonoBehaviour
 {
-   public static AudioManager instance { get; private set; }
+    /// <summary>
+    /// Singleton instance of the AudioManager.
+    /// </summary>
+    public static AudioManager instance { get; private set; }
 
-   private Dictionary<string, EventInstance> persistentEvents = new();
+    private Dictionary<EventReference, EventInstance> persistentEvents = new();
 
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Debug.LogError("Found more than one AudioManager in the scene!");
             Destroy(gameObject);
@@ -21,18 +27,27 @@ public class AudioManager : MonoBehaviour
         instance = this;
     }
 
-    //used for simple one time sound effects
+    /// <summary>
+    /// Plays a one-shot sound at a specified world position.
+    /// </summary>
+    /// <param name="sound">The FMOD event to play.</param>
+    /// <param name="worldPos">The world position of the sound.</param>
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {
         RuntimeManager.PlayOneShot(sound, worldPos);
     }
 
-    //used for all sound effects that overlap on top of each other
+    /// <summary>
+    /// Plays a sound as an instance that allows overlapping and parameter customization.
+    /// </summary>
+    /// <param name="sound">The FMOD event to play.</param>
+    /// <param name="source">The GameObject serving as the sound source.</param>
+    /// <param name="parameters">Optional parameters to set on the event.</param>
+    /// <returns>The created FMOD event instance.</returns>
     public EventInstance PlayEventInstance(EventReference sound, GameObject source, List<AudioParameter> parameters = null)
     {
         EventInstance instance = RuntimeManager.CreateInstance(sound);
         instance.set3DAttributes(RuntimeUtils.To3DAttributes(source));
-        // Apply parameters
         if (parameters != null)
         {
             foreach (var param in parameters)
@@ -41,15 +56,23 @@ public class AudioManager : MonoBehaviour
             }
         }
         instance.start();
-        instance.release(); // cleanup
+        instance.release();
         return instance;
     }
 
-    //used for all sound effects that loop or for whenever you want to use paramaters with them
+    /// <summary>
+    /// Creates and starts a persistent sound event that can be stopped later.
+    /// </summary>
+    /// <param name="sound">The FMOD event to play.</param>
+    /// <param name="source">The GameObject serving as the sound source.</param>
+    /// <param name="parameters">Optional parameters to set on the event.</param>
+    /// <returns>The created FMOD event instance.</returns>
     public EventInstance CreatePersistentEvent(EventReference sound, GameObject source, List<AudioParameter> parameters = null)
     {
         EventInstance instance = RuntimeManager.CreateInstance(sound);
         instance.set3DAttributes(RuntimeUtils.To3DAttributes(source));
+        persistentEvents.Add(sound, instance);
+
         if (parameters != null)
         {
             foreach (var param in parameters)
@@ -61,13 +84,20 @@ public class AudioManager : MonoBehaviour
         return instance;
     }
 
-    public void StopPersistentEvent(string key, FMOD.Studio.STOP_MODE stopMode = FMOD.Studio.STOP_MODE.ALLOWFADEOUT)
+    /// <summary>
+    /// Stops and removes a persistent event if it exists.
+    /// </summary>
+    /// <param name="key">The event reference used as the dictionary key.</param>
+    /// <param name="stopMode">Stop mode (e.g., allow fadeout).</param>
+    public void StopPersistentEvent(EventReference key, FMOD.Studio.STOP_MODE stopMode = FMOD.Studio.STOP_MODE.ALLOWFADEOUT)
     {
+        Debug.Log(persistentEvents.Count);
         if (persistentEvents.TryGetValue(key, out EventInstance instance))
         {
-            instance.stop(stopMode);   // Stop the sound (with fadeout or immediate)
-            instance.release();        // Release FMOD resources
-            persistentEvents.Remove(key); // Clean up tracking
+            instance.stop(stopMode);
+            instance.release();
+            persistentEvents.Remove(key);
+            Debug.Log("Sound is stopping");
         }
         else
         {
@@ -75,8 +105,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-
-    public void PlayWithDelay(AudioReceiver receiver)
+    /// <summary>
+    /// Plays an audio event after a specified delay.
+    /// </summary>
+    /// <param name="receiver">Audio data containing playback settings.</param>
+    public void PlayWithDelay(AudioData receiver)
     {
         if (receiver != null && !receiver.soundEffect.IsNull)
         {
@@ -84,7 +117,12 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private IEnumerator PlaySoundCoroutine(AudioReceiver receiver)
+    /// <summary>
+    /// Coroutine that handles delayed audio playback based on AudioData.
+    /// </summary>
+    /// <param name="receiver">Audio data containing playback settings.</param>
+    /// <returns>IEnumerator for coroutine execution.</returns>
+    private IEnumerator PlaySoundCoroutine(AudioData receiver)
     {
         yield return new WaitForSeconds(receiver.delay);
 
@@ -92,15 +130,15 @@ public class AudioManager : MonoBehaviour
         {
             switch (receiver.mode)
             {
-                case AudioReceiver.PlaybackMode.OneShot:
+                case AudioData.PlaybackMode.OneShot:
                     PlayOneShot(receiver.soundEffect, receiver.soundSource.transform.position);
                     break;
 
-                case AudioReceiver.PlaybackMode.Instance:
+                case AudioData.PlaybackMode.Instance:
                     PlayEventInstance(receiver.soundEffect, receiver.soundSource, receiver.parameters);
                     break;
 
-                case AudioReceiver.PlaybackMode.Persistent:
+                case AudioData.PlaybackMode.Persistent:
                     CreatePersistentEvent(receiver.soundEffect, receiver.soundSource, receiver.parameters);
                     break;
             }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HeartBeatEVApplier : BaseEVApplier
 {
-    [SerializeField] private AudioReceiver receiver;
+    [SerializeField] private AudioData receiver;
 
     protected override void OnEnable()
     {
@@ -28,9 +28,9 @@ public class HeartBeatEVApplier : BaseEVApplier
         if (!CanApplyEffect() && onOrOff == true) return;
 
         if (onOrOff == true)
-            AudioManager.instance.PlayEventInstance(receiver.soundEffect, receiver.soundSource, receiver.parameters);
+            AudioManager.instance.CreatePersistentEvent(receiver.soundEffect, receiver.soundSource, receiver.parameters);
         else
-            //TODO stop sound
+            AudioManager.instance.StopPersistentEvent(receiver.soundEffect, FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         EVController.Instance.ToggleRadar.Invoke(true);
     }
 }

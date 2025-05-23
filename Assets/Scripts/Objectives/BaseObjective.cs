@@ -17,7 +17,7 @@ public class BaseObjective : MonoBehaviour, IObjective
 
     //receiving the sound effect through editor
     [Header("Effects to preload")]
-    [SerializeField] private List<AudioReceiver> sfxToPreload = new List<AudioReceiver>();
+    [SerializeField] private List<AudioData> sfxToPreload = new List<AudioData>();
 
     public string ObjectiveTitle { get; protected set; }
     public string ObjectiveDescription { get; protected set; }

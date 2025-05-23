@@ -11,7 +11,7 @@ public class AudioParameter
 }
 
 [System.Serializable]
-public class AudioReceiver
+public class AudioData
 {
     public enum PlaybackMode
     {
