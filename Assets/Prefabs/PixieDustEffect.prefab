@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75f9a58081ebda4d96f63774bab51f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minEVTrigger: 2
+  maxEVTrigger: 5
   pixiedust: {fileID: 2050875059619550235}
 --- !u!1001 &5669835827159501481
 PrefabInstance:

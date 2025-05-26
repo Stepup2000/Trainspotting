@@ -17,7 +17,7 @@ public class BaseObjective : MonoBehaviour, IObjective
 
     //receiving the sound effect through editor
     [Header("Effects to preload")]
-    [SerializeField] private List<AudioReceiver> sfxToPreload = new List<AudioReceiver>();
+    [SerializeField] private List<AudioData> sfxToPreload = new List<AudioData>();
 
     public string ObjectiveTitle { get; protected set; }
     public string ObjectiveDescription { get; protected set; }
@@ -32,6 +32,11 @@ public class BaseObjective : MonoBehaviour, IObjective
         IsCompleted = false;
     }
 
+    protected void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
     /// <summary>
     /// Starts the objective and triggers all associated logic.
     /// </summary>
@@ -41,12 +46,20 @@ public class BaseObjective : MonoBehaviour, IObjective
         gameObject.SetActive(true);
         IsCompleted = false;
 
-        // Trigger all sounds via the AudioManager
         foreach (var sfx in sfxToPreload)
         {
             AudioManager.instance.PlayWithDelay(sfx);
         }
+
+        if (transform.childCount > 0)
+        {
+            Transform child = transform.GetChild(0);
+            CanvasObjectManager.Instance.ClearCanvasObjects();
+            CanvasObjectManager.Instance.AddToCanvasWithRetry(child.gameObject);
+        }
     }
+
+
 
     /// <summary>
     /// Completes the objective triggers all associated logic.

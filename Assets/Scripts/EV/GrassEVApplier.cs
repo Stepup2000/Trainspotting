@@ -60,7 +60,6 @@ public class GrassEVApplier : BaseEVApplier
     /// <param name="onOrOff">Whether to enable or disable the grass growth effect.</param>
     public void TriggerGrass(bool onOrOff)
     {
-        Debug.Log(CanApplyEffect());
         if (CanApplyEffect())
         {
             float targetAmplitude = onOrOff ? CalculateTransitionAmplitude(currentEV) : 0f;
@@ -140,7 +139,6 @@ public class GrassEVApplier : BaseEVApplier
 
         float amplifier = Mathf.Lerp(minAmplifier, maxAmplifier, t);
 
-        Debug.Log(amplifier);
         return originalYScale * amplifier;
     }
 

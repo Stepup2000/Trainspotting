@@ -24,6 +24,7 @@ public class PixiedustEVApplier : BaseEVApplier
     /// </summary>
     public void TriggerPixiedust(bool onOrOff)
     {
+        if (!CanApplyEffect() && onOrOff == true) return;
         if (onOrOff)
         {
             if (!pixiedust.isPlaying)

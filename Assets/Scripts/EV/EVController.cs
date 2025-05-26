@@ -43,6 +43,26 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> ToggleGrass { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the grass should start growing..
+    /// </summary>
+    public UnityEvent<bool> TogglePostProcessing { get; } = new UnityEvent<bool>();
+
+    /// <summary>
+    /// Event triggered if the aurora should appear..
+    /// </summary>
+    public UnityEvent<bool> ToggleAurora { get; } = new UnityEvent<bool>();
+
+    /// <summary>
+    /// Event triggered if the radar should appear..
+    /// </summary>
+    public UnityEvent<bool> ToggleRadar { get; } = new UnityEvent<bool>();
+
+    /// <summary>
+    /// Event triggered if the heartbeat should appear..
+    /// </summary>
+    public UnityEvent<bool> ToggleHeartbeat { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -144,6 +164,42 @@ public class EVController : MonoBehaviour
     public void TriggerGrass(bool onOrOff)
     {
         ToggleGrass.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to start or stop the post processing effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the post processing effect.</param>
+    /// </summary>
+    public void TriggerPostProcessing(bool onOrOff)
+    {
+        TogglePostProcessing.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to show or hide the aurora.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the aurora effect.</param>
+    /// </summary>
+    public void TriggerAurora(bool onOrOff)
+    {
+        ToggleAurora.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to show or hide the radar.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the radar effect.</param>
+    /// </summary>
+    public void TriggerRadar(bool onOrOff)
+    {
+        ToggleRadar.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to show or hide the heartbeat.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the heartbeat effect.</param>
+    /// </summary>
+    public void TriggerHeartbeat(bool onOrOff)
+    {
+        ToggleHeartbeat.Invoke(onOrOff);
     }
 
     public void Update()
