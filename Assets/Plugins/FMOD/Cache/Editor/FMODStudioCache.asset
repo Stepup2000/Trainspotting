@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9060583513155922937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Do you mind being the tripsitter
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Do you mind being the tripsitter
-  Guid:
-    Data1: -2127758039
-    Data2: 1180636304
-    Data3: -694649972
-    Data4: -627412056
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2585
 --- !u!114 &-8653233681386586576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +27,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1178
+--- !u!114 &-8573696009920258584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Woooow
+  Guid:
+    Data1: -726833768
+    Data2: 1270912215
+    Data3: 1042742175
+    Data4: 1202540646
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1194
+--- !u!114 &-8552521245860898725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Sure. Well look for a bench
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Sure. Well look for a bench
+  Guid:
+    Data1: 348943807
+    Data2: 1202703859
+    Data3: -205349756
+    Data4: -1536610490
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2310
 --- !u!114 &-8413575050895995836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +152,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638836096399326231
+  lastModified: 638838520983865618
   FileSizes: []
   Exists: 1
 --- !u!114 &-6746684091310718279
@@ -155,6 +182,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2774
+--- !u!114 &-6709594183000949381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow 3
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Woooow 3
+  Guid:
+    Data1: 1185706582
+    Data2: 1303464189
+    Data3: -426506317
+    Data4: 245125975
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 940
 --- !u!114 &-6675409060564598968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,60 +236,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 812
---- !u!114 &-6575406455763297974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - You know what_ I'm doing it
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - You know what_ I'm doing it
-  Guid:
-    Data1: 148189588
-    Data2: 1078082646
-    Data3: -251827784
-    Data4: -1799927105
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1995
---- !u!114 &-6561026331351285445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - There's our bench
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - There's our bench
-  Guid:
-    Data1: -651319146
-    Data2: 1280961362
-    Data3: -1369947510
-    Data4: -9894526
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1892
 --- !u!114 &-6459338457053037605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,33 +290,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 29538
---- !u!114 &-6227292502016698084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Wooah look at my hands
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Wooah look at my hands
-  Guid:
-    Data1: 489995838
-    Data2: 1248415438
-    Data3: 32770725
-    Data4: -531063173
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2001
 --- !u!114 &-5891844771787149633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,7 +344,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3912
---- !u!114 &-5772886668396878122
+--- !u!114 &-5585776639938517609
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,23 +354,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Ok lets go
+  m_Name: event:/SFX/Ominous Noise
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Ok lets go
+  Path: event:/SFX/Ominous Noise
   Guid:
-    Data1: 728836737
-    Data2: 1237640840
-    Data3: -1076471877
-    Data4: -813839390
+    Data1: 1214104627
+    Data2: 1185979979
+    Data3: -230267743
+    Data4: 1241539025
   Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
+  - {fileID: -7550391594114686699}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1068
+  Length: 49452
 --- !u!114 &-5451129875072354843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +398,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2380
---- !u!114 &-5360600639995763027
+--- !u!114 &-5446213331641809907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Wooah look at my hands
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Wooah look at my hands
+  Guid:
+    Data1: 489995838
+    Data2: 1248415438
+    Data3: 32770725
+    Data4: -531063173
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2001
+--- !u!114 &-5397761706621319019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Ok lets go
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Ok lets go
+  Guid:
+    Data1: 728836737
+    Data2: 1237640840
+    Data3: -1076471877
+    Data4: -813839390
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1068
+--- !u!114 &-5332585213324712463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -534,6 +561,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1404
+--- !u!114 &-4861840397685943679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Sparkles
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Sparkles
+  Guid:
+    Data1: -29332991
+    Data2: 1285800938
+    Data3: 1080230040
+    Data4: 1362974346
+  Banks:
+  - {fileID: -7550391594114686699}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34400
+--- !u!114 &-4858179673480320541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Shut up Kurt
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Shut up Kurt
+  Guid:
+    Data1: -608157518
+    Data2: 1311412586
+    Data3: -1066263413
+    Data4: -475966418
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3784
 --- !u!114 &-4701637906941932531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,6 +717,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1613
+--- !u!114 &-4293702508447554260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow 2
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Woooow 2
+  Guid:
+    Data1: 2042679282
+    Data2: 1105014917
+    Data3: -1117947492
+    Data4: 1490230147
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 777
 --- !u!114 &-3725176694962222709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,7 +786,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638836096367700577
+  lastModified: 638838541216342017
   FileSizes: []
   Exists: 1
 --- !u!114 &-3218766315451944552
@@ -735,33 +843,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3004
---- !u!114 &-3167671255718795620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Are you taking it Robin_
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Are you taking it Robin_
-  Guid:
-    Data1: 1591847979
-    Data2: 1263306826
-    Data3: 2125382591
-    Data4: -772666476
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1126
 --- !u!114 &-2846235313141164315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,7 +870,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2054
---- !u!114 &-2402427062393414980
+--- !u!114 &-2527532015866244318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -799,14 +880,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow
+  m_Name: event:/Voicelines/Levi Female/Levi F - Hey do you also see that_
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Woooow
+  Path: event:/Voicelines/Levi Female/Levi F - Hey do you also see that_
   Guid:
-    Data1: -726833768
-    Data2: 1270912215
-    Data3: 1042742175
-    Data4: 1202540646
+    Data1: -1448157852
+    Data2: 1238224600
+    Data3: -796579452
+    Data4: -551259140
   Banks:
   - {fileID: -1459093706844295467}
   IsStream: 0
@@ -815,7 +896,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1194
+  Length: 1776
 --- !u!114 &-2279714933582364350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,7 +924,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2258
---- !u!114 &-2114106286037543174
+--- !u!114 &-2048500444269278601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -870,33 +951,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1126
---- !u!114 &-2081951379649900328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - This is so cool
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - This is so cool
-  Guid:
-    Data1: -1446945002
-    Data2: 1106724081
-    Data3: -1178413655
-    Data4: -856303979
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1995
 --- !u!114 &-2007010724232361517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,60 +978,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2240
---- !u!114 &-1931578553424208677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ominous Noise
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Ominous Noise
-  Guid:
-    Data1: 1214104627
-    Data2: 1185979979
-    Data3: -230267743
-    Data4: 1241539025
-  Banks:
-  - {fileID: -7550391594114686699}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 49452
---- !u!114 &-1611845870221131280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Hey do you also see that_
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Hey do you also see that_
-  Guid:
-    Data1: -1448157852
-    Data2: 1238224600
-    Data3: -796579452
-    Data4: -551259140
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1776
 --- !u!114 &-1547269311053117489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,9 +1049,36 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Voicelines.bank
   Name: Voicelines
   StudioPath: bank:/Voicelines
-  lastModified: 638836096413922210
+  lastModified: 638838520989794484
   FileSizes: []
   Exists: 1
+--- !u!114 &-1442007421648793563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Do you mind being the tripsitter
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Do you mind being the tripsitter
+  Guid:
+    Data1: -2127758039
+    Data2: 1180636304
+    Data3: -694649972
+    Data4: -627412056
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2585
 --- !u!114 &-1382723046419694288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,6 +1106,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4066
+--- !u!114 &-1220820094117009011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Are you taking it Robin_
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Are you taking it Robin_
+  Guid:
+    Data1: 1591847979
+    Data2: 1263306826
+    Data3: 2125382591
+    Data4: -772666476
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1126
 --- !u!114 &-774942628173687299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,33 +1160,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1654
---- !u!114 &-521936461559852734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow 5
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Woooow 5
-  Guid:
-    Data1: 1086236448
-    Data2: 1245688715
-    Data3: -1539364193
-    Data4: -27580047
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 905
 --- !u!114 &-505855713940462608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,7 +1187,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1468
---- !u!114 &-192454160132459235
+--- !u!114 &-349631043316475093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1170,14 +1197,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Woah do you also see that_
+  m_Name: event:/Voicelines/Levi Female/Levi F - You know what_ I'm doing it
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Woah do you also see that_
+  Path: event:/Voicelines/Levi Female/Levi F - You know what_ I'm doing it
   Guid:
-    Data1: -1206360684
-    Data2: 1309940167
-    Data3: -218317184
-    Data4: -1198491712
+    Data1: 148189588
+    Data2: 1078082646
+    Data3: -251827784
+    Data4: -1799927105
   Banks:
   - {fileID: -1459093706844295467}
   IsStream: 0
@@ -1186,7 +1213,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1892
+  Length: 1995
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,26 +1240,18 @@ MonoBehaviour:
   - {fileID: -6359760158546964977}
   - {fileID: 5776474604801960122}
   - {fileID: 3336193842178814528}
-  - {fileID: 6263717875135457507}
-  - {fileID: -1931578553424208677}
   - {fileID: 5793277639830800286}
   - {fileID: 2491376610775730755}
   - {fileID: 6602658457792985820}
   - {fileID: -2279714933582364350}
   - {fileID: 5843323958514044494}
   - {fileID: -2007010724232361517}
-  - {fileID: -2081951379649900328}
   - {fileID: 5080122780724432052}
   - {fileID: -1547269311053117489}
   - {fileID: 1481016763409194875}
-  - {fileID: -521936461559852734}
-  - {fileID: 8613746929057022693}
-  - {fileID: -9060583513155922937}
-  - {fileID: -3167671255718795620}
   - {fileID: -4503711858311054190}
   - {fileID: 3804685637715263791}
   - {fileID: -1382723046419694288}
-  - {fileID: -6227292502016698084}
   - {fileID: -505855713940462608}
   - {fileID: 5923607427004659383}
   - {fileID: 5839416743721564002}
@@ -1242,45 +1261,29 @@ MonoBehaviour:
   - {fileID: 5719373368399669513}
   - {fileID: -8339374962176988564}
   - {fileID: -2846235313141164315}
-  - {fileID: 8462373807004046099}
-  - {fileID: -2114106286037543174}
   - {fileID: -5323544254017105537}
-  - {fileID: 8781259460129871734}
   - {fileID: 4361103715325101463}
   - {fileID: 6303144294355047503}
   - {fileID: 7493661351825384464}
-  - {fileID: -1611845870221131280}
   - {fileID: -5891844771787149633}
   - {fileID: -8413575050895995836}
-  - {fileID: -5360600639995763027}
   - {fileID: 7700508603211061903}
   - {fileID: 8995177666977481434}
-  - {fileID: -5772886668396878122}
-  - {fileID: 8983887739796009157}
   - {fileID: -774942628173687299}
   - {fileID: -6746684091310718279}
   - {fileID: 8383622397442574842}
   - {fileID: 8210698852544629816}
-  - {fileID: -6575406455763297974}
-  - {fileID: -192454160132459235}
-  - {fileID: -6561026331351285445}
   - {fileID: 9167940801796482769}
-  - {fileID: -2402427062393414980}
   - {fileID: 6369909827105406050}
   - {fileID: -1497744616583301787}
   - {fileID: 8502877568590813819}
   - {fileID: 8041829886195859639}
   - {fileID: 5247066252043774266}
-  - {fileID: 5454374657603874696}
   - {fileID: 3650979036347566316}
   - {fileID: -3201337480146736977}
   - {fileID: 1954586097837458541}
   - {fileID: 4633211791419721067}
-  - {fileID: 125008503502729794}
   - {fileID: 3279567279936933315}
-  - {fileID: 5032836209305525888}
-  - {fileID: 7555929134516720958}
-  - {fileID: 8932810942304979173}
   - {fileID: -3725176694962222709}
   - {fileID: 9032922044906123850}
   - {fileID: -5776508506819514774}
@@ -1293,15 +1296,39 @@ MonoBehaviour:
   - {fileID: -5451129875072354843}
   - {fileID: 8641805557749806341}
   - {fileID: -6675409060564598968}
-  - {fileID: 824662923653863039}
   - {fileID: 7087253924825654671}
+  - {fileID: -4861840397685943679}
+  - {fileID: -5585776639938517609}
+  - {fileID: 4748961915924423425}
+  - {fileID: 5136797515166473966}
+  - {fileID: 4589537715710379221}
+  - {fileID: -1442007421648793563}
+  - {fileID: -1220820094117009011}
+  - {fileID: -5446213331641809907}
+  - {fileID: -6709594183000949381}
+  - {fileID: -2048500444269278601}
+  - {fileID: 5076992300213706949}
+  - {fileID: -2527532015866244318}
+  - {fileID: -5332585213324712463}
+  - {fileID: -5397761706621319019}
+  - {fileID: 2819563402138457444}
+  - {fileID: -349631043316475093}
+  - {fileID: 3486783150138236877}
+  - {fileID: 7527559518743201755}
+  - {fileID: -8573696009920258584}
+  - {fileID: 8904028555034593152}
+  - {fileID: -4858179673480320541}
+  - {fileID: -8552521245860898725}
+  - {fileID: 2262077900571114993}
+  - {fileID: 8497515936166705885}
+  - {fileID: -4293702508447554260}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7149136644340738759}
   StringsBanks:
   - {fileID: 5789202589998437987}
   cacheVersion: 131847
-  cacheTime: 638836096413922210
+  cacheTime: 638838541216342017
   SerializableEventsDict:
   - key: event:/Ambience/Park Ambience
     index: 0
@@ -1315,226 +1342,172 @@ MonoBehaviour:
     index: 4
   - key: event:/SFX/Heart Beat
     index: 5
-  - key: event:/SFX/Sparkles
-    index: 6
-  - key: event:/SFX/Ominous Noise
-    index: 7
   - key: event:/Voicelines/Levi Male/Levi_ Gonna look for bank
-    index: 8
+    index: 6
   - key: event:/Voicelines/Narrator/Narrator_ Can you also feel the music
-    index: 9
+    index: 7
   - key: event:/Voicelines/Levi Male/Levi_ R u seeing this
-    index: 10
+    index: 8
   - key: event:/Voicelines/Kurt/Kurt - Robin getting cheesy
-    index: 11
+    index: 9
   - key: event:/Voicelines/Levi Male/Levi_ Looking at stars
-    index: 12
+    index: 10
   - key: event:/Voicelines/Narrator/Narrator_ It's cold here
-    index: 13
-  - key: event:/Voicelines/Levi Female/Levi F - This is so cool
-    index: 14
+    index: 11
   - key: event:/Voicelines/Kurt/Kurt - Gotta get something from the trunk
-    index: 15
+    index: 12
   - key: event:/Voicelines/Kurt/Kurt - I think so (response to Zehra are you seeing
       this)
-    index: 16
+    index: 13
   - key: event:/Voicelines/Levi Male/Levi_ Should we take them right now
-    index: 17
-  - key: event:/Voicelines/Levi Female/Levi F - Woooow 5
-    index: 18
-  - key: event:/Voicelines/Levi Female/Levi F - Woooow 4
-    index: 19
-  - key: event:/Voicelines/Levi Female/Levi F - Do you mind being the tripsitter
-    index: 20
-  - key: event:/Voicelines/Levi Female/Levi F - Are you taking it Robin_
-    index: 21
+    index: 14
   - key: event:/Voicelines/Levi Male/Levi_ Proposes pill
-    index: 22
+    index: 15
   - key: event:/Voicelines/Kurt/Kurt - A nice break
-    index: 23
+    index: 16
   - key: event:/Voicelines/Narrator/Narrator_ Convincing player FOMO
-    index: 24
-  - key: event:/Voicelines/Levi Female/Levi F - Wooah look at my hands
-    index: 25
+    index: 17
   - key: event:/Voicelines/Kurt/Kurt - Here we go
-    index: 26
+    index: 18
   - key: event:/Voicelines/Levi Male/Levi_ I'll indulge
-    index: 27
+    index: 19
   - key: event:/Voicelines/Kurt/Kurt - Woah 1
-    index: 28
+    index: 20
   - key: event:/Voicelines/Levi Male/Levi_ Shut up Kurt
-    index: 29
+    index: 21
   - key: event:/Voicelines/Levi Male/Levi_ Mind blown3
-    index: 30
+    index: 22
   - key: event:/Voicelines/Narrator/Narrator_ Suit urself man
-    index: 31
+    index: 23
   - key: event:/Voicelines/Levi Male/Levi_ Leaves car
-    index: 32
+    index: 24
   - key: event:/Voicelines/Narrator/Narrator_ Imagine feeling like this everyday
-    index: 33
+    index: 25
   - key: event:/Voicelines/Narrator/Narrator_ How are they having a good time
-    index: 34
-  - key: event:/Voicelines/Levi Female/Levi F - Woooow 3
-    index: 35
-  - key: event:/Voicelines/Levi Female/Levi F - Are we gonna do it
-    index: 36
+    index: 26
   - key: event:/Voicelines/Kurt/Kurt - More for me then
-    index: 37
-  - key: event:/Voicelines/Levi Female/Levi F - Ok. Here we go
-    index: 38
+    index: 27
   - key: event:/Voicelines/Levi Male/Levi_ U fine tripsitting then
-    index: 39
+    index: 28
   - key: event:/Voicelines/Kurt/Kurt - The sky looks so beautiful
-    index: 40
+    index: 29
   - key: event:/Voicelines/Kurt/Kurt - Have no fear, the pills are here
-    index: 41
-  - key: event:/Voicelines/Levi Female/Levi F - Hey do you also see that_
-    index: 42
+    index: 30
   - key: event:/Voicelines/Kurt/Kurt - Woah 4
-    index: 43
+    index: 31
   - key: event:/Voicelines/Kurt/Kurt - You really think I'd forget_ Of course I brought
       them
-    index: 44
-  - key: event:/Voicelines/Levi Female/Levi F - Fuck it I'm doing it
-    index: 45
+    index: 32
   - key: event:/Voicelines/Narrator/Narrator_ We're gonna have a good night
-    index: 46
+    index: 33
   - key: event:/Voicelines/Kurt/Kurt - Are you sure_ It might be a bit boring
-    index: 47
-  - key: event:/Voicelines/Levi Female/Levi F - Ok lets go
-    index: 48
-  - key: event:/Voicelines/Levi Female/Levi F - Looking at the sky
-    index: 49
+    index: 34
   - key: event:/Voicelines/Kurt/Kurt - Kurt hyped
-    index: 50
+    index: 35
   - key: event:/Voicelines/Kurt/Kurt - Are you guys enjoying this
-    index: 51
+    index: 36
   - key: event:/Voicelines/Levi Male/Levi_ Mind blown1
-    index: 52
+    index: 37
   - key: event:/Voicelines/Levi Male/Levi_ Mind blown2
-    index: 53
-  - key: event:/Voicelines/Levi Female/Levi F - You know what_ I'm doing it
-    index: 54
-  - key: event:/Voicelines/Levi Female/Levi F - Woah do you also see that_
-    index: 55
-  - key: event:/Voicelines/Levi Female/Levi F - There's our bench
-    index: 56
+    index: 38
   - key: event:/Voicelines/Levi Male/Levi_ Thank you_Cheers
-    index: 57
-  - key: event:/Voicelines/Levi Female/Levi F - Woooow
-    index: 58
+    index: 39
   - key: event:/Voicelines/Kurt/Kurt - We've arrived
-    index: 59
+    index: 40
   - key: event:/Voicelines/Narrator/Narrator_ Suuuuper boring
-    index: 60
+    index: 41
   - key: event:/Voicelines/Kurt/Kurt - Woah 5
-    index: 61
+    index: 42
   - key: event:/Voicelines/Narrator/Narrator_ Telling Robin to go out
-    index: 62
+    index: 43
   - key: event:/Voicelines/Kurt/Kurt - Woah 2
-    index: 63
-  - key: event:/Voicelines/Levi Female/Levi F - We're already here so why not_
-    index: 64
+    index: 44
   - key: event:/Voicelines/Narrator/Narrator_ Whatever
-    index: 65
+    index: 45
   - key: event:/Voicelines/Narrator/Narrator_ Thank god I'm not alone
-    index: 66
+    index: 46
   - key: event:/Voicelines/Narrator/Narrator_ Convincing (disappointing friends)
-    index: 67
+    index: 47
   - key: event:/Voicelines/Levi Male/Levi_ Dude of course
-    index: 68
-  - key: event:/Voicelines/Levi Female/Levi F - Shut up Kurt
-    index: 69
+    index: 48
   - key: event:/Voicelines/Narrator/Narrator_ Grateful for friends
-    index: 70
-  - key: event:/Voicelines/Levi Female/Levi F - Sure. Well look for a bench
-    index: 71
-  - key: event:/Voicelines/Levi Female/Levi F - That is the perfect place
-    index: 72
-  - key: event:/Voicelines/Levi Female/Levi F - I'm so glad we're doing this together
-    index: 73
+    index: 49
   - key: event:/Voicelines/Narrator/Narrator_ Should be legal everywhere
-    index: 74
+    index: 50
   - key: event:/Voicelines/Levi Male/Levi_ Finding the bench
-    index: 75
+    index: 51
   - key: event:/Voicelines/Kurt/Kurt - Minecraft
-    index: 76
+    index: 52
   - key: event:/Voicelines/Levi Male/Levi_ I love you guys
-    index: 77
+    index: 53
   - key: event:/Voicelines/Kurt/Kurt - Woah 6
-    index: 78
+    index: 54
   - key: event:/Voicelines/Narrator/Narrator_ When is this over
-    index: 79
+    index: 55
   - key: event:/Voicelines/Narrator/Narrator_ How did we even get here
-    index: 80
+    index: 56
   - key: event:/Voicelines/Narrator/Narrator_ We'll be fine. Probably
-    index: 81
+    index: 57
   - key: event:/Voicelines/Narrator/Narrator_ Surprise
-    index: 82
+    index: 58
   - key: event:/Voicelines/Kurt/Kurt - Thought I was gonna be tripping alone
-    index: 83
+    index: 59
   - key: event:/Voicelines/Kurt/Kurt - Up to you guys. I'm taking it
-    index: 84
+    index: 60
   - key: event:/Voicelines/Kurt/Kurt - Woah 3
-    index: 85
-  - key: event:/Voicelines/Levi Female/Levi F - Woooow 2
-    index: 86
+    index: 61
   - key: event:/Voicelines/Levi Male/Levi_ Mind blown4
+    index: 62
+  - key: event:/SFX/Sparkles
+    index: 63
+  - key: event:/SFX/Ominous Noise
+    index: 64
+  - key: event:/Voicelines/Levi Female/Levi F - This is so cool
+    index: 65
+  - key: event:/Voicelines/Levi Female/Levi F - Woooow 5
+    index: 66
+  - key: event:/Voicelines/Levi Female/Levi F - Woooow 4
+    index: 67
+  - key: event:/Voicelines/Levi Female/Levi F - Do you mind being the tripsitter
+    index: 68
+  - key: event:/Voicelines/Levi Female/Levi F - Are you taking it Robin_
+    index: 69
+  - key: event:/Voicelines/Levi Female/Levi F - Wooah look at my hands
+    index: 70
+  - key: event:/Voicelines/Levi Female/Levi F - Woooow 3
+    index: 71
+  - key: event:/Voicelines/Levi Female/Levi F - Are we gonna do it
+    index: 72
+  - key: event:/Voicelines/Levi Female/Levi F - Ok. Here we go
+    index: 73
+  - key: event:/Voicelines/Levi Female/Levi F - Hey do you also see that_
+    index: 74
+  - key: event:/Voicelines/Levi Female/Levi F - Fuck it I'm doing it
+    index: 75
+  - key: event:/Voicelines/Levi Female/Levi F - Ok lets go
+    index: 76
+  - key: event:/Voicelines/Levi Female/Levi F - Looking at the sky
+    index: 77
+  - key: event:/Voicelines/Levi Female/Levi F - You know what_ I'm doing it
+    index: 78
+  - key: event:/Voicelines/Levi Female/Levi F - Woah do you also see that_
+    index: 79
+  - key: event:/Voicelines/Levi Female/Levi F - There's our bench
+    index: 80
+  - key: event:/Voicelines/Levi Female/Levi F - Woooow
+    index: 81
+  - key: event:/Voicelines/Levi Female/Levi F - We're already here so why not_
+    index: 82
+  - key: event:/Voicelines/Levi Female/Levi F - Shut up Kurt
+    index: 83
+  - key: event:/Voicelines/Levi Female/Levi F - Sure. Well look for a bench
+    index: 84
+  - key: event:/Voicelines/Levi Female/Levi F - That is the perfect place
+    index: 85
+  - key: event:/Voicelines/Levi Female/Levi F - I'm so glad we're doing this together
+    index: 86
+  - key: event:/Voicelines/Levi Female/Levi F - Woooow 2
     index: 87
---- !u!114 &125008503502729794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Shut up Kurt
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Shut up Kurt
-  Guid:
-    Data1: -608157518
-    Data2: 1311412586
-    Data3: -1066263413
-    Data4: -475966418
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3784
---- !u!114 &824662923653863039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow 2
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Woooow 2
-  Guid:
-    Data1: 2042679282
-    Data2: 1105014917
-    Data3: -1117947492
-    Data4: 1490230147
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 777
 --- !u!114 &1481016763409194875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1562,30 +1535,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1706
---- !u!114 &1640425819441351216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Car Running/CarOver
-  m_EditorClassIdentifier: 
-  Name: CarOver
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2923640337
-    data2: 3352973566
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &1954586097837458541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,6 +1589,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1114
+--- !u!114 &2262077900571114993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - That is the perfect place
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - That is the perfect place
+  Guid:
+    Data1: -669671231
+    Data2: 1158270453
+    Data3: -1789116786
+    Data4: 1995146857
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1776
 --- !u!114 &2491376610775730755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1694,6 +1670,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3571
+--- !u!114 &2819563402138457444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Looking at the sky
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Looking at the sky
+  Guid:
+    Data1: 1296594307
+    Data2: 1242681667
+    Data3: 1701745304
+    Data4: -1718234698
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4609
 --- !u!114 &3279567279936933315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,6 +1779,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 21333
+--- !u!114 &3486783150138236877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Woah do you also see that_
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Woah do you also see that_
+  Guid:
+    Data1: -1206360684
+    Data2: 1309940167
+    Data3: -218317184
+    Data4: -1198491712
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1892
 --- !u!114 &3650979036347566316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,12 +1855,11 @@ MonoBehaviour:
   - {fileID: -3392430872175588351}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 1640425819441351216}
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 72695
+  Length: 30695
 --- !u!114 &3804685637715263791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,6 +1914,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2084
+--- !u!114 &4589537715710379221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow 4
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Woooow 4
+  Guid:
+    Data1: -1471935711
+    Data2: 1185630605
+    Data3: 510572210
+    Data4: 718715744
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1021
 --- !u!114 &4633211791419721067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,7 +1968,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1393
---- !u!114 &5032836209305525888
+--- !u!114 &4748961915924423425
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1922,14 +1978,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Sure. Well look for a bench
+  m_Name: event:/Voicelines/Levi Female/Levi F - This is so cool
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Sure. Well look for a bench
+  Path: event:/Voicelines/Levi Female/Levi F - This is so cool
   Guid:
-    Data1: 348943807
-    Data2: 1202703859
-    Data3: -205349756
-    Data4: -1536610490
+    Data1: -1446945002
+    Data2: 1106724081
+    Data3: -1178413655
+    Data4: -856303979
   Banks:
   - {fileID: -1459093706844295467}
   IsStream: 0
@@ -1938,7 +1994,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2310
+  Length: 1995
+--- !u!114 &5076992300213706949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Ok. Here we go
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Ok. Here we go
+  Guid:
+    Data1: -1770533797
+    Data2: 1156144581
+    Data3: 1477322114
+    Data4: 2024290578
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1511
 --- !u!114 &5080122780724432052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,6 +2049,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4069
+--- !u!114 &5136797515166473966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow 5
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Levi Female/Levi F - Woooow 5
+  Guid:
+    Data1: 1086236448
+    Data2: 1245688715
+    Data3: -1539364193
+    Data4: -27580047
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 905
 --- !u!114 &5247066252043774266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,33 +2103,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1602
---- !u!114 &5454374657603874696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - We're already here so why not_
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - We're already here so why not_
-  Guid:
-    Data1: 1180476070
-    Data2: 1340325383
-    Data3: 1678335620
-    Data4: 1354081826
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2160
 --- !u!114 &5719373368399669513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2089,10 +2172,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638836096367888838
+  lastModified: 638838520982847595
   FileSizes:
   - Name: 
-    Value: 5834
+    Value: 5796
   Exists: 1
 --- !u!114 &5793277639830800286
 MonoBehaviour:
@@ -2202,33 +2285,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 952
---- !u!114 &6263717875135457507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Sparkles
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Sparkles
-  Guid:
-    Data1: -29332991
-    Data2: 1285800938
-    Data3: 1080230040
-    Data4: 1362974346
-  Banks:
-  - {fileID: -7550391594114686699}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 34400
 --- !u!114 &6303144294355047503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2352,7 +2408,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638836096367858310
+  lastModified: 638838520982812014
   FileSizes: []
   Exists: 1
 --- !u!114 &7493661351825384464
@@ -2382,7 +2438,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1921
---- !u!114 &7555929134516720958
+--- !u!114 &7527559518743201755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2392,14 +2448,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - That is the perfect place
+  m_Name: event:/Voicelines/Levi Female/Levi F - There's our bench
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - That is the perfect place
+  Path: event:/Voicelines/Levi Female/Levi F - There's our bench
   Guid:
-    Data1: -669671231
-    Data2: 1158270453
-    Data3: -1789116786
-    Data4: 1995146857
+    Data1: -651319146
+    Data2: 1280961362
+    Data3: -1369947510
+    Data4: -9894526
   Banks:
   - {fileID: -1459093706844295467}
   IsStream: 0
@@ -2408,7 +2464,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1776
+  Length: 1892
 --- !u!114 &7566176391626075780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2424,7 +2480,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638836096380347529
+  lastModified: 638829910415474967
   FileSizes: []
   Exists: 1
 --- !u!114 &7700508603211061903
@@ -2589,7 +2645,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4260
---- !u!114 &8462373807004046099
+--- !u!114 &8497515936166705885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2599,14 +2655,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow 3
+  m_Name: event:/Voicelines/Levi Female/Levi F - I'm so glad we're doing this together
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Woooow 3
+  Path: event:/Voicelines/Levi Female/Levi F - I'm so glad we're doing this together
   Guid:
-    Data1: 1185706582
-    Data2: 1303464189
-    Data3: -426506317
-    Data4: 245125975
+    Data1: 1533445315
+    Data2: 1190252925
+    Data3: -1193530208
+    Data4: 1352848780
   Banks:
   - {fileID: -1459093706844295467}
   IsStream: 0
@@ -2615,7 +2671,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 940
+  Length: 2830
 --- !u!114 &8502877568590813819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2643,33 +2699,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1737
---- !u!114 &8613746929057022693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Woooow 4
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Woooow 4
-  Guid:
-    Data1: -1471935711
-    Data2: 1185630605
-    Data3: 510572210
-    Data4: 718715744
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1021
 --- !u!114 &8641805557749806341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2697,7 +2726,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1921
---- !u!114 &8781259460129871734
+--- !u!114 &8904028555034593152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2707,14 +2736,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Ok. Here we go
+  m_Name: event:/Voicelines/Levi Female/Levi F - We're already here so why not_
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Ok. Here we go
+  Path: event:/Voicelines/Levi Female/Levi F - We're already here so why not_
   Guid:
-    Data1: -1770533797
-    Data2: 1156144581
-    Data3: 1477322114
-    Data4: 2024290578
+    Data1: 1180476070
+    Data2: 1340325383
+    Data3: 1678335620
+    Data4: 1354081826
   Banks:
   - {fileID: -1459093706844295467}
   IsStream: 0
@@ -2723,61 +2752,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1511
---- !u!114 &8932810942304979173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - I'm so glad we're doing this together
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - I'm so glad we're doing this together
-  Guid:
-    Data1: 1533445315
-    Data2: 1190252925
-    Data3: -1193530208
-    Data4: 1352848780
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2830
---- !u!114 &8983887739796009157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Levi Female/Levi F - Looking at the sky
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Levi Female/Levi F - Looking at the sky
-  Guid:
-    Data1: 1296594307
-    Data2: 1242681667
-    Data3: 1701745304
-    Data4: -1718234698
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4609
+  Length: 2160
 --- !u!114 &8995177666977481434
 MonoBehaviour:
   m_ObjectHideFlags: 0
