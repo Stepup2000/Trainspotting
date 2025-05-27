@@ -52,7 +52,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1194
 --- !u!114 &-8552521245860898725
 MonoBehaviour:
@@ -79,7 +79,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 2310
 --- !u!114 &-8413575050895995836
 MonoBehaviour:
@@ -207,7 +207,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 940
 --- !u!114 &-6675409060564598968
 MonoBehaviour:
@@ -423,7 +423,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 2001
 --- !u!114 &-5397761706621319019
 MonoBehaviour:
@@ -450,7 +450,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1068
 --- !u!114 &-5332585213324712463
 MonoBehaviour:
@@ -477,7 +477,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1428
 --- !u!114 &-5323544254017105537
 MonoBehaviour:
@@ -613,7 +613,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 3784
 --- !u!114 &-4701637906941932531
 MonoBehaviour:
@@ -742,7 +742,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 777
 --- !u!114 &-3725176694962222709
 MonoBehaviour:
@@ -895,7 +895,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1776
 --- !u!114 &-2279714933582364350
 MonoBehaviour:
@@ -949,7 +949,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1126
 --- !u!114 &-2007010724232361517
 MonoBehaviour:
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Voicelines.bank
   Name: Voicelines
   StudioPath: bank:/Voicelines
-  lastModified: 638838722426054256
+  lastModified: 638839568099652846
   FileSizes: []
   Exists: 1
 --- !u!114 &-1442007421648793563
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 2585
 --- !u!114 &-1382723046419694288
 MonoBehaviour:
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1126
 --- !u!114 &-774942628173687299
 MonoBehaviour:
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1995
 --- !u!114 &11400000
 MonoBehaviour:
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 5789202589998437987}
   cacheVersion: 131847
-  cacheTime: 638838722426054256
+  cacheTime: 638839568099652846
   SerializableEventsDict:
   - key: event:/Ambience/Park Ambience
     index: 0
@@ -1614,7 +1614,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1776
 --- !u!114 &2491376610775730755
 MonoBehaviour:
@@ -1695,7 +1695,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 4609
 --- !u!114 &3279567279936933315
 MonoBehaviour:
@@ -1804,7 +1804,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1892
 --- !u!114 &3650979036347566316
 MonoBehaviour:
@@ -1939,7 +1939,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1021
 --- !u!114 &4633211791419721067
 MonoBehaviour:
@@ -1993,7 +1993,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1995
 --- !u!114 &5076992300213706949
 MonoBehaviour:
@@ -2020,7 +2020,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1511
 --- !u!114 &5080122780724432052
 MonoBehaviour:
@@ -2074,7 +2074,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 905
 --- !u!114 &5247066252043774266
 MonoBehaviour:
@@ -2463,7 +2463,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 1892
 --- !u!114 &7566176391626075780
 MonoBehaviour:
@@ -2480,7 +2480,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638838715254731635
+  lastModified: 638839568097815765
   FileSizes: []
   Exists: 1
 --- !u!114 &7700508603211061903
@@ -2670,7 +2670,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 2830
 --- !u!114 &8502877568590813819
 MonoBehaviour:
@@ -2751,7 +2751,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 20
   Length: 2160
 --- !u!114 &8995177666977481434
 MonoBehaviour:
