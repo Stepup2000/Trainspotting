@@ -6,14 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BasicScene.unity
-    guid: 4e9fef26e6adb88479ad1b9834a32d94
-  - enabled: 1
-    path: Assets/Scenes/ChoiceTest_Buttons.unity
-    guid: 371bb3e5ed716f74daa6c7b17fe69dfe
-  - enabled: 1
-    path: Assets/Scenes/ChoiceTest_Gestures.unity
-    guid: 9af2241c47a1f7246bc3383b6584c2b2
+    path: Assets/Scenes/ImprovedScene.unity
+    guid: 219dab10bb258244ba65566407a45c54
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

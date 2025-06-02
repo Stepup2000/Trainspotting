@@ -1,0 +1,5 @@
+C:/Users/Student/Trainspotting/Trainspotting/.utmp/RelWithDebInfo/6u3z7073/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Student/Trainspotting/Trainspotting/.utmp/RelWithDebInfo/6u3z7073/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Student/Trainspotting/Trainspotting/.utmp/RelWithDebInfo/6u3z7073/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Student/Trainspotting/Trainspotting/.utmp/RelWithDebInfo/6u3z7073/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Student/Trainspotting/Trainspotting/.utmp/RelWithDebInfo/6u3z7073/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

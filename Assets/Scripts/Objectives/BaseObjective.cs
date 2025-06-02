@@ -3,7 +3,6 @@ using UnityEngine.Events;
 using FMODUnity;
 using System.Collections.Generic;
 using System.Collections;
-using Unity.Android.Gradle.Manifest;
 
 /// <summary>
 /// Base class for quest objectives.
