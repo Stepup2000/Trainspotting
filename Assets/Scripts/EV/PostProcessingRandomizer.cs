@@ -26,13 +26,12 @@ public class PostProcessingRandomizer : BaseEVApplier
             return;
         }
 
-        float clampedEV = Mathf.Clamp(currentEV, -5f, 5f);
-
         foreach (var data in dataList)
         {
-            if (clampedEV >= data.minEV && clampedEV < data.maxEV)
+            if (currentEV >= data.minEV && currentEV < data.maxEV)
             {
                 PPController.Instance.SetPostProcessingStyle(data.style);
+                Debug.Log(data.style);
                 return;
             }
         }

@@ -1138,7 +1138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1150,7 +1150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -5013,7 +5013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: objectiveTime
-      value: 6
+      value: 8.53
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.size
@@ -5190,7 +5190,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6634517930299326434, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_text
-      value: Ask Kurt about the pills (Thumbs up)
+      value: 'You cool with tripsitting?
+
+
+        Option 1: Yep all good(Thumbs
+        up)'
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.size
@@ -5818,7 +5822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -6083,7 +6087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: objectiveTime
-      value: 4.44
+      value: 4.56
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.size
