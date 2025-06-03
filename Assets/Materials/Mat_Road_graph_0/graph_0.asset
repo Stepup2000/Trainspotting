@@ -1,0 +1,318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed5864476f84ce4b85454db09ca4eaa, type: 3}
+  m_Name: graph_0
+  m_EditorClassIdentifier: 
+  AssetPath: Assets/Materials/Mat_Road.sbsar
+  RawData: {fileID: -244192453324840774, guid: b2643f74c7bf6cd4c91fb5214b5f8c06, type: 3}
+  Name: graph_0
+  IsRoot: 1
+  FlagedForDelete: 0
+  GUID: f49e339e-1494-4d0e-9c0e-5fbdd4513152
+  Index: 0
+  Input:
+  - rid: 4023944605599531008
+  - rid: 4023944605599531009
+  - rid: 4023944605599531010
+  - rid: 4023944605599531011
+  - rid: 4023944605599531012
+  - rid: 4023944605599531013
+  - rid: 4023944605599531014
+  - rid: 4023944605599531015
+  Output:
+  - Index: 0
+    VirtualOutputIndex: 6
+    Description:
+      Identifier: normal
+      Label: normal
+      Index: 0
+      Type: 8
+      Channel: normal
+    OutputTexture: {fileID: 2800000, guid: b88954d077ac56b4088a82b2d82bb825, type: 3}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 0
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _BumpMap
+  - Index: 1
+    VirtualOutputIndex: 7
+    Description:
+      Identifier: roughness
+      Label: roughness
+      Index: 1
+      Type: 8
+      Channel: roughness
+    OutputTexture: {fileID: 0}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _RoughnessMap
+  - Index: 2
+    VirtualOutputIndex: 8
+    Description:
+      Identifier: metallic
+      Label: metallic
+      Index: 2
+      Type: 8
+      Channel: metallic
+    OutputTexture: {fileID: 2800000, guid: 40cdbded21f034e4ea20ab1788bdc624, type: 3}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: roughness
+    InvertAssignedAlpha: 1
+    Flags: 0
+    MaterialTextureTarget: _MetallicGlossMap
+  - Index: 3
+    VirtualOutputIndex: 9
+    Description:
+      Identifier: height
+      Label: height
+      Index: 3
+      Type: 8
+      Channel: height
+    OutputTexture: {fileID: 2800000, guid: 0712506cc0da8e64b9c42320af3ff02d, type: 3}
+    sRGB: 1
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _ParallaxMap
+  - Index: 4
+    VirtualOutputIndex: 10
+    Description:
+      Identifier: ambientocclusion
+      Label: ambientocclusion
+      Index: 4
+      Type: 8
+      Channel: ambientOcclusion
+    OutputTexture: {fileID: 2800000, guid: e5f21741959498e4b9364d91eeafdfce, type: 3}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _OcclusionMap
+  - Index: 5
+    VirtualOutputIndex: 11
+    Description:
+      Identifier: output
+      Label: output
+      Index: 5
+      Type: 8
+      Channel: baseColor
+    OutputTexture: {fileID: 2800000, guid: 202ff2dd22bc2874cba2cc6747ac12d2, type: 3}
+    sRGB: 1
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _BaseMap
+  HasPhysicalSize: 0
+  PhysicalSize: {x: 0, y: 0, z: 0}
+  EnablePhysicalSize: 0
+  Thumbnail: 
+  CurrentStatePreset: " <sbspreset pkgurl=\"pkg://Mat_Road\" label=\"\" >\n  <presetinput
+    identifier=\"$outputsize\" uid=\"1010280125\" type=\"8\" value=\"10,10\" />\n 
+    <presetinput identifier=\"GlowColor\" uid=\"1562786308\" type=\"3\" value=\"0.175685,0.71475,0.792453,1\"
+    />\n  <presetinput identifier=\"GrassColor\" uid=\"1563019795\" type=\"3\" value=\"0.04498,0.358491,0,1\"
+    />\n  <presetinput identifier=\"GroutColor\" uid=\"1563020012\" type=\"3\" value=\"0.358491,0.308077,0.231666,1\"
+    />\n </sbspreset>\n"
+  IsRuntimeOnly: 0
+  GenerateAllOutputs: 0
+  GenerateAllMipmaps: 1
+  OutputMaterial: {fileID: 2100000, guid: 462f3990822a4e34a93dedf8ef9c1d22, type: 2}
+  DefaultPreset: " <sbspreset pkgurl=\"pkg://Mat_Road\" label=\"\" >\n  <presetinput
+    identifier=\"$outputsize\" uid=\"1010280125\" type=\"8\" value=\"10,10\" />\n
+    </sbspreset>\n"
+  MaterialShader: Universal Render Pipeline/Lit
+  RenderTextures: 0
+  OutputRemaped: 0
+  Presets: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 4023944605599531008
+      type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 0
+        Description:
+          Identifier: $outputsize
+          Label: $outputsize
+          GuiGroup: 
+          GuiDescription: 
+          Type: 5
+          WidgetType: 0
+        Data: {x: 10, y: 10}
+        NumericalDescription:
+          DefaultValue: {x: 8, y: 8}
+          MinValue: {x: 0, y: 0}
+          MaxValue: {x: 1, y: 1}
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 4023944605599531009
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 1
+        Description:
+          Identifier: $randomseed
+          Label: $randomseed
+          GuiGroup: 
+          GuiDescription: 
+          Type: 4
+          WidgetType: 0
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 4023944605599531010
+      type: {class: SubstanceInputFloat4, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 2
+        Description:
+          Identifier: GlowColor
+          Label: GlowColor
+          GuiGroup: 
+          GuiDescription: Adjust the Hue for different colors, change the Saturation
+            to get washed out versions. and change value for changes in brightness
+          Type: 3
+          WidgetType: 3
+        Data: {x: 0.17568529, y: 0.7147497, z: 0.7924528, w: 1}
+        NumericalDescription:
+          DefaultValue: {x: 0.176677, y: 0.352941, z: 0.171626, w: 1}
+          MinValue: {x: 0, y: 0, z: 0, w: 0}
+          MaxValue: {x: 0, y: 0, z: 0, w: 0}
+          SliderStep: 0
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 4023944605599531011
+      type: {class: SubstanceInputFloat4, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 3
+        Description:
+          Identifier: Rock_scale_and_amount
+          Label: Rock_scale_and_amount
+          GuiGroup: 
+          GuiDescription: Adjust slider 0 and 3 to desired number. ALWAYS use the
+            same number for both of them
+          Type: 3
+          WidgetType: 0
+        Data: {x: 1, y: 0, z: 0, w: 1}
+        NumericalDescription:
+          DefaultValue: {x: 1, y: 0, z: 0, w: 1}
+          MinValue: {x: 0, y: 0, z: 0, w: 0}
+          MaxValue: {x: 0, y: 0, z: 0, w: 0}
+          SliderStep: 0
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 4023944605599531012
+      type: {class: SubstanceInputFloat4, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 4
+        Description:
+          Identifier: GrassColor
+          Label: GrassColor
+          GuiGroup: 
+          GuiDescription: The <b>Color Output</b> parameter creates a uniform color
+            output image
+          Type: 3
+          WidgetType: 3
+        Data: {x: 0.044979956, y: 0.3584906, z: 0, w: 1}
+        NumericalDescription:
+          DefaultValue: {x: 0.174777, y: 0.392157, z: 0, w: 1}
+          MinValue: {x: 0, y: 0, z: 0, w: 0}
+          MaxValue: {x: 0, y: 0, z: 0, w: 0}
+          SliderStep: 0
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 4023944605599531013
+      type: {class: SubstanceInputFloat4, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 5
+        Description:
+          Identifier: GroutColor
+          Label: GroutColor
+          GuiGroup: 
+          GuiDescription: The <b>Color Output</b> parameter creates a uniform color
+            output image
+          Type: 3
+          WidgetType: 3
+        Data: {x: 0.3584906, y: 0.30807698, z: 0.23166609, w: 1}
+        NumericalDescription:
+          DefaultValue: {x: 0.274194, y: 0.176899, z: 0, w: 1}
+          MinValue: {x: 0, y: 0, z: 0, w: 0}
+          MaxValue: {x: 0, y: 0, z: 0, w: 0}
+          SliderStep: 0
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 4023944605599531014
+      type: {class: SubstanceInputFloat4, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 6
+        Description:
+          Identifier: RockColor
+          Label: RockColor
+          GuiGroup: 
+          GuiDescription: The <b>Color Output</b> parameter creates a uniform color
+            output image
+          Type: 3
+          WidgetType: 3
+        Data: {x: 0.462745, y: 0.437632, z: 0.40286, w: 1}
+        NumericalDescription:
+          DefaultValue: {x: 0.462745, y: 0.437632, z: 0.40286, w: 1}
+          MinValue: {x: 0, y: 0, z: 0, w: 0}
+          MaxValue: {x: 0, y: 0, z: 0, w: 0}
+          SliderStep: 0
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 4023944605599531015
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 7
+        Description:
+          Identifier: BlackOutlineOpcaity
+          Label: BlackOutlineOpcaity
+          GuiGroup: 
+          GuiDescription: The <b>Opacity</b> parameter sets the transparency of the
+            blend
+          Type: 0
+          WidgetType: 1
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
