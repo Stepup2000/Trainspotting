@@ -13839,6 +13839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base light
       objectReference: {fileID: 0}
+    - target: {fileID: 977931491875455692, guid: e3f4f3e9fa2100447b0a8eb94f9180e9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1838983099617700645, guid: e3f4f3e9fa2100447b0a8eb94f9180e9, type: 3}
       propertyPath: m_AdditionalLightsShadowResolutionTier
       value: 1
