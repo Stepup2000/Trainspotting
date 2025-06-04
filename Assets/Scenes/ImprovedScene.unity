@@ -6364,13 +6364,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 572946673092627920, guid: 332ff16a295adbe43a6e3654df80d85d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.783
+      objectReference: {fileID: 0}
+    - target: {fileID: 572946673092627920, guid: 332ff16a295adbe43a6e3654df80d85d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.395
+      objectReference: {fileID: 0}
     - target: {fileID: 5639146059963939544, guid: 332ff16a295adbe43a6e3654df80d85d, type: 3}
       propertyPath: m_Name
       value: Prefab_Env_Park_Terrain
       objectReference: {fileID: 0}
     - target: {fileID: 7951849020503701451, guid: 332ff16a295adbe43a6e3654df80d85d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.2
+      value: -25.01
       objectReference: {fileID: 0}
     - target: {fileID: 7951849020503701451, guid: 332ff16a295adbe43a6e3654df80d85d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11194,6 +11202,10 @@ PrefabInstance:
     - target: {fileID: 977931491875455692, guid: e3f4f3e9fa2100447b0a8eb94f9180e9, type: 3}
       propertyPath: m_Name
       value: Base light
+      objectReference: {fileID: 0}
+    - target: {fileID: 977931491875455692, guid: e3f4f3e9fa2100447b0a8eb94f9180e9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1838983099617700645, guid: e3f4f3e9fa2100447b0a8eb94f9180e9, type: 3}
       propertyPath: m_AdditionalLightsShadowResolutionTier
