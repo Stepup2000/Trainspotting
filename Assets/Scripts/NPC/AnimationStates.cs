@@ -5,7 +5,10 @@ public enum AnimationState
 {
     Idle,
     Run,
+    Sit,
     Chill,
     GetUp,
+    GetPills,
     TakePill,
+    StartTripping,
 }
