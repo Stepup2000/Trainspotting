@@ -11,6 +11,9 @@ public class EventBus<T> where T : Event
 {
     public static event Action<T> OnEvent;
 
+    private static readonly Dictionary<Type, float> _lastPublishTime = new Dictionary<Type, float>();
+    private const float PublishCooldown = 1f;
+
     /// <summary>
     /// Subscribes a handler to the event. The handler will be called when the event is published.
     /// </summary>
@@ -31,13 +34,25 @@ public class EventBus<T> where T : Event
 
     /// <summary>
     /// Publishes an event of type <typeparamref name="T"/> to all subscribed handlers.
+    /// Only allows publishing once per second per event type.
     /// </summary>
     /// <param name="pEvent">The event to publish.</param>
     public static void Publish(T pEvent)
     {
+        var eventType = typeof(T);
+        float time = Time.time;
+
+        if (_lastPublishTime.TryGetValue(eventType, out float lastTime))
+        {
+            if (time - lastTime < PublishCooldown)
+                return;
+        }
+
+        _lastPublishTime[eventType] = time;
         OnEvent?.Invoke(pEvent);
     }
 }
+
 
 /// <summary>
 /// Represents an event indicating a thumbs up reaction.

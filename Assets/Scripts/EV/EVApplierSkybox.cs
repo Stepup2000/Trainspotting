@@ -9,10 +9,12 @@ public class EVApplierSkybox : BaseEVApplier
     [SerializeField] protected Material targetMaterial;
     [SerializeField] protected float transitionSpeed = 1f;
     [SerializeField] protected bool loop = true;
-    [SerializeField] protected float rotationSpeed = 1f;
+    [SerializeField] protected float maxRotationSpeed = 1f;
+    [SerializeField] protected float rotationSpeedRampupTime = 1f;
 
     private Material initialSkyboxMaterial;
     private float transitionProgress = 0f;
+    private float currentRotationSpeed;
     private bool transitioningToTarget = true;
     private bool isActive = false;
 
@@ -99,7 +101,10 @@ public class EVApplierSkybox : BaseEVApplier
             ? Mathf.Lerp(initialStarIntensity, targetStarIntensity, t)
             : Mathf.Lerp(targetStarIntensity, initialStarIntensity, t);
 
-        float rotation = initialStarRotation + Time.time * rotationSpeed;
+        float rotation = initialStarRotation + Time.time * currentRotationSpeed;
+
+        currentRotationSpeed += (currentRotationSpeed / rotationSpeedRampupTime) * Time.deltaTime;
+        currentRotationSpeed = Mathf.Min(currentRotationSpeed, maxRotationSpeed);
 
         skyboxMaterial.SetFloat("_StarHeight", height);
         skyboxMaterial.SetFloat("_StarPower", power);
@@ -134,10 +139,13 @@ public class EVApplierSkybox : BaseEVApplier
         {
             transitionProgress = 0f;
             transitioningToTarget = true;
+            currentRotationSpeed = 0.01f;
         }
         else
         {
             RevertSkyboxProperties();
+            currentRotationSpeed = 0f;
         }
     }
+
 }
