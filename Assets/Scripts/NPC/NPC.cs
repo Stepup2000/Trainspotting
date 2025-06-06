@@ -93,4 +93,20 @@ public class NPC : MonoBehaviour
             Debug.LogWarning($"No matching animator bool found for animation state: {state}");
         }
     }
+
+    /// <summary>
+    /// Allows playing animations from a string, useful for UI buttons.
+    /// </summary>
+    public void PlayAnimationByName(string stateName)
+    {
+        if (System.Enum.TryParse(stateName, true, out AnimationState parsedState))
+        {
+            PlayAnimation(parsedState);
+        }
+        else
+        {
+            Debug.LogWarning($"Invalid animation state string: {stateName}");
+        }
+    }
+
 }
