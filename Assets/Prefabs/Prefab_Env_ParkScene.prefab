@@ -1590,7 +1590,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9fdf09f3f1455f84ebe1f4c6075c63ef, type: 2}
     - target: {fileID: 919132149155446097, guid: 44614e3b073467b4491b19ace41e5eaf, type: 3}
       propertyPath: m_Name
-      value: Fbx_Environment_ParkScene_PA_0423
+      value: Prefab_Env_ParkScene
       objectReference: {fileID: 0}
     - target: {fileID: 984392852383959881, guid: 44614e3b073467b4491b19ace41e5eaf, type: 3}
       propertyPath: m_Materials.Array.size
