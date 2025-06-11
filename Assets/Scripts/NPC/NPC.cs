@@ -56,6 +56,8 @@ public class NPC : MonoBehaviour
     /// </summary>
     private void GenerateAnimationLookupFromAnimator()
     {
+        if (animator == null) return;
+
         animationLookup.Clear();
 
         var parameters = animator.parameters;

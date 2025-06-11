@@ -152,7 +152,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638846450259351765
+  lastModified: 638836096399326231
   FileSizes: []
   Exists: 1
 --- !u!114 &-6746684091310718279
@@ -786,7 +786,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638846450258172648
+  lastModified: 638852422258344987
   FileSizes: []
   Exists: 1
 --- !u!114 &-3218766315451944552
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Voicelines.bank
   Name: Voicelines
   StudioPath: bank:/Voicelines
-  lastModified: 638846450260124454
+  lastModified: 638852422462292379
   FileSizes: []
   Exists: 1
 --- !u!114 &-1442007421648793563
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 5789202589998437987}
   cacheVersion: 131847
-  cacheTime: 638846450260124454
+  cacheTime: 638852422462292379
   SerializableEventsDict:
   - key: event:/Ambience/Park Ambience
     index: 0
@@ -2172,7 +2172,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638846450258432164
+  lastModified: 638852422258390352
   FileSizes:
   - Name: 
     Value: 5796
@@ -2408,7 +2408,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638846450258195323
+  lastModified: 638836096367858310
   FileSizes: []
   Exists: 1
 --- !u!114 &7493661351825384464
@@ -2480,7 +2480,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638846450258815698
+  lastModified: 638852422258492730
   FileSizes: []
   Exists: 1
 --- !u!114 &7700508603211061903
