@@ -28,6 +28,7 @@ public class NPC : MonoBehaviour
             {
                 isMoving = false;
                 PlayAnimation(AnimationState.Idle);
+                Debug.Log("Turned off");
             }
         }
     }
