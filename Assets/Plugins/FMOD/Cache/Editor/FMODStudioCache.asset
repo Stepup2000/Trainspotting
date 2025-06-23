@@ -843,6 +843,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3004
+--- !u!114 &-2897950426966795242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Trip music/BackgroundMusic
+  m_EditorClassIdentifier: 
+  Name: BackgroundMusic
+  StudioPath: 
+  Min: -5
+  Max: 5
+  Default: 0
+  ID:
+    data1: 4230996805
+    data2: 3119845790
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2846235313141164315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,7 +1073,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Voicelines.bank
   Name: Voicelines
   StudioPath: bank:/Voicelines
-  lastModified: 638852422462292379
+  lastModified: 638862855838616139
   FileSizes: []
   Exists: 1
 --- !u!114 &-1442007421648793563
@@ -1322,13 +1346,14 @@ MonoBehaviour:
   - {fileID: 2262077900571114993}
   - {fileID: 8497515936166705885}
   - {fileID: -4293702508447554260}
+  - {fileID: 5539891072032665315}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7149136644340738759}
   StringsBanks:
   - {fileID: 5789202589998437987}
   cacheVersion: 131847
-  cacheTime: 638852422462292379
+  cacheTime: 638862855838616139
   SerializableEventsDict:
   - key: event:/Ambience/Park Ambience
     index: 0
@@ -1508,6 +1533,8 @@ MonoBehaviour:
     index: 86
   - key: event:/Voicelines/Levi Female/Levi F - Woooow 2
     index: 87
+  - key: event:/Music/Trip music
+    index: 88
 --- !u!114 &1481016763409194875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2103,6 +2130,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1602
+--- !u!114 &5539891072032665315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Trip music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Trip music
+  Guid:
+    Data1: -197438731
+    Data2: 1228176446
+    Data3: 1311431325
+    Data4: 1807744921
+  Banks:
+  - {fileID: 7566176391626075780}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2897950426966795242}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 85344
 --- !u!114 &5719373368399669513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,10 +2227,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638852422258390352
+  lastModified: 638862855836090802
   FileSizes:
   - Name: 
-    Value: 5796
+    Value: 5882
   Exists: 1
 --- !u!114 &5793277639830800286
 MonoBehaviour:
@@ -2480,7 +2535,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638852422258492730
+  lastModified: 638862855838065447
   FileSizes: []
   Exists: 1
 --- !u!114 &7700508603211061903
