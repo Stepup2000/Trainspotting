@@ -130,9 +130,11 @@ public class NPC : MonoBehaviour
 
     public void PlayAnimationByName(string stateName)
     {
+        Debug.Log(gameObject.name);
         if (System.Enum.TryParse(stateName, true, out AnimationState parsedState))
         {
             PlayAnimation(parsedState);
+            Debug.Log("Played " + stateName);
         }
         else
         {

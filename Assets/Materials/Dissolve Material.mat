@@ -49,10 +49,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CutOffHeight: 48.49
+    - _CutOffHeight: 50.76
     - _EdgeWidth: 1.3
     - _NoiseScale: 174.8
-    - _NoiseStrength: 35.66
+    - _NoiseStrength: 8.9
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:

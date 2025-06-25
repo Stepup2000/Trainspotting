@@ -91,7 +91,6 @@ public class AudioManager : MonoBehaviour
     /// <param name="stopMode">Stop mode (e.g., allow fadeout).</param>
     public void StopPersistentEvent(EventReference key, FMOD.Studio.STOP_MODE stopMode = FMOD.Studio.STOP_MODE.ALLOWFADEOUT)
     {
-        Debug.Log(persistentEvents.Count);
         if (persistentEvents.TryGetValue(key, out EventInstance instance))
         {
             instance.stop(stopMode);

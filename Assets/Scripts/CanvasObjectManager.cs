@@ -46,7 +46,7 @@ public class CanvasObjectManager : MonoBehaviour
                 instance.transform.rotation = parentTransform.rotation;
 
                 createdObjects.Add(instance);
-                Debug.Log("Child added to canvas at offset position.");
+                //Debug.Log("Child added to canvas at offset position.");
                 yield break;
             }
 
