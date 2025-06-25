@@ -9,8 +9,13 @@ public class NPC : MonoBehaviour
 
     private NavMeshAgent agent;
     private bool isMoving = false;
+    private bool isRotating = false;
 
     private Dictionary<AnimationState, string> animationLookup = new();
+    private Transform currentTargetRotation;
+
+    [SerializeField] private float rotationSpeed = 5f;
+    [SerializeField] private float rotationThreshold = 1f; // How close (in degrees) before we consider rotation done
 
     void Awake()
     {
@@ -27,9 +32,37 @@ public class NPC : MonoBehaviour
             if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
             {
                 isMoving = false;
-                PlayAnimation(AnimationState.Idle);
-                Debug.Log("Turned off");
+                agent.enabled = false;
+                isRotating = currentTargetRotation != null;
+
+                if (!isRotating)
+                {
+                    PlayAnimation(AnimationState.Idle);
+                    Debug.Log("Reached destination and turned off");
+                }
             }
+        }
+
+        if (isRotating)
+        {
+            RotateTowardsTargetRotation();
+        }
+    }
+
+    private void RotateTowardsTargetRotation()
+    {
+        if (currentTargetRotation == null) return;
+
+        Quaternion targetRotation = currentTargetRotation.rotation;
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+        float angleDifference = Quaternion.Angle(transform.rotation, targetRotation);
+        if (angleDifference <= rotationThreshold)
+        {
+            transform.rotation = targetRotation;
+            isRotating = false;
+            PlayAnimation(AnimationState.Idle);
+            Debug.Log("Finished smooth rotation");
         }
     }
 
@@ -40,20 +73,23 @@ public class NPC : MonoBehaviour
 
     public void MoveTo(Vector3 targetPosition)
     {
+        agent.enabled = true;
         agent.SetDestination(targetPosition);
         isMoving = true;
+        isRotating = false;
         PlayAnimation(AnimationState.Run);
+        currentTargetRotation = null;
     }
 
     public void MoveTo(Transform target)
     {
         if (target != null)
+        {
             MoveTo(target.position);
+            currentTargetRotation = target;
+        }
     }
 
-    /// <summary>
-    /// Auto-fills the animation lookup based on Animator bool parameters that match enum names.
-    /// </summary>
     private void GenerateAnimationLookupFromAnimator()
     {
         if (animator == null) return;
@@ -75,18 +111,13 @@ public class NPC : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Plays the animation by setting the corresponding bool and disabling others.
-    /// </summary>
     public void PlayAnimation(AnimationState state)
     {
-        // Reset all known bools first
         foreach (var boolName in animationLookup.Values)
         {
             animator.SetBool(boolName, false);
         }
 
-        // Then activate the one for this state
         if (animationLookup.TryGetValue(state, out string boolToPlay))
         {
             animator.SetBool(boolToPlay, true);
@@ -97,9 +128,6 @@ public class NPC : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Allows playing animations from a string, useful for UI buttons.
-    /// </summary>
     public void PlayAnimationByName(string stateName)
     {
         if (System.Enum.TryParse(stateName, true, out AnimationState parsedState))
@@ -111,5 +139,4 @@ public class NPC : MonoBehaviour
             Debug.LogWarning($"Invalid animation state string: {stateName}");
         }
     }
-
 }
