@@ -2134,7 +2134,7 @@ Transform:
   m_GameObject: {fileID: 314734205}
   serializedVersion: 2
   m_LocalRotation: {x: 0.102592506, y: -0.6996248, z: 0.6996248, w: 0.10259246}
-  m_LocalPosition: {x: 34.5, y: -14.3, z: 166.5}
+  m_LocalPosition: {x: 34.5, y: -34.3, z: 166.5}
   m_LocalScale: {x: 25.720585, y: 0.0014538319, z: 9.117196}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7412,6 +7412,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 437339951667829112, guid: 345202fe9ff0b324d97d34af18697693, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1698067252796440193, guid: 345202fe9ff0b324d97d34af18697693, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7494,7 +7498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5629278045324021839, guid: 345202fe9ff0b324d97d34af18697693, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.9
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 5629278045324021839, guid: 345202fe9ff0b324d97d34af18697693, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7904,6 +7908,99 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &869473135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869473138}
+  - component: {fileID: 869473137}
+  - component: {fileID: 869473136}
+  m_Layer: 0
+  m_Name: Terrain (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &869473136
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869473135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: fe93c5e6c32e77248b2eae97ec8010e0, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &869473137
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869473135}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: fe93c5e6c32e77248b2eae97ec8010e0, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 6a063bbf6fa6974469f67f9f7804c973, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!4 &869473138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869473135}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1181.6, y: -23, z: -42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &871024652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
@@ -16644,3 +16741,4 @@ SceneRoots:
   - {fileID: 1643431962}
   - {fileID: 552355388}
   - {fileID: 446954705}
+  - {fileID: 869473138}
