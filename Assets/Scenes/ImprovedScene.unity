@@ -1799,14 +1799,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241835607}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.58981127, z: -0, w: 0.80754113}
-  m_LocalPosition: {x: 0.20760442, y: 42.108, z: -6.81216}
+  m_LocalRotation: {x: -0, y: -0.5619994, z: -0, w: 0.8271377}
+  m_LocalPosition: {x: 0.288, y: 42.633, z: -3.423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 255624136}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -72.287, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -68.388, z: 0}
 --- !u!195 &241835609
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1817,7 +1817,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 2.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -3376,7 +3376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4751078412799468477, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.396
+      value: -1.795
       objectReference: {fileID: 0}
     - target: {fileID: 4751078412799468477, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3384,7 +3384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4751078412799468477, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.02
+      value: -2.637
       objectReference: {fileID: 0}
     - target: {fileID: 4751078412799468477, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5076,7 +5076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7793299348868649583, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: objectiveTime
-      value: 12
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7793299348868649583, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
