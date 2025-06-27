@@ -3862,6 +3862,10 @@ PrefabInstance:
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1351155258089094861, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1201670487}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: objectiveTime
       value: 10
@@ -5301,9 +5305,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6642681881906005, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4149726595750674958, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 595708821}
     - targetCorrespondingSourceObject: {fileID: 6458261930977474588, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -5419,37 +5420,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
---- !u!1 &595708820 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4149726595750674958, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
-  m_PrefabInstance: {fileID: 595708819}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &595708821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595708820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08088b615bfc1a84dad746e57430d5d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: 0
-  maxEVTrigger: 0
-  audioData:
-    parameters: []
-    soundEffect:
-      Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
-    soundSource: {fileID: 0}
-    delay: 0
-    mode: 0
 --- !u!4 &598870062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
