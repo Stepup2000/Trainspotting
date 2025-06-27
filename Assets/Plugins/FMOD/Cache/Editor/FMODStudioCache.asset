@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8653233681386586576
+--- !u!114 &-8981788213994225174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Suit urself man
+  m_Name: event:/Voicelines/Narrator/Narrator-This is the perfect moment to try
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Suit urself man
+  Path: event:/Voicelines/Narrator/Narrator-This is the perfect moment to try
   Guid:
-    Data1: 1927881300
-    Data2: 1131834894
-    Data3: 271114627
-    Data4: -1898867887
+    Data1: -532418476
+    Data2: 1283707312
+    Data3: 116491423
+    Data4: -466626186
   Banks:
   - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1178
+  Length: 5700
 --- !u!114 &-8573696009920258584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,33 +110,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4603
---- !u!114 &-8339374962176988564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Imagine feeling like this everyday
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Imagine feeling like this everyday
-  Guid:
-    Data1: 2135317589
-    Data2: 1154215928
-    Data3: -30754631
-    Data4: 1731249610
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3004
 --- !u!114 &-7550391594114686699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,33 +209,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 812
---- !u!114 &-6459338457053037605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ How did we even get here
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ How did we even get here
-  Guid:
-    Data1: -2075504944
-    Data2: 1174762722
-    Data3: 435164071
-    Data4: -1880991097
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1773
 --- !u!114 &-6359760158546964977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +290,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3912
+--- !u!114 &-5617447804550821591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Narrator/Narrator-Whatever you want dude
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Narrator/Narrator-Whatever you want dude
+  Guid:
+    Data1: 322167872
+    Data2: 1237456871
+    Data3: -1460250212
+    Data4: -1137598063
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2900
 --- !u!114 &-5585776639938517609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,33 +636,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-4514833643102751373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ When is this over
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ When is this over
-  Guid:
-    Data1: -271775029
-    Data2: 1215647716
-    Data3: -446465609
-    Data4: 1984077434
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1271
 --- !u!114 &-4503711858311054190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +690,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 777
---- !u!114 &-3725176694962222709
+--- !u!114 &-3520588872989701378
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -754,23 +700,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Should be legal everywhere
+  m_Name: event:/Voicelines/Narrator/Narrator-We're gonna have fun tonight
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Should be legal everywhere
+  Path: event:/Voicelines/Narrator/Narrator-We're gonna have fun tonight
   Guid:
-    Data1: 1922954436
-    Data2: 1207365750
-    Data3: 1143387058
-    Data4: -138562376
+    Data1: 540510358
+    Data2: 1219615873
+    Data3: -100841565
+    Data4: -1053965225
   Banks:
   - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2623
+  Length: 3000
 --- !u!114 &-3392430872175588351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,63 +732,9 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638852422258344987
+  lastModified: 638866161472885532
   FileSizes: []
   Exists: 1
---- !u!114 &-3218766315451944552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Surprise
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Surprise
-  Guid:
-    Data1: -1187607592
-    Data2: 1137553356
-    Data3: -484583520
-    Data4: -754440256
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3366
---- !u!114 &-3201337480146736977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Thank god I'm not alone
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Thank god I'm not alone
-  Guid:
-    Data1: 450704553
-    Data2: 1220796485
-    Data3: 1748996517
-    Data4: 1572472481
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3004
 --- !u!114 &-2897950426966795242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,33 +759,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-2846235313141164315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ How are they having a good time
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ How are they having a good time
-  Guid:
-    Data1: -363022763
-    Data2: 1288080331
-    Data3: -2106593401
-    Data4: -1401240110
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2054
 --- !u!114 &-2527532015866244318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,33 +840,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1126
---- !u!114 &-2007010724232361517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ It's cold here
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ It's cold here
-  Guid:
-    Data1: 1198653457
-    Data2: 1178352466
-    Data3: 1006385569
-    Data4: -595418252
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2240
 --- !u!114 &-1547269311053117489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,7 +869,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1725
---- !u!114 &-1497744616583301787
+--- !u!114 &-1471286848290109303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1041,23 +879,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Suuuuper boring
+  m_Name: event:/Voicelines/Narrator/Narrator-Intro 2
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Suuuuper boring
+  Path: event:/Voicelines/Narrator/Narrator-Intro 2
   Guid:
-    Data1: 410323357
-    Data2: 1214817431
-    Data3: -1317279057
-    Data4: 1807619874
+    Data1: 2116410596
+    Data2: 1130747010
+    Data3: -1065614463
+    Data4: 1980715245
   Banks:
   - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4249
+  Length: 3000
 --- !u!114 &-1459093706844295467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1073,7 +911,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Voicelines.bank
   Name: Voicelines
   StudioPath: bank:/Voicelines
-  lastModified: 638864448588387188
+  lastModified: 638866161474536429
   FileSizes: []
   Exists: 1
 --- !u!114 &-1442007421648793563
@@ -1103,33 +941,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2585
---- !u!114 &-1382723046419694288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Convincing player FOMO
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Convincing player FOMO
-  Guid:
-    Data1: 1701869116
-    Data2: 1227044537
-    Data3: -1149865051
-    Data4: 555674318
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4066
 --- !u!114 &-1220820094117009011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,6 +995,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1654
+--- !u!114 &-545230542132192458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Narrator/Narrator-Are you reaaaally sure
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Narrator/Narrator-Are you reaaaally sure
+  Guid:
+    Data1: 57766638
+    Data2: 1076239657
+    Data3: 1362167425
+    Data4: -1854324860
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
 --- !u!114 &-505855713940462608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,6 +1076,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1995
+--- !u!114 &-240188582873057220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Narrator/Narrator-Where's the surprise
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Narrator/Narrator-Where's the surprise
+  Guid:
+    Data1: 1458722815
+    Data2: 1195267869
+    Data3: -875065157
+    Data4: 1837801868
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4100
+--- !u!114 &-101040341117924594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Narrator/Narrator-You need to get out more Robin
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Narrator/Narrator-You need to get out more Robin
+  Guid:
+    Data1: -2128950058
+    Data2: 1185649300
+    Data3: -1539088988
+    Data4: 347627630
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2050
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,33 +1157,26 @@ MonoBehaviour:
   - {fileID: 5776474604801960122}
   - {fileID: 3336193842178814528}
   - {fileID: 5793277639830800286}
-  - {fileID: 2491376610775730755}
   - {fileID: 6602658457792985820}
   - {fileID: -2279714933582364350}
   - {fileID: 5843323958514044494}
-  - {fileID: -2007010724232361517}
   - {fileID: 5080122780724432052}
   - {fileID: -1547269311053117489}
   - {fileID: 1481016763409194875}
   - {fileID: -4503711858311054190}
   - {fileID: 3804685637715263791}
-  - {fileID: -1382723046419694288}
   - {fileID: -505855713940462608}
   - {fileID: 5923607427004659383}
   - {fileID: 5839416743721564002}
   - {fileID: 8050775179530368198}
   - {fileID: -5227264580450516088}
-  - {fileID: -8653233681386586576}
   - {fileID: 5719373368399669513}
-  - {fileID: -8339374962176988564}
-  - {fileID: -2846235313141164315}
   - {fileID: -5323544254017105537}
   - {fileID: 4361103715325101463}
   - {fileID: 6303144294355047503}
   - {fileID: 7493661351825384464}
   - {fileID: -5891844771787149633}
   - {fileID: -8413575050895995836}
-  - {fileID: 7700508603211061903}
   - {fileID: 8995177666977481434}
   - {fileID: -774942628173687299}
   - {fileID: -6746684091310718279}
@@ -1299,24 +1184,13 @@ MonoBehaviour:
   - {fileID: 8210698852544629816}
   - {fileID: 9167940801796482769}
   - {fileID: 6369909827105406050}
-  - {fileID: -1497744616583301787}
   - {fileID: 8502877568590813819}
-  - {fileID: 8041829886195859639}
   - {fileID: 5247066252043774266}
-  - {fileID: 3650979036347566316}
-  - {fileID: -3201337480146736977}
-  - {fileID: 1954586097837458541}
   - {fileID: 4633211791419721067}
-  - {fileID: 3279567279936933315}
-  - {fileID: -3725176694962222709}
   - {fileID: 9032922044906123850}
   - {fileID: -5776508506819514774}
   - {fileID: 8402194999730613907}
   - {fileID: 2210638712091076886}
-  - {fileID: -4514833643102751373}
-  - {fileID: -6459338457053037605}
-  - {fileID: 2678524065129619932}
-  - {fileID: -3218766315451944552}
   - {fileID: -5451129875072354843}
   - {fileID: 8641805557749806341}
   - {fileID: -6675409060564598968}
@@ -1347,13 +1221,25 @@ MonoBehaviour:
   - {fileID: 8497515936166705885}
   - {fileID: -4293702508447554260}
   - {fileID: 5539891072032665315}
+  - {fileID: 8000162184743834051}
+  - {fileID: -5617447804550821591}
+  - {fileID: -8981788213994225174}
+  - {fileID: 138109012809249463}
+  - {fileID: 1204643291974047623}
+  - {fileID: -3520588872989701378}
+  - {fileID: -101040341117924594}
+  - {fileID: -1471286848290109303}
+  - {fileID: 4708667010795550639}
+  - {fileID: -545230542132192458}
+  - {fileID: 207410135756243078}
+  - {fileID: -240188582873057220}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7149136644340738759}
   StringsBanks:
   - {fileID: 5789202589998437987}
   cacheVersion: 131847
-  cacheTime: 638864448588387188
+  cacheTime: 638866161474536429
   SerializableEventsDict:
   - key: event:/Ambience/Park Ambience
     index: 0
@@ -1369,172 +1255,241 @@ MonoBehaviour:
     index: 5
   - key: event:/Voicelines/Levi Male/Levi_ Gonna look for bank
     index: 6
-  - key: event:/Voicelines/Narrator/Narrator_ Can you also feel the music
-    index: 7
   - key: event:/Voicelines/Levi Male/Levi_ R u seeing this
-    index: 8
+    index: 7
   - key: event:/Voicelines/Kurt/Kurt - Robin getting cheesy
-    index: 9
+    index: 8
   - key: event:/Voicelines/Levi Male/Levi_ Looking at stars
-    index: 10
-  - key: event:/Voicelines/Narrator/Narrator_ It's cold here
-    index: 11
+    index: 9
   - key: event:/Voicelines/Kurt/Kurt - Gotta get something from the trunk
-    index: 12
+    index: 10
   - key: event:/Voicelines/Kurt/Kurt - I think so (response to Zehra are you seeing
       this)
-    index: 13
+    index: 11
   - key: event:/Voicelines/Levi Male/Levi_ Should we take them right now
-    index: 14
+    index: 12
   - key: event:/Voicelines/Levi Male/Levi_ Proposes pill
-    index: 15
+    index: 13
   - key: event:/Voicelines/Kurt/Kurt - A nice break
-    index: 16
-  - key: event:/Voicelines/Narrator/Narrator_ Convincing player FOMO
-    index: 17
+    index: 14
   - key: event:/Voicelines/Kurt/Kurt - Here we go
-    index: 18
+    index: 15
   - key: event:/Voicelines/Levi Male/Levi_ I'll indulge
-    index: 19
+    index: 16
   - key: event:/Voicelines/Kurt/Kurt - Woah 1
-    index: 20
+    index: 17
   - key: event:/Voicelines/Levi Male/Levi_ Shut up Kurt
-    index: 21
+    index: 18
   - key: event:/Voicelines/Levi Male/Levi_ Mind blown3
-    index: 22
-  - key: event:/Voicelines/Narrator/Narrator_ Suit urself man
-    index: 23
+    index: 19
   - key: event:/Voicelines/Levi Male/Levi_ Leaves car
-    index: 24
-  - key: event:/Voicelines/Narrator/Narrator_ Imagine feeling like this everyday
-    index: 25
-  - key: event:/Voicelines/Narrator/Narrator_ How are they having a good time
-    index: 26
+    index: 20
   - key: event:/Voicelines/Kurt/Kurt - More for me then
-    index: 27
+    index: 21
   - key: event:/Voicelines/Levi Male/Levi_ U fine tripsitting then
-    index: 28
+    index: 22
   - key: event:/Voicelines/Kurt/Kurt - The sky looks so beautiful
-    index: 29
+    index: 23
   - key: event:/Voicelines/Kurt/Kurt - Have no fear, the pills are here
-    index: 30
+    index: 24
   - key: event:/Voicelines/Kurt/Kurt - Woah 4
-    index: 31
+    index: 25
   - key: event:/Voicelines/Kurt/Kurt - You really think I'd forget_ Of course I brought
       them
-    index: 32
-  - key: event:/Voicelines/Narrator/Narrator_ We're gonna have a good night
-    index: 33
+    index: 26
   - key: event:/Voicelines/Kurt/Kurt - Are you sure_ It might be a bit boring
-    index: 34
+    index: 27
   - key: event:/Voicelines/Kurt/Kurt - Kurt hyped
-    index: 35
+    index: 28
   - key: event:/Voicelines/Kurt/Kurt - Are you guys enjoying this
-    index: 36
+    index: 29
   - key: event:/Voicelines/Levi Male/Levi_ Mind blown1
-    index: 37
+    index: 30
   - key: event:/Voicelines/Levi Male/Levi_ Mind blown2
-    index: 38
+    index: 31
   - key: event:/Voicelines/Levi Male/Levi_ Thank you_Cheers
-    index: 39
+    index: 32
   - key: event:/Voicelines/Kurt/Kurt - We've arrived
-    index: 40
-  - key: event:/Voicelines/Narrator/Narrator_ Suuuuper boring
-    index: 41
+    index: 33
   - key: event:/Voicelines/Kurt/Kurt - Woah 5
-    index: 42
-  - key: event:/Voicelines/Narrator/Narrator_ Telling Robin to go out
-    index: 43
+    index: 34
   - key: event:/Voicelines/Kurt/Kurt - Woah 2
-    index: 44
-  - key: event:/Voicelines/Narrator/Narrator_ Whatever
-    index: 45
-  - key: event:/Voicelines/Narrator/Narrator_ Thank god I'm not alone
-    index: 46
-  - key: event:/Voicelines/Narrator/Narrator_ Convincing (disappointing friends)
-    index: 47
+    index: 35
   - key: event:/Voicelines/Levi Male/Levi_ Dude of course
-    index: 48
-  - key: event:/Voicelines/Narrator/Narrator_ Grateful for friends
-    index: 49
-  - key: event:/Voicelines/Narrator/Narrator_ Should be legal everywhere
-    index: 50
+    index: 36
   - key: event:/Voicelines/Levi Male/Levi_ Finding the bench
-    index: 51
+    index: 37
   - key: event:/Voicelines/Kurt/Kurt - Minecraft
-    index: 52
+    index: 38
   - key: event:/Voicelines/Levi Male/Levi_ I love you guys
-    index: 53
+    index: 39
   - key: event:/Voicelines/Kurt/Kurt - Woah 6
-    index: 54
-  - key: event:/Voicelines/Narrator/Narrator_ When is this over
-    index: 55
-  - key: event:/Voicelines/Narrator/Narrator_ How did we even get here
-    index: 56
-  - key: event:/Voicelines/Narrator/Narrator_ We'll be fine. Probably
-    index: 57
-  - key: event:/Voicelines/Narrator/Narrator_ Surprise
-    index: 58
+    index: 40
   - key: event:/Voicelines/Kurt/Kurt - Thought I was gonna be tripping alone
-    index: 59
+    index: 41
   - key: event:/Voicelines/Kurt/Kurt - Up to you guys. I'm taking it
-    index: 60
+    index: 42
   - key: event:/Voicelines/Kurt/Kurt - Woah 3
-    index: 61
+    index: 43
   - key: event:/Voicelines/Levi Male/Levi_ Mind blown4
-    index: 62
+    index: 44
   - key: event:/SFX/Sparkles
-    index: 63
+    index: 45
   - key: event:/SFX/Ominous Noise
-    index: 64
+    index: 46
   - key: event:/Voicelines/Levi Female/Levi F - This is so cool
-    index: 65
+    index: 47
   - key: event:/Voicelines/Levi Female/Levi F - Woooow 5
-    index: 66
+    index: 48
   - key: event:/Voicelines/Levi Female/Levi F - Woooow 4
-    index: 67
+    index: 49
   - key: event:/Voicelines/Levi Female/Levi F - Do you mind being the tripsitter
-    index: 68
+    index: 50
   - key: event:/Voicelines/Levi Female/Levi F - Are you taking it Robin_
-    index: 69
+    index: 51
   - key: event:/Voicelines/Levi Female/Levi F - Wooah look at my hands
-    index: 70
+    index: 52
   - key: event:/Voicelines/Levi Female/Levi F - Woooow 3
-    index: 71
+    index: 53
   - key: event:/Voicelines/Levi Female/Levi F - Are we gonna do it
-    index: 72
+    index: 54
   - key: event:/Voicelines/Levi Female/Levi F - Ok. Here we go
-    index: 73
+    index: 55
   - key: event:/Voicelines/Levi Female/Levi F - Hey do you also see that_
-    index: 74
+    index: 56
   - key: event:/Voicelines/Levi Female/Levi F - Fuck it I'm doing it
-    index: 75
+    index: 57
   - key: event:/Voicelines/Levi Female/Levi F - Ok lets go
-    index: 76
+    index: 58
   - key: event:/Voicelines/Levi Female/Levi F - Looking at the sky
-    index: 77
+    index: 59
   - key: event:/Voicelines/Levi Female/Levi F - You know what_ I'm doing it
-    index: 78
+    index: 60
   - key: event:/Voicelines/Levi Female/Levi F - Woah do you also see that_
-    index: 79
+    index: 61
   - key: event:/Voicelines/Levi Female/Levi F - There's our bench
-    index: 80
+    index: 62
   - key: event:/Voicelines/Levi Female/Levi F - Woooow
-    index: 81
+    index: 63
   - key: event:/Voicelines/Levi Female/Levi F - We're already here so why not_
-    index: 82
+    index: 64
   - key: event:/Voicelines/Levi Female/Levi F - Shut up Kurt
-    index: 83
+    index: 65
   - key: event:/Voicelines/Levi Female/Levi F - Sure. Well look for a bench
-    index: 84
+    index: 66
   - key: event:/Voicelines/Levi Female/Levi F - That is the perfect place
-    index: 85
+    index: 67
   - key: event:/Voicelines/Levi Female/Levi F - I'm so glad we're doing this together
-    index: 86
+    index: 68
   - key: event:/Voicelines/Levi Female/Levi F - Woooow 2
-    index: 87
+    index: 69
   - key: event:/Music/Trip music
-    index: 88
+    index: 70
+  - key: event:/Voicelines/Narrator/Narrator-We'll be fine... probably...
+    index: 71
+  - key: event:/Voicelines/Narrator/Narrator-Whatever you want dude
+    index: 72
+  - key: event:/Voicelines/Narrator/Narrator-This is the perfect moment to try
+    index: 73
+  - key: event:/Voicelines/Narrator/Narrator-Tries to convince player FOMO
+    index: 74
+  - key: event:/Voicelines/Narrator/Narrator-Intro
+    index: 75
+  - key: event:/Voicelines/Narrator/Narrator-We're gonna have fun tonight
+    index: 76
+  - key: event:/Voicelines/Narrator/Narrator-You need to get out more Robin
+    index: 77
+  - key: event:/Voicelines/Narrator/Narrator-Intro 2
+    index: 78
+  - key: event:/Voicelines/Narrator/Narrator-It's gonna be super boring
+    index: 79
+  - key: event:/Voicelines/Narrator/Narrator-Are you reaaaally sure
+    index: 80
+  - key: event:/Voicelines/Narrator/Narrator-Whispers
+    index: 81
+  - key: event:/Voicelines/Narrator/Narrator-Where's the surprise
+    index: 82
+--- !u!114 &138109012809249463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Narrator/Narrator-Tries to convince player FOMO
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Narrator/Narrator-Tries to convince player FOMO
+  Guid:
+    Data1: -1816157855
+    Data2: 1256379580
+    Data3: -721036105
+    Data4: 921609703
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5800
+--- !u!114 &207410135756243078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Narrator/Narrator-Whispers
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Narrator/Narrator-Whispers
+  Guid:
+    Data1: 102686715
+    Data2: 1149947463
+    Data3: -662993516
+    Data4: 1205769205
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10217
+--- !u!114 &1204643291974047623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Narrator/Narrator-Intro
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Narrator/Narrator-Intro
+  Guid:
+    Data1: 995038051
+    Data2: 1277590472
+    Data3: -1486077046
+    Data4: -849564981
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5100
 --- !u!114 &1481016763409194875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1562,33 +1517,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 55
   Length: 1706
---- !u!114 &1954586097837458541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Convincing (disappointing friends)
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Convincing (disappointing friends)
-  Guid:
-    Data1: -1552251729
-    Data2: 1310337834
-    Data3: 277782193
-    Data4: -256749724
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5015
 --- !u!114 &2210638712091076886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,60 +1571,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1776
---- !u!114 &2491376610775730755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Can you also feel the music
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Can you also feel the music
-  Guid:
-    Data1: -385659389
-    Data2: 1177574415
-    Data3: -1279613023
-    Data4: 1378668708
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2142
---- !u!114 &2678524065129619932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ We'll be fine. Probably
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ We'll be fine. Probably
-  Guid:
-    Data1: 1969462994
-    Data2: 1299326574
-    Data3: -791479144
-    Data4: 938560498
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3571
 --- !u!114 &2819563402138457444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,33 +1598,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4609
---- !u!114 &3279567279936933315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Grateful for friends
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Grateful for friends
-  Guid:
-    Data1: 1323767222
-    Data2: 1281056093
-    Data3: -519339590
-    Data4: 516077488
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1904
 --- !u!114 &3336193842178814528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,33 +1680,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1892
---- !u!114 &3650979036347566316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Whatever
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Whatever
-  Guid:
-    Data1: 1770705319
-    Data2: 1076036666
-    Data3: -1409214810
-    Data4: -971401499
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1773
 --- !u!114 &3727783479946709550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1995,6 +1815,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 55
   Length: 1393
+--- !u!114 &4708667010795550639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Narrator/Narrator-It's gonna be super boring
+  m_EditorClassIdentifier: 
+  Path: event:/Voicelines/Narrator/Narrator-It's gonna be super boring
+  Guid:
+    Data1: -835872533
+    Data2: 1111723920
+    Data3: 199008409
+    Data4: 443493375
+  Banks:
+  - {fileID: -1459093706844295467}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4800
 --- !u!114 &4748961915924423425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2227,10 +2074,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638864448586474081
+  lastModified: 638866161472914038
   FileSizes:
   - Name: 
-    Value: 5882
+    Value: 5526
   Exists: 1
 --- !u!114 &5793277639830800286
 MonoBehaviour:
@@ -2535,10 +2382,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638864448588034782
+  lastModified: 638866161474156393
   FileSizes: []
   Exists: 1
---- !u!114 &7700508603211061903
+--- !u!114 &8000162184743834051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2548,50 +2395,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ We're gonna have a good night
+  m_Name: event:/Voicelines/Narrator/Narrator-We'll be fine... probably...
   m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ We're gonna have a good night
+  Path: event:/Voicelines/Narrator/Narrator-We'll be fine... probably...
   Guid:
-    Data1: 576707445
-    Data2: 1297680874
-    Data3: 2055341230
-    Data4: -1728971846
+    Data1: -913743575
+    Data2: 1110622423
+    Data3: 1676550811
+    Data4: 1369641297
   Banks:
   - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2623
---- !u!114 &8041829886195859639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/Narrator/Narrator_ Telling Robin to go out
-  m_EditorClassIdentifier: 
-  Path: event:/Voicelines/Narrator/Narrator_ Telling Robin to go out
-  Guid:
-    Data1: 1748896163
-    Data2: 1187292194
-    Data3: -967542885
-    Data4: 1269406172
-  Banks:
-  - {fileID: -1459093706844295467}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4891
+  Length: 4000
 --- !u!114 &8050775179530368198
 MonoBehaviour:
   m_ObjectHideFlags: 0
