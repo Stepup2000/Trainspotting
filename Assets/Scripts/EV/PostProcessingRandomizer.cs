@@ -30,6 +30,7 @@ public class PostProcessingRandomizer : BaseEVApplier
         {
             if (currentEV >= data.minEV && currentEV < data.maxEV)
             {
+                Debug.Log(currentEV);
                 PPController.Instance.SetPostProcessingStyle(data.style);
                 Debug.Log(data.style);
                 return;
@@ -51,8 +52,8 @@ public class PostProcessingRandomizer : BaseEVApplier
     /// <param name="newEV">The new EV value.</param>
     protected override void OnEVChanged(float newEV)
     {
-        if (canTrigger == false) return;
         currentEV = newEV;
+        if (canTrigger == false) return;
         ApplyProfileBasedOnEV(true);
     }
 }
