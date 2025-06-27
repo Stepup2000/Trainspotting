@@ -18,6 +18,10 @@ public class BaseObjective : MonoBehaviour, IObjective
     [Header("Effects to preload")]
     [SerializeField] private List<AudioData> sfxToPreload = new List<AudioData>();
 
+    //receiving the sound effect through editor
+    [Header("Effects to stop")]
+    [SerializeField] private List<EventReference> sfxToStop = new List<EventReference>();
+
     public string ObjectiveTitle { get; protected set; }
     public string ObjectiveDescription { get; protected set; }
     public bool IsCompleted { get; protected set; }
@@ -48,6 +52,11 @@ public class BaseObjective : MonoBehaviour, IObjective
         foreach (var sfx in sfxToPreload)
         {
             AudioManager.instance.PlayWithDelay(sfx);
+        }
+
+        foreach (var sfxStop in sfxToStop)
+        {
+            AudioManager.instance.StopPersistentEvent(sfxStop);
         }
 
         if (transform.childCount > 0)

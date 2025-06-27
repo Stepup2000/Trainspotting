@@ -104,6 +104,16 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void StopAllPersistentSounds()
+    {
+        var keys = new List<EventReference>(persistentEvents.Keys);
+        foreach (EventReference reference in keys)
+        {
+            StopPersistentEvent(reference);
+        }
+    }
+
+
     /// <summary>
     /// Plays an audio event after a specified delay.
     /// </summary>
