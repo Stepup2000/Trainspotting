@@ -3786,6 +3786,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimerObjective_Lisete_Leaving the car
       objectReference: {fileID: 0}
+    - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 96337882}
+    - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NPC, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 552355388}
+    - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Transform, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 638696005366582471, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].delay
       value: 1.08
@@ -3818,6 +3850,14 @@ PrefabInstance:
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
       objectReference: {fileID: 366474546}
+    - target: {fileID: 705435911210639178, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].parameters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 705435911210639178, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].parameters.Array.data[0].name
+      value: StopMusic
+      objectReference: {fileID: 0}
     - target: {fileID: 1330020327095503648, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
@@ -3855,8 +3895,12 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: objectiveTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -3865,46 +3909,46 @@ PrefabInstance:
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 96337882}
+      objectReference: {fileID: 1948642919}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1948642919}
+      objectReference: {fileID: 96337882}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MoveTo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: StartObjective
       objectReference: {fileID: 0}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: MoveTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: NPC, Assembly-CSharp
+      value: ObjectiveManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ObjectiveManager, Assembly-CSharp
+      value: NPC, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 552355388}
+      objectReference: {fileID: 575568638}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 575568638}
+      objectReference: {fileID: 552355388}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Transform, UnityEngine
+      value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1361329203039328287, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: BaseObjective, Assembly-CSharp
+      value: UnityEngine.Transform, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1630497491386899604, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
@@ -3934,6 +3978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimerObjective_Lisete_Takes pill (player doesn't)
       objectReference: {fileID: 0}
+    - target: {fileID: 1831959690203797335, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundSource
+      value: 
+      objectReference: {fileID: 366474546}
     - target: {fileID: 1995548410197122216, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
@@ -3968,7 +4016,7 @@ PrefabInstance:
       objectReference: {fileID: 96337879}
     - target: {fileID: 2892996765372297604, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: 'Lisete sits on the park bench.
+      value: 'Lisette sits on the park bench.
 
 
         As you approach it, she looks
@@ -4068,12 +4116,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3001058889485832103, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: You step out of the car and walk for a bit with Lisete.
+      value: You step out of the car and walk for a bit with Lisette.
       objectReference: {fileID: 0}
     - target: {fileID: 3037043912513164498, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
       value: TimerObjective_Lisete_Grabs pill
       objectReference: {fileID: 0}
+    - target: {fileID: 3088347420200336645, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundSource
+      value: 
+      objectReference: {fileID: 366474546}
     - target: {fileID: 3215930416113028596, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -4633,7 +4685,7 @@ PrefabInstance:
     - target: {fileID: 5734766680029195168, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: startingObjective
       value: 
-      objectReference: {fileID: 870449613}
+      objectReference: {fileID: 575568638}
     - target: {fileID: 5756833074942244344, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
@@ -5122,6 +5174,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Lisete grabs a pill.
       objectReference: {fileID: 0}
+    - target: {fileID: 8574997720475257280, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundSource
+      value: 
+      objectReference: {fileID: 366474546}
     - target: {fileID: 8628747284519461322, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
       value: Prefab_ObjectiveManager_VO_Lisete
@@ -5268,6 +5324,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4776530803376414850, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 7797971636822612534, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6883641937942048868, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 6642681881906005, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -5355,12 +5417,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1512438297752599207, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 2840015047011854378, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1798321087333722151, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 6455293470846890061, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -5368,6 +5424,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 8697307362400137151, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1798321087333722151, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 1344315640082455408, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
@@ -7907,17 +7966,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!114 &870449613 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3968301531689315811, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
-  m_PrefabInstance: {fileID: 595708819}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &871024652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
@@ -10976,8 +11024,48 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
+      value: event:/Music/Laidback music
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].parameters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
+      value: -701811384
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
+      value: 1201933138
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
+      value: -699114860
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
+      value: 1477121468
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].parameters.Array.data[0].name
+      value: StopMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].parameters.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

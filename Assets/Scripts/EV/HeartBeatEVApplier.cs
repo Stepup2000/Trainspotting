@@ -30,7 +30,7 @@ public class HeartBeatEVApplier : BaseEVApplier
         if (onOrOff == true)
             AudioManager.instance.CreatePersistentEvent(receiver.soundEffect, receiver.soundSource, receiver.parameters);
         else
-            AudioManager.instance.StopPersistentEvent(receiver.soundEffect, FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            AudioManager.instance.StopPersistentEvent(receiver.soundEffect);
         EVController.Instance.ToggleRadar.Invoke(true);
     }
 }
