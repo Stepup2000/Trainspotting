@@ -89,12 +89,11 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     /// <param name="key">The event reference used as the dictionary key.</param>
     /// <param name="stopMode">Stop mode (e.g., allow fadeout).</param>
-    public void StopPersistentEvent(EventReference key, FMOD.Studio.STOP_MODE stopMode = FMOD.Studio.STOP_MODE.ALLOWFADEOUT)
+    public void StopPersistentEvent(EventReference key)
     {
-        Debug.Log(persistentEvents.Count);
         if (persistentEvents.TryGetValue(key, out EventInstance instance))
         {
-            instance.stop(stopMode);
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             instance.release();
             persistentEvents.Remove(key);
             Debug.Log("Sound is stopping");

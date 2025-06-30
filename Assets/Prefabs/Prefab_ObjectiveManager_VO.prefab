@@ -32,6 +32,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2651153459251181654}
+  - {fileID: 771411380847936226}
+  - {fileID: 4108677780416555184}
   - {fileID: 7391803406193382273}
   - {fileID: 4549537710390878408}
   - {fileID: 3428542294577963494}
@@ -60,11 +62,10 @@ Transform:
   - {fileID: 4913371725755403365}
   - {fileID: 35185138609175403}
   - {fileID: 2340610796633519595}
-  - {fileID: 4749799867351003390}
-  - {fileID: 3202670664774018923}
   - {fileID: 4545997100629534873}
   - {fileID: 5002594899360411500}
   - {fileID: 5491521232552222963}
+  - {fileID: 3202670664774018923}
   - {fileID: 8368981687234544548}
   - {fileID: 1249809275167133906}
   - {fileID: 3856676507170119917}
@@ -417,15 +418,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102202853261514235, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3102202853261514235, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3102202853261514235, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3102202853261514235, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -441,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3294597687470028605, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_Name
-      value: GestureObjective_Narrator_Disappointing friends
+      value: GestureObjective_Narrator_Are you reaaaally sure?
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.size
@@ -550,7 +551,7 @@ PrefabInstance:
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 3228614153609854252}
+      objectReference: {fileID: 7492986688001627665}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
@@ -569,7 +570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6634517930299326434, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_text
-      value: 'Option 1: Psh fuck it  (Thumbs up)
+      value: 'Option 1: Aaahh fuck it  (Thumbs up)
 
         Option 2: I''m just not
         in the right headspace. The stars are enough (Thumbs down)'
@@ -584,23 +585,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ Convincing (disappointing friends)
+      value: event:/Voicelines/Narrator/Narrator-Are you reaaaally sure
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: -1552251729
+      value: 57766638
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1310337834
+      value: 1076239657
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: 277782193
+      value: 1362167425
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: -256749724
+      value: -1854324860
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -911,7 +912,7 @@ PrefabInstance:
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8932465190449191728}
+      objectReference: {fileID: 6247687576782830297}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
@@ -923,7 +924,7 @@ PrefabInstance:
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 5922896385948738891}
+      objectReference: {fileID: 3228614153609854252}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
@@ -942,10 +943,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6634517930299326434, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_text
-      value: 'Option 1: I''m not sure if I should... (Thumbs up)
+      value: 'Option 1: Pshhh fuck it... (Thumbs up)
 
-        Option
-        2: I don''t mind missing out (Thumbs down)'
+        Option 2: I don''t
+        mind missing out (Thumbs down)'
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.size
@@ -957,23 +958,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ Convincing player FOMO
+      value: event:/Voicelines/Narrator/Narrator-Tries to convince player FOMO
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 1701869116
+      value: -1816157855
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1227044537
+      value: 1256379580
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: -1149865051
+      value: -721036105
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: 555674318
+      value: 921609703
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1174,21 +1175,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6634517930299326434, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: m_text
-      value: 'Seems like the perfect moment to try this pill: with your friends at
-        a very peaceful location.
+      value: 'Option 1: This is gonna be fun (Thumbs up)
 
-
-        Why not?
-
-
-        Option 1: This is
-        gonna be fun (Thumbs up)
-
-        Option 2: Nah. I''m good (Thumbs down)'
+        Option 2: Nah.
+        I''m good (Thumbs down)'
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].mode
@@ -1200,23 +1194,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: 
+      value: event:/Voicelines/Narrator/Narrator-This is the perfect moment to try
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 0
+      value: -532418476
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 0
+      value: 1283707312
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: 0
+      value: 116491423
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: 0
+      value: -466626186
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1293,7 +1287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: objectiveTime
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.size
@@ -1301,7 +1295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
@@ -1354,7 +1348,7 @@ PrefabInstance:
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8452131946366092852}
+      objectReference: {fileID: 1831959690203797335}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
@@ -1384,6 +1378,151 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1246082466625886302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6592285865712092317}
+    m_Modifications:
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385567696232026664, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_Name
+      value: TimerObjective_Narrator_Intro 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: objectiveTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
+      value: event:/Voicelines/Narrator/Narrator-Intro 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
+      value: 2116410596
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
+      value: 1130747010
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
+      value: -1065614463
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
+      value: 1980715245
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5734766680029195168}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartObjective
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ObjectiveManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8452131946366092852}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: BaseObjective, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+--- !u!114 &3088347420200336645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+  m_PrefabInstance: {fileID: 1246082466625886302}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &4108677780416555184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+  m_PrefabInstance: {fileID: 1246082466625886302}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1353978685028479984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1728,7 +1867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: objectiveTime
-      value: 3
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.size
@@ -1744,23 +1883,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ Suit urself man
+      value: event:/Voicelines/Narrator/Narrator-Whatever you want dude
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 1927881300
+      value: 322167872
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1131834894
+      value: 1237456871
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: 271114627
+      value: -1460250212
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: -1898867887
+      value: -1137598063
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
@@ -2058,23 +2197,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ Surprise
+      value: event:/Voicelines/Narrator/Narrator-Where's the surprise
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: -1187607592
+      value: 1458722815
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1137553356
+      value: 1195267869
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: -484583520
+      value: -875065157
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: -754440256
+      value: 1837801868
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2381,6 +2520,151 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e080ad2ba33f0b44cac4a3d99b673594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &2520493357448458764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6592285865712092317}
+    m_Modifications:
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385567696232026664, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_Name
+      value: TimerObjective_Narrator_Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: objectiveTime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
+      value: event:/Voicelines/Narrator/Narrator-Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
+      value: 995038051
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
+      value: 1277590472
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
+      value: -1486077046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
+      value: -849564981
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5734766680029195168}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartObjective
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ObjectiveManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3088347420200336645}
+    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: BaseObjective, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+--- !u!4 &771411380847936226 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+  m_PrefabInstance: {fileID: 2520493357448458764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831959690203797335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+  m_PrefabInstance: {fileID: 2520493357448458764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2978777621976963990
@@ -2966,7 +3250,7 @@ PrefabInstance:
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8646863858145135024}
+      objectReference: {fileID: 1995548410197122216}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
@@ -2978,7 +3262,7 @@ PrefabInstance:
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1995548410197122216}
+      objectReference: {fileID: 8646863858145135024}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
@@ -3012,23 +3296,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ Suuuuper boring
+      value: event:/Voicelines/Narrator/Narrator-It's gonna be super boring
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 410323357
+      value: -835872533
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1214817431
+      value: 1111723920
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: -1317279057
+      value: 199008409
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: 1807619874
+      value: 443493375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4784,7 +5068,7 @@ PrefabInstance:
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3228614153609854252}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
@@ -5013,7 +5297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: objectiveTime
-      value: 8.53
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.size
@@ -5029,23 +5313,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ Telling Robin to go out
+      value: event:/Voicelines/Narrator/Narrator-You need to get out more Robin
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 1748896163
+      value: -2128950058
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1187292194
+      value: 1185649300
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: -967542885
+      value: -1539088988
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: 1269406172
+      value: 347627630
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
@@ -5161,11 +5445,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5734766680029195168}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5734766680029195168}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
@@ -5177,15 +5473,39 @@ PrefabInstance:
       value: StartObjective
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartObjective
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ObjectiveManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ObjectiveManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 7492986688001627665}
+      objectReference: {fileID: 8646863858145135024}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8932465190449191728}
     - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: BaseObjective, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607097187549932394, guid: 394e8869fbb877749abee871912261a3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6634517930299326434, guid: 394e8869fbb877749abee871912261a3, type: 3}
@@ -5193,8 +5513,10 @@ PrefabInstance:
       value: 'You cool with tripsitting?
 
 
-        Option 1: Yep all good(Thumbs
-        up)'
+        Option 1: Yep all good (Thumbs
+        down)
+
+        Option 2: I don''t know... (Thumbs up)'
       objectReference: {fileID: 0}
     - target: {fileID: 8973823359950547360, guid: 394e8869fbb877749abee871912261a3, type: 3}
       propertyPath: sfxToPreload.Array.size
@@ -5245,151 +5567,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3102202853261514235, guid: 394e8869fbb877749abee871912261a3, type: 3}
   m_PrefabInstance: {fileID: 7437959183444571400}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7612385306812579856
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 6592285865712092317}
-    m_Modifications:
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3385567696232026664, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_Name
-      value: TimerObjective_Narrator_Whatever you want man
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: objectiveTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: sfxToPreload.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: sfxToPreload.Array.data[0].mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: sfxToPreload.Array.data[0].delay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ Whatever
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 1770705319
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1076036666
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: -1409214810
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: -971401499
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5734766680029195168}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartObjective
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ObjectiveManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 1351155258089094861}
-    - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: BaseObjective, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
---- !u!4 &4749799867351003390 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2904273974933385454, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-  m_PrefabInstance: {fileID: 7612385306812579856}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5922896385948738891 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
-  m_PrefabInstance: {fileID: 7612385306812579856}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7809734642248563851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5460,23 +5637,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Kurt/Kurt - Kurt hyped
+      value: event:/Voicelines/Kurt/Kurt - Are you sure_ It might be a bit boring
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 2009119365
+      value: -1360767108
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1199792740
+      value: 1080819473
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: 1592230546
+      value: 304976813
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: -1122413047
+      value: 1279507076
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
@@ -5605,23 +5782,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ We'll be fine. Probably
+      value: event:/Voicelines/Narrator/Narrator-We'll be fine... probably...
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 1969462994
+      value: -913743575
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1299326574
+      value: 1110622423
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: -791479144
+      value: 1676550811
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: 938560498
+      value: 1369641297
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
@@ -6377,7 +6554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: objectiveTime
-      value: 4.15
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.size
@@ -6393,23 +6570,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Path
-      value: event:/Voicelines/Narrator/Narrator_ We're gonna have a good night
+      value: event:/Voicelines/Narrator/Narrator-We're gonna have fun tonight
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data1
-      value: 576707445
+      value: 540510358
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data2
-      value: 1297680874
+      value: 1219615873
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data3
-      value: 2055341230
+      value: -100841565
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundEffect.Guid.Data4
-      value: -1728971846
+      value: -1053965225
       objectReference: {fileID: 0}
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
