@@ -27,30 +27,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5700
---- !u!114 &-8745598750334522426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Laidback music/Stop laidback music
-  m_EditorClassIdentifier: 
-  Name: Stop laidback music
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 4205038658
-    data2: 1409717852
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-8573696009920258584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,7 +911,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Voicelines.bank
   Name: Voicelines
   StudioPath: bank:/Voicelines
-  lastModified: 638874864608249241
+  lastModified: 638874866272748872
   FileSizes: []
   Exists: 1
 --- !u!114 &-1442007421648793563
@@ -1263,7 +1239,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 5789202589998437987}
   cacheVersion: 131847
-  cacheTime: 638874864608249241
+  cacheTime: 638874866272748872
   SerializableEventsDict:
   - key: event:/Ambience/Park Ambience
     index: 0
@@ -1673,8 +1649,7 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: -8745598750334522426}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 21333
@@ -2099,10 +2074,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638874864607459017
+  lastModified: 638874866271897643
   FileSizes:
   - Name: 
-    Value: 5576
+    Value: 5526
   Exists: 1
 --- !u!114 &5793277639830800286
 MonoBehaviour:
@@ -2407,7 +2382,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638874864608139198
+  lastModified: 638874866272628845
   FileSizes: []
   Exists: 1
 --- !u!114 &8000162184743834051

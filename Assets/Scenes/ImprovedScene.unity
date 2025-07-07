@@ -1426,6 +1426,10 @@ PrefabInstance:
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1704,6 +1708,10 @@ PrefabInstance:
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3806,21 +3814,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimerObjective_Lisete_Asks if player also wants to take it
       objectReference: {fileID: 0}
+    - target: {fileID: 2360090650867316347, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2764468997376456024, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
       objectReference: {fileID: 96337879}
     - target: {fileID: 2892996765372297604, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: 'Lisette sits on the park bench.
-
-
-        As you approach it, she looks
-        at you and taps on it, telling you to sit down.
-
-
-        Sit next to her
-        (Thumbs up)'
+      value: Sit next to her (Thumbs up)
       objectReference: {fileID: 0}
     - target: {fileID: 2963754646786179872, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
@@ -3912,7 +3916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3001058889485832103, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: You step out of the car and walk for a bit with Lisette.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3037043912513164498, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
@@ -3922,6 +3926,10 @@ PrefabInstance:
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
       objectReference: {fileID: 366474546}
+    - target: {fileID: 3122903119833485117, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3215930416113028596, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -4048,7 +4056,14 @@ PrefabInstance:
       objectReference: {fileID: 96337879}
     - target: {fileID: 3626939146101196218, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: You clink the pill with Lisete and take it
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670091010279775586, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 'Option 1: I really needed this (Thumbs up)
+
+        Option 2: I guess
+        it''s ok (Thumbs down)'
       objectReference: {fileID: 0}
     - target: {fileID: 3681551199750492579, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
@@ -4330,6 +4345,10 @@ PrefabInstance:
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 4666850013698215742, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4717050182516139985, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
@@ -4400,15 +4419,11 @@ PrefabInstance:
       objectReference: {fileID: 96337879}
     - target: {fileID: 4743653560486976691, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: Lisete looks at you.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4809059914838219132, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: 'As you grab the pill, Lisete holds her hand out.
-
-
-        Cheers (Thumbs
-        up)'
+      value: Cheers (Thumbs up)
       objectReference: {fileID: 0}
     - target: {fileID: 4988429568523899757, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
@@ -4625,6 +4640,10 @@ PrefabInstance:
     - target: {fileID: 6592285865712092317, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624131871674959979, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6829716370048011976, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Sprite
@@ -4970,6 +4989,10 @@ PrefabInstance:
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8102941583698817771, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8452131946366092852, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
@@ -4980,7 +5003,7 @@ PrefabInstance:
       objectReference: {fileID: 366474546}
     - target: {fileID: 8521227379634582485, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: Lisete grabs a pill.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8574997720475257280, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
@@ -5693,6 +5716,10 @@ PrefabInstance:
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9786,6 +9813,10 @@ PrefabInstance:
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10475,6 +10506,10 @@ PrefabInstance:
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10923,6 +10958,10 @@ PrefabInstance:
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11307,6 +11346,10 @@ PrefabInstance:
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11841,6 +11884,10 @@ PrefabInstance:
     - target: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259381396202403119, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
