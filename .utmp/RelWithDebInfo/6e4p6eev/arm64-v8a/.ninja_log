@@ -1,0 +1,10 @@
+# ninja log v5
+14	1882	7736112906377688	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	1a2a3400e35860d1
+11	1890	7736112906417697	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	cb50ecf2b0b7970e
+4	1896	7736112906647750	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	adab63913f84b0fd
+23	1898	7736112906647750	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a7bfbb6f7d0ecefe
+0	1908	7736112906777780	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	1ac97c460ffe3cec
+27	1930	7736112907007046	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	578b8c1fa621cd5f
+18	2102	7736112908710607	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c1d1fbebe08ae86a
+7	2199	7736112909680866	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	41d0483316e1eab6
+2200	2290	7736112910614609	D:/Unity/Trainspotting/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6e4p6eev/obj/arm64-v8a/libgame.so	74e197ece0ed8cf8
