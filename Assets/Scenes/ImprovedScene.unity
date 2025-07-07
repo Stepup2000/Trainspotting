@@ -3586,6 +3586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimerObjective_Lisete_Leaving the car
       objectReference: {fileID: 0}
+    - target: {fileID: 488920493971102125, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_Name
+      value: Objective_Narrator_Yeah man, it's gonna be super boring boring
+      objectReference: {fileID: 0}
     - target: {fileID: 629970814042220486, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -3786,6 +3790,10 @@ PrefabInstance:
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
       objectReference: {fileID: 366474546}
+    - target: {fileID: 1837123927714711034, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1468438624}
     - target: {fileID: 1995548410197122216, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
@@ -3824,7 +3832,7 @@ PrefabInstance:
       objectReference: {fileID: 96337879}
     - target: {fileID: 2892996765372297604, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: Sit next to her (Thumbs up)
+      value: Ga naast Lisette zitten (duim omhoog)
       objectReference: {fileID: 0}
     - target: {fileID: 2963754646786179872, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
@@ -4060,10 +4068,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3670091010279775586, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: 'Option 1: I really needed this (Thumbs up)
+      value: 'Optie 1: Ik had dit echt even nodig (duim omhoog)
 
-        Option 2: I guess
-        it''s ok (Thumbs down)'
+        Optie 2:
+        Het is oke (duim omlaag)'
       objectReference: {fileID: 0}
     - target: {fileID: 3681551199750492579, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
@@ -4140,6 +4148,16 @@ PrefabInstance:
     - target: {fileID: 4141802120747295391, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263354756898097898, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 'Vind je het erg om te tripsitten?
+
+
+        Optie 1: Ja hoor geen probleem
+        (duim omhoog)
+
+        Optie 2:  Nee ik ga liever naar huis (duim omlaag)'
       objectReference: {fileID: 0}
     - target: {fileID: 4312959939636677794, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4423,7 +4441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4809059914838219132, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_text
-      value: Cheers (Thumbs up)
+      value: Proost (duim omhoog)
       objectReference: {fileID: 0}
     - target: {fileID: 4988429568523899757, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
@@ -4489,6 +4507,10 @@ PrefabInstance:
       propertyPath: OnObjectiveComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5123815737282404996, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: Vraag Kurt naar de pillen (duim omhoog)
+      objectReference: {fileID: 0}
     - target: {fileID: 5368347226062455349, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
       value: GestureObjective_Lisete_You cool with tripsitting?
@@ -4500,7 +4522,7 @@ PrefabInstance:
     - target: {fileID: 5734766680029195168, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: startingObjective
       value: 
-      objectReference: {fileID: 1741346943}
+      objectReference: {fileID: 1914931463}
     - target: {fileID: 5756833074942244344, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
@@ -4533,10 +4555,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6140108060173540962, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1468438624}
+    - target: {fileID: 6140108060173540962, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: ThumbsDownPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1492646313}
     - target: {fileID: 6247687576782830297, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
       objectReference: {fileID: 366474546}
+    - target: {fileID: 6297214225213333490, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 'Optie: 1 Ach ik doe wel mee (duim omhoog)
+
+        Optie 2: Ik vermaak
+        me ook zonder (duim omlaag)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6312750192088145794, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: "Optie 1: Natuurlijk, Ik heb er nu al zin in (duim omhoog) \nOptie 2:
+        Nee ik sla over (duim omlaag)"
+      objectReference: {fileID: 0}
     - target: {fileID: 6338599583590210000, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
@@ -4600,6 +4642,11 @@ PrefabInstance:
     - target: {fileID: 6523860110115635851, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
       value: TimerObjective_Lisete_Shut up Kurt
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588093247707614578, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: "Optie 1: Ah doe maar (duim omhoog)\nOptie 2: M\u2019n hoofd staat er
+        niet naar. De sterren zijn al meer dan genoeg (duim omlaag)"
       objectReference: {fileID: 0}
     - target: {fileID: 6592285865712092317, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5009,6 +5056,13 @@ PrefabInstance:
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
       objectReference: {fileID: 366474546}
+    - target: {fileID: 8602639815584010610, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_text
+      value: 'Optie 1: Ik twijfel nog (duim omhoog)
+
+        Optie 2: Ik wil het
+        echt niet (duim omlaag)'
+      objectReference: {fileID: 0}
     - target: {fileID: 8628747284519461322, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: m_Name
       value: Prefab_ObjectiveManager_VO_Lisete
@@ -12961,6 +13015,28 @@ MonoBehaviour:
     soundSource: {fileID: 734818867}
     delay: 0
     mode: 2
+--- !u!114 &1468438624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932465190449191728, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+  m_PrefabInstance: {fileID: 595708819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e080ad2ba33f0b44cac4a3d99b673594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1492646313 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8646863858145135024, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+  m_PrefabInstance: {fileID: 595708819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e080ad2ba33f0b44cac4a3d99b673594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1500960031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
@@ -13735,17 +13811,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e080ad2ba33f0b44cac4a3d99b673594, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1741346943 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3968301531689315811, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
-  m_PrefabInstance: {fileID: 595708819}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23335182f1b6a6846973c1c9b57effc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1751041254
