@@ -4844,7 +4844,7 @@ PrefabInstance:
     - target: {fileID: 5734766680029195168, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: startingObjective
       value: 
-      objectReference: {fileID: 1201670487}
+      objectReference: {fileID: 132742948}
     - target: {fileID: 5756833074942244344, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: sfxToPreload.Array.data[0].soundSource
       value: 
