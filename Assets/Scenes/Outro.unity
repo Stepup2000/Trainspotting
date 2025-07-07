@@ -799,7 +799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9195877253618889162, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4245755646050065076, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
@@ -850,7 +850,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734818867}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7f6be6469f105c4083f6beabbb25a5b, type: 3}
   m_Name: 
@@ -1194,6 +1194,7 @@ MonoBehaviour:
   visibleDuration: 2
   fadeOutDuration: 1
   textComponent: {fileID: 927763704}
+  imageComponent: {fileID: 0}
 --- !u!114 &927763706 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
@@ -1416,6 +1417,7 @@ MonoBehaviour:
   visibleDuration: 2
   fadeOutDuration: 1
   textComponent: {fileID: 1298329283}
+  imageComponent: {fileID: 0}
 --- !u!1001 &1298647355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1778,6 +1780,7 @@ MonoBehaviour:
   visibleDuration: 2
   fadeOutDuration: 1
   textComponent: {fileID: 1479549848}
+  imageComponent: {fileID: 0}
 --- !u!114 &1493262029 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4293895252501914971, guid: e837df0d1f325fd42b4289d69bbc7632, type: 3}
@@ -1934,6 +1937,7 @@ MonoBehaviour:
   visibleDuration: 2
   fadeOutDuration: 1
   textComponent: {fileID: 1728179081}
+  imageComponent: {fileID: 0}
 --- !u!1001 &1808318949
 PrefabInstance:
   m_ObjectHideFlags: 0

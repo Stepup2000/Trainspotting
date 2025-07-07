@@ -1,60 +1,35 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
 /// <summary>
-/// Fades a TextMeshProUGUI element in, waits, then fades it out.
+/// Fades a TextMeshProUGUI or Image component in, waits, then fades it out.
 /// </summary>
-public class TextFader : MonoBehaviour
+public class UIFader : MonoBehaviour
 {
-    /// <summary>
-    /// Duration for the fade-in effect.
-    /// </summary>
     [SerializeField] private float fadeInDuration = 1f;
-
-    /// <summary>
-    /// How long the text stays fully visible before fading out.
-    /// </summary>
     [SerializeField] private float visibleDuration = 2f;
-
-    /// <summary>
-    /// Duration for the fade-out effect.
-    /// </summary>
     [SerializeField] private float fadeOutDuration = 1f;
 
-    /// <summary>
-    /// The TextMeshProUGUI component attached to this GameObject.
-    /// </summary>
-    [SerializeField ]private TMP_Text textComponent;
+    [SerializeField] private TMP_Text textComponent;
+    [SerializeField] private Image imageComponent;
 
-    /// <summary>
-    /// Reference to the currently running fade coroutine.
-    /// </summary>
     private Coroutine fadeCoroutine;
 
-    /// <summary>
-    /// Gets the TextMeshProUGUI component when the object is initialized.
-    /// </summary>
     void Awake()
     {
-        if (textComponent == null)
+        if (textComponent == null && imageComponent == null)
         {
-            Debug.LogWarning("Text component does not exist");
+            Debug.LogWarning("No UI component assigned to fade.");
             Destroy(gameObject);
             return;
         }
 
-        // Ensure it's fully transparent before starting fade-in
-        Color color = textComponent.color;
-        color.a = 0f;
-        textComponent.color = color;
-
+        SetAlpha(0f); // Fully transparent at start
         FadeInAndOut();
     }
 
-    /// <summary>
-    /// Starts the full sequence: fade in → stay → fade out.
-    /// </summary>
     public void FadeInAndOut()
     {
         if (fadeCoroutine != null)
@@ -63,9 +38,6 @@ public class TextFader : MonoBehaviour
         fadeCoroutine = StartCoroutine(FadeSequence());
     }
 
-    /// <summary>
-    /// Runs the fade in → wait → fade out sequence.
-    /// </summary>
     private IEnumerator FadeSequence()
     {
         yield return FadeTo(1f, fadeInDuration);
@@ -73,22 +45,47 @@ public class TextFader : MonoBehaviour
         yield return FadeTo(0f, fadeOutDuration);
     }
 
-    /// <summary>
-    /// Smoothly fades the text to a target alpha over the given duration.
-    /// </summary>
     private IEnumerator FadeTo(float targetAlpha, float duration)
     {
-        float startAlpha = textComponent.alpha;
+        float startAlpha = GetAlpha();
         float time = 0f;
 
         while (time < duration)
         {
             float t = time / duration;
-            textComponent.alpha = Mathf.Lerp(startAlpha, targetAlpha, t);
+            SetAlpha(Mathf.Lerp(startAlpha, targetAlpha, t));
             time += Time.deltaTime;
             yield return null;
         }
 
-        textComponent.alpha = targetAlpha;
+        SetAlpha(targetAlpha);
+    }
+
+    private void SetAlpha(float alpha)
+    {
+        if (textComponent != null)
+        {
+            Color color = textComponent.color;
+            color.a = alpha;
+            textComponent.color = color;
+        }
+
+        if (imageComponent != null)
+        {
+            Color color = imageComponent.color;
+            color.a = alpha;
+            imageComponent.color = color;
+        }
+    }
+
+    private float GetAlpha()
+    {
+        if (textComponent != null)
+            return textComponent.color.a;
+
+        if (imageComponent != null)
+            return imageComponent.color.a;
+
+        return 1f;
     }
 }
