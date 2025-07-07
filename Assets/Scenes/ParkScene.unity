@@ -5397,7 +5397,7 @@ PrefabInstance:
     - target: {fileID: 5734766680029195168, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: startingObjective
       value: 
-      objectReference: {fileID: 89330611}
+      objectReference: {fileID: 1201670487}
     - target: {fileID: 5756833074942244344, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: objectiveTime
       value: 4.5
@@ -16422,6 +16422,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8522973890195394471, guid: 81954645cb84b0049a4102c942d71150, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: da713a4ad2faa6948b8075be364e29ee, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
