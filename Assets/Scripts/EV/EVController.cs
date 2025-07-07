@@ -63,6 +63,11 @@ public class EVController : MonoBehaviour
     public UnityEvent<bool> ToggleHeartbeat { get; } = new UnityEvent<bool>();
 
     /// <summary>
+    /// Event triggered if the dissolve effect should appear..
+    /// </summary>
+    public UnityEvent<bool> ToggleDissolve { get; } = new UnityEvent<bool>();
+
+    /// <summary>
     /// Provides access to the singleton instance of EVController
     /// </summary>
     public static EVController Instance
@@ -200,6 +205,15 @@ public class EVController : MonoBehaviour
     public void TriggerHeartbeat(bool onOrOff)
     {
         ToggleHeartbeat.Invoke(onOrOff);
+    }
+
+    /// <summary>
+    /// Sends an event out to show or hide the dissolve effect.
+    /// <param name="onOrOff">Boolean indicating whether to play or stop the dissolve effect.</param>
+    /// </summary>
+    public void TriggerDissolve(bool onOrOff)
+    {
+        ToggleDissolve.Invoke(onOrOff);
     }
 
     public void Update()
