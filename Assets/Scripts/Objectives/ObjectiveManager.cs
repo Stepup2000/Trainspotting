@@ -1,17 +1,18 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectiveManager : MonoBehaviour
 {
     [SerializeField] private BaseObjective startingObjective;
+    [SerializeField] private float objectiveCooldown = 2f;
 
     private BaseObjective currentObjective;
-
     private static ObjectiveManager instance;
 
-    /// <summary>
-    /// Provides access to the singleton instance of ObjectiveManager
-    /// </summary>
+    private Queue<BaseObjective> objectiveQueue = new Queue<BaseObjective>();
+    private bool isWaitingToStart = false;
+
     public static ObjectiveManager Instance
     {
         get
@@ -30,7 +31,16 @@ public class ObjectiveManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Starts the first objective.
+    /// Stops all coroutines and clears the queue when the object is disabled.
+    /// </summary>
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        objectiveQueue.Clear();
+    }
+
+    /// <summary>
+    /// Starts the first objective at the beginning of the game.
     /// </summary>
     private void Start()
     {
@@ -38,20 +48,57 @@ public class ObjectiveManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Starts a new objective by completing the current one (if any) and setting the new objective as the current one.
+    /// Starts a new objective immediately if no cooldown is active, otherwise adds it to the queue.
     /// </summary>
-    /// <param name="baseObject">The new objective to start.</param>
+    /// <param name="baseObject">The objective to start.</param>
     public void StartObjective(BaseObjective baseObject)
     {
-        currentObjective?.CompleteObjective();
-        currentObjective = baseObject;
-        baseObject.gameObject.SetActive(true);
-        baseObject.StartObjective();        
+        if (isWaitingToStart)
+        {
+            objectiveQueue.Enqueue(baseObject);
+        }
+        else
+        {
+            StartObjectiveImmediately(baseObject);
+        }
     }
 
-    // <summary>
-    /// Public method that other scripts/instances can access to change the EV through the EVController.
+    /// <summary>
+    /// Immediately starts the given objective and begins the cooldown period.
     /// </summary>
+    /// <param name="newObjective">The new objective to start.</param>
+    private void StartObjectiveImmediately(BaseObjective newObjective)
+    {
+        currentObjective?.CompleteObjective();
+        currentObjective = newObjective;
+        newObjective.gameObject.SetActive(true);
+        newObjective.StartObjective();
+
+        StartCoroutine(CooldownRoutine());
+    }
+
+    /// <summary>
+    /// Waits for the cooldown before allowing another objective to be started.
+    /// Automatically dequeues the next objective if one exists.
+    /// </summary>
+    private IEnumerator CooldownRoutine()
+    {
+        isWaitingToStart = true;
+
+        yield return new WaitForSeconds(objectiveCooldown);
+
+        isWaitingToStart = false;
+
+        if (objectiveQueue.Count > 0)
+        {
+            StartObjectiveImmediately(objectiveQueue.Dequeue());
+        }
+    }
+
+    /// <summary>
+    /// Adjusts the EV value using the EVController.
+    /// </summary>
+    /// <param name="amount">The amount to change the EV by.</param>
     public void ChangeEV(float amount)
     {
         EVController.Instance.AdjustEV(amount);
