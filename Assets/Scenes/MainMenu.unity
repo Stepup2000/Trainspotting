@@ -119,27 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &14785356 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4348247826521989979, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-  m_PrefabInstance: {fileID: 2082969565}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &14785360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14785356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c41219e93d4aea14aa5ead97d96193c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: -5
-  maxEVTrigger: 5
-  targetMaterial: {fileID: 2100000, guid: dc8716d3584fb8b42876ac62c0611a00, type: 2}
-  amplitudeProperty: _Amplitude
 --- !u!1 &20544350
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +441,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (47)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -527,7 +507,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (40)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -592,7 +573,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (29)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -662,7 +644,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (58)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -732,7 +715,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (42)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -797,7 +781,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (70)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -984,7 +969,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1337,7 +1323,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1438,7 +1425,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (44)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1453,6 +1441,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
   m_PrefabInstance: {fileID: 1769997879}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &263774529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263774531}
+  - component: {fileID: 263774530}
+  m_Layer: 0
+  m_Name: CanvasObjectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &263774530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263774529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76330a3df5198b64ebfe917ce1a2aa52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryCanvas: {fileID: 809180105}
+  fallbackCanvas: {fileID: 809180106}
+  textDistance: 2.5
+--- !u!4 &263774531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263774529}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314186111}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &265514581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1513,7 +1548,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1593,7 +1629,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (65)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1627,6 +1664,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 263774531}
+  - {fileID: 1257842600}
   - {fileID: 750552328}
   - {fileID: 779042335}
   m_Father: {fileID: 0}
@@ -1805,7 +1844,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1729395464739866362, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_AddedGameObjects: []
@@ -1881,7 +1921,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (49)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2483,7 +2524,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (95)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2548,7 +2590,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2618,7 +2661,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (76)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2683,7 +2727,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (66)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3966,6 +4011,10 @@ PrefabInstance:
       value: BaseObjective, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5060229678503339276, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060229678503339276, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       propertyPath: ThumbsUpPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -4819,14 +4868,12 @@ PrefabInstance:
     - {fileID: 2963754646786179872, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
     - {fileID: 4149726595750674958, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
     - {fileID: 6926826652132421959, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
+    - {fileID: 7763235292177454289, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6592285865712092317, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1635636050}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7763235292177454289, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a1a8109de85ce542b7a11e08c9d3cb3, type: 3}
 --- !u!4 &595708820 stripped
 Transform:
@@ -4898,7 +4945,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (34)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4963,7 +5011,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5028,7 +5077,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (37)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5093,7 +5143,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (94)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5163,7 +5214,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (83)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5352,7 +5404,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (80)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5617,7 +5670,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5682,7 +5736,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (38)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6035,7 +6090,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (87)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6045,27 +6101,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
   m_PrefabInstance: {fileID: 889108956}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &700675942 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4348247826521989979, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-  m_PrefabInstance: {fileID: 730253404}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &700675944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700675942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c41219e93d4aea14aa5ead97d96193c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: -5
-  maxEVTrigger: 5
-  targetMaterial: {fileID: 2100000, guid: dc8716d3584fb8b42876ac62c0611a00, type: 2}
-  amplitudeProperty: _Amplitude
 --- !u!1001 &701046655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6126,7 +6161,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (79)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6228,7 +6264,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (61)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6336,19 +6373,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7943186990657084664, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1144177411}
-    - targetCorrespondingSourceObject: {fileID: 7943186990657084664, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1144177410}
-    - targetCorrespondingSourceObject: {fileID: 4348247826521989979, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 700675944}
-    - targetCorrespondingSourceObject: {fileID: 1635229684776189292, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 781872898}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
 --- !u!1001 &737827367
 PrefabInstance:
@@ -6410,7 +6435,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (77)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6537,7 +6563,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (63)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6651,7 +6678,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6723,27 +6751,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6027198972565741948, guid: c2ec2d8ac550f8f49917a07d2e1cb025, type: 3}
   m_PrefabInstance: {fileID: 779042334}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &781872896 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1635229684776189292, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-  m_PrefabInstance: {fileID: 730253404}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &781872898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781872896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c41219e93d4aea14aa5ead97d96193c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: -5
-  maxEVTrigger: 5
-  targetMaterial: {fileID: 2100000, guid: dc8716d3584fb8b42876ac62c0611a00, type: 2}
-  amplitudeProperty: _Amplitude
 --- !u!1001 &789323736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7077,11 +7084,18 @@ PrefabInstance:
     - {fileID: 1135497671093730432, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
     - {fileID: 1276191349936506466, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
     - {fileID: 5948915014677425445, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 5951853395397910064, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 4667297227677890782, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 6517286702798094921, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 4343025362762007167, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 7237315718212291118, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 3566487493801543813, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 909839973477466940, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 980935227458570966, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 6348934704932088394, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+    - {fileID: 313346180771670328, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4751078412799468477, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1434228308}
     - targetCorrespondingSourceObject: {fileID: 4893098479362057564, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 656471971}
@@ -7133,11 +7147,6 @@ GameObject:
 --- !u!1 &789323743 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 39494164123195535, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
-  m_PrefabInstance: {fileID: 789323736}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &789323744 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4751078412799468477, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
   m_PrefabInstance: {fileID: 789323736}
   m_PrefabAsset: {fileID: 0}
 --- !u!195 &789323745
@@ -7276,7 +7285,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (73)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7579,6 +7589,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2495584200339385064, guid: 345202fe9ff0b324d97d34af18697693, type: 3}
   m_PrefabInstance: {fileID: 805866759}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &809180105 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4385486234892677633, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+  m_PrefabInstance: {fileID: 789323736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &809180106 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 9216435854868027718, guid: 65890a81bc14d8c42a827779e35d28b4, type: 3}
+  m_PrefabInstance: {fileID: 789323736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &817050167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
@@ -7644,7 +7664,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (25)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7709,7 +7730,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (26)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7959,7 +7981,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8029,7 +8052,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8220,7 +8244,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (91)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1729395464739866362, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_AddedGameObjects: []
@@ -8286,7 +8311,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (84)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1729395464739866362, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_AddedGameObjects: []
@@ -8367,7 +8393,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (43)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8442,7 +8469,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8507,7 +8535,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (99)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8572,7 +8601,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (69)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8582,52 +8612,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
   m_PrefabInstance: {fileID: 1681079299}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1003740762 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7943186990657084664, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-  m_PrefabInstance: {fileID: 2082969565}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1003740763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7309358512477226562, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
   m_PrefabInstance: {fileID: 2082969565}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1003740764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003740762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ee61539da18ab41bfccd7bf8774a03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: -5
-  maxEVTrigger: -0.99
---- !u!95 &1003740765
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003740762}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2a11111de4435b342b768682f6b6f3e7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1004817920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
@@ -8693,7 +8682,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (57)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8758,7 +8748,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (81)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8949,7 +8940,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (52)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9014,7 +9006,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (48)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9079,7 +9072,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (24)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9280,7 +9274,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (72)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9366,7 +9361,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9563,7 +9559,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (45)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9926,52 +9923,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1895481968}
   m_SourcePrefab: {fileID: 100100000, guid: 332ff16a295adbe43a6e3654df80d85d, type: 3}
---- !u!1 &1144177408 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7943186990657084664, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-  m_PrefabInstance: {fileID: 730253404}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1144177409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7309358512477226562, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
   m_PrefabInstance: {fileID: 730253404}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1144177410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144177408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1ee61539da18ab41bfccd7bf8774a03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: -5
-  maxEVTrigger: -0.99
---- !u!95 &1144177411
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144177408}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2a11111de4435b342b768682f6b6f3e7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1145580093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
@@ -10042,7 +9998,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (53)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10107,7 +10064,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (60)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10177,7 +10135,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (93)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10242,7 +10201,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10346,7 +10306,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (92)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10411,7 +10372,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (97)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10481,11 +10443,57 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (54)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
+--- !u!1 &1257842599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257842600}
+  - component: {fileID: 1257842601}
+  m_Layer: 0
+  m_Name: EVController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1257842600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257842599}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314186111}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1257842601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257842599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08896a110b398a544a58aed23665da07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ev: 0
 --- !u!4 &1258926393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 563747757758706465, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
@@ -10551,7 +10559,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (85)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10620,7 +10629,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10695,7 +10705,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (32)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10765,7 +10776,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (82)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10840,7 +10852,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (71)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10905,7 +10918,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11096,7 +11110,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (35)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11187,7 +11202,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (90)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 1729395464739866362, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_AddedGameObjects: []
@@ -11253,7 +11269,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (96)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11459,7 +11476,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (86)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11524,149 +11542,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (51)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
---- !u!1001 &1434228307
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 789323744}
-    m_Modifications:
-    - target: {fileID: 708638349940645208, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_Name
-      value: VFX_TerrainScanner
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.36999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.11100006
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].cycleCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].probability
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].repeatInterval
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].time
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].inSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].inSlope
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].outSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].outSlope
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8083377029299956564, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1434228311}
-  m_SourcePrefab: {fileID: 100100000, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
---- !u!4 &1434228308 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1012932445809118196, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-  m_PrefabInstance: {fileID: 1434228307}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1434228309 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8083377029299956564, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-  m_PrefabInstance: {fileID: 1434228307}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1434228310 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5558022390558948945, guid: 33b23157e2a09a14eafcced3ff7c2f77, type: 3}
-  m_PrefabInstance: {fileID: 1434228307}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1434228311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434228309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49e0e2a2e1b7d30459fb04600b6ecbe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: 3
-  maxEVTrigger: 5
-  radar: {fileID: 1434228310}
 --- !u!4 &1446058510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6021640605723416425, guid: cc8719053fbfeb049bae41d7b4dc36c1, type: 3}
@@ -11753,7 +11634,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (74)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11823,7 +11705,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11898,7 +11781,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (98)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11968,7 +11852,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (62)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12043,7 +11928,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12108,7 +11994,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (67)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12302,7 +12189,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (30)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12367,7 +12255,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (22)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12432,7 +12321,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (21)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12517,7 +12407,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12582,7 +12473,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (78)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12647,7 +12539,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (88)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12712,7 +12605,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (55)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12777,7 +12671,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (36)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12842,7 +12737,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12912,7 +12808,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (56)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12987,7 +12884,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (28)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13062,7 +12960,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (31)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13127,7 +13026,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (39)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13305,7 +13205,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (64)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13410,7 +13311,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (89)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13475,7 +13377,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (41)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13567,32 +13470,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (50)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
---- !u!1 &1998326188 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1635229684776189292, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-  m_PrefabInstance: {fileID: 2082969565}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1998326190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998326188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c41219e93d4aea14aa5ead97d96193c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: -5
-  maxEVTrigger: 5
-  targetMaterial: {fileID: 2100000, guid: dc8716d3584fb8b42876ac62c0611a00, type: 2}
-  amplitudeProperty: _Amplitude
 --- !u!1001 &2001745542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13668,41 +13551,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5d073250309ccd349a175e0add23a60b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2001745545}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d073250309ccd349a175e0add23a60b, type: 3}
 --- !u!4 &2001745543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d073250309ccd349a175e0add23a60b, type: 3}
   m_PrefabInstance: {fileID: 2001745542}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2001745544 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5d073250309ccd349a175e0add23a60b, type: 3}
-  m_PrefabInstance: {fileID: 2001745542}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2001745545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001745544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d78ebe3a571e3f4418356c41991b3f2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minEVTrigger: 0.99
-  maxEVTrigger: 5
-  skyboxMaterial: {fileID: 2100000, guid: 00d10a0e8ae293842b03f50aed55b972, type: 2}
-  targetMaterial: {fileID: 2100000, guid: faa5d05881b573944886a15a3746b1b3, type: 2}
-  transitionSpeed: 2.5
-  loop: 1
-  maxRotationSpeed: 0.03
-  rotationSpeedRampupTime: 5
 --- !u!1 &2006918804
 GameObject:
   m_ObjectHideFlags: 0
@@ -13842,7 +13697,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (59)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13907,7 +13763,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14113,7 +13970,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (68)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14231,19 +14089,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7943186990657084664, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1003740765}
-    - targetCorrespondingSourceObject: {fileID: 7943186990657084664, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1003740764}
-    - targetCorrespondingSourceObject: {fileID: 4348247826521989979, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 14785360}
-    - targetCorrespondingSourceObject: {fileID: 1635229684776189292, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1998326190}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0442a672e58af4a84a0b38c3188138, type: 3}
 --- !u!1001 &2084584944
 PrefabInstance:
@@ -14305,7 +14151,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14370,7 +14217,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Env_Grass_Tall (75)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1502012613436817359, guid: c9c75b98bfa529d42a496fb4b4544d8d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16037,7 +15885,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.6430054
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1585202710642643253, guid: cc8719053fbfeb049bae41d7b4dc36c1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

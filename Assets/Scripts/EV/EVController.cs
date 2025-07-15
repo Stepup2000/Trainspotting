@@ -79,10 +79,10 @@ public class EVController : MonoBehaviour
                 instance = FindAnyObjectByType<EVController>();
                 if (instance == null)
                 {
-                    GameObject singletonObject = new GameObject("EVController");
-                    instance = singletonObject.AddComponent<EVController>();
+                    Debug.LogWarning("EVController instance not found in the scene.");
                 }
             }
+
             return instance;
         }
     }
