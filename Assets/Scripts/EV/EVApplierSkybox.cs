@@ -27,7 +27,7 @@ public class EVApplierSkybox : BaseEVApplier
     protected override void OnEnable()
     {
         base.OnEnable();
-        EVController.Instance.ToggleSky.AddListener(TriggerSky);
+        EVController.Instance?.ToggleSky.AddListener(TriggerSky);
     }
 
     /// <summary>
@@ -36,7 +36,7 @@ public class EVApplierSkybox : BaseEVApplier
     protected override void OnDisable()
     {
         base.OnDisable();
-        EVController.Instance.ToggleSky.RemoveListener(TriggerSky);
+        EVController.Instance?.ToggleSky.RemoveListener(TriggerSky);
     }
 
     /// <summary>

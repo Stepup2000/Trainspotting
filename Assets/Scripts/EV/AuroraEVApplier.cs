@@ -14,7 +14,7 @@ public class AuroraEVApplier : BaseEVApplier
     protected override void OnEnable()
     {
         base.OnEnable();
-        EVController.Instance.ToggleAurora.AddListener(TriggerAurora);
+        EVController.Instance?.ToggleAurora.AddListener(TriggerAurora);
 
         originalDissolvePower = auroraMaterial.GetFloat("_Disolve_Power");
 
@@ -24,7 +24,7 @@ public class AuroraEVApplier : BaseEVApplier
     protected override void OnDisable()
     {
         base.OnDisable();
-        EVController.Instance.ToggleAurora.RemoveListener(TriggerAurora);
+        EVController.Instance?.ToggleAurora.RemoveListener(TriggerAurora);
         auroraMaterial.SetFloat("_Disolve_Power", originalDissolvePower);
     }
 

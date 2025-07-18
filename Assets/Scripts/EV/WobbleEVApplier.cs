@@ -20,14 +20,14 @@ public class WobbleEVApplier : BaseEVApplier
 
         base.OnEnable();
 
-        EVController.Instance.ToggleWobble.AddListener(TriggerWobble);
+        EVController.Instance?.ToggleWobble.AddListener(TriggerWobble);
         TriggerWobble(false);
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-        EVController.Instance.ToggleWobble.RemoveListener(TriggerWobble);
+        EVController.Instance?.ToggleWobble.RemoveListener(TriggerWobble);
         ApplyAmplitude(oldAmplitude);
     }
 

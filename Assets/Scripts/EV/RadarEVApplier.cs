@@ -7,14 +7,14 @@ public class RadarEVApplier : BaseEVApplier
     protected override void OnEnable()
     {
         base.OnEnable();
-        EVController.Instance.ToggleRadar.AddListener(TriggerRadar);
+        EVController.Instance?.ToggleRadar.AddListener(TriggerRadar);
         TriggerRadar(false);
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-        EVController.Instance.ToggleRadar.RemoveListener(TriggerRadar);
+        EVController.Instance?.ToggleRadar.RemoveListener(TriggerRadar);
     }
 
 

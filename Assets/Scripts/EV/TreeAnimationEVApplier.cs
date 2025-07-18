@@ -7,7 +7,7 @@ public class TreeAnimationEVApplier : BaseEVApplier
     protected override void OnEnable()
     {
         base.OnEnable();
-        EVController.Instance.ToggleTree.AddListener(TriggerTree);
+        EVController.Instance?.ToggleTree.AddListener(TriggerTree);
         TriggerTree(false);
         TryGetComponent<Animator>(out animator);
     }
@@ -15,7 +15,7 @@ public class TreeAnimationEVApplier : BaseEVApplier
     protected override void OnDisable()
     {
         base.OnDisable();
-        EVController.Instance.ToggleTree.RemoveListener(TriggerTree);
+        EVController.Instance?.ToggleTree.RemoveListener(TriggerTree);
     }
 
 
