@@ -15,6 +15,8 @@ public class GestureReceiver : MonoBehaviour
     [Tooltip("The event fired when the thumbs-down gesture is performed.")]
     UnityEvent ThumbsDownPerformed;
 
+    private bool canInvokeGestures = false;
+
     /// <summary>
     /// Subscribes to gesture events when the script is enabled.
     /// </summary>
@@ -22,6 +24,7 @@ public class GestureReceiver : MonoBehaviour
     {
         EventBus<OnThumbsUpEvent>.Subscribe(ThumbsUpDetected);
         EventBus<OnThumbsDownEvent>.Subscribe(ThumbsDownDetected);
+        StartCoroutine(CooldownRoutine());
     }
 
     /// <summary>
@@ -32,6 +35,17 @@ public class GestureReceiver : MonoBehaviour
         EventBus<OnThumbsUpEvent>.UnSubscribe(ThumbsUpDetected);
         EventBus<OnThumbsDownEvent>.UnSubscribe(ThumbsDownDetected);
         StopAllCoroutines();
+        canInvokeGestures = false;
+    }
+
+    /// <summary>
+    /// A routine to manage the cooldown for registering gestures.
+    /// </summary>
+    private IEnumerator CooldownRoutine()
+    {
+        canInvokeGestures = false;
+        yield return new WaitForSeconds(1f);
+        canInvokeGestures = true;
     }
 
     /// <summary>
@@ -40,6 +54,7 @@ public class GestureReceiver : MonoBehaviour
     /// <param name="thumbsUpEvent">The thumbs-up event data.</param>
     private void ThumbsUpDetected(OnThumbsUpEvent thumbsUpEvent)
     {
+        if (!canInvokeGestures) return;
         ThumbsUpPerformed?.Invoke();
     }
 
@@ -49,6 +64,7 @@ public class GestureReceiver : MonoBehaviour
     /// <param name="thumbsDownEvent">The thumbs-down event data.</param>
     private void ThumbsDownDetected(OnThumbsDownEvent thumbsDownEvent)
     {
+        if (!canInvokeGestures) return;
         ThumbsDownPerformed?.Invoke();
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectiveManager : MonoBehaviour
 {
     [SerializeField] private BaseObjective startingObjective;
-    [SerializeField] private float objectiveCooldown = 2f;
+    [SerializeField] private float objectiveCooldown = 1f;
 
     private BaseObjective currentObjective;
     private static ObjectiveManager instance;
